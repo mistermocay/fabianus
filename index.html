@@ -17,7 +17,16 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .page{min-height:100svh;position:relative;overflow:hidden;scroll-snap-align:start;isolation:isolate}.snap{scroll-snap-type:y mandatory}.inner{width:min(1120px,92%);height:100%;min-height:100svh;margin:auto;position:relative;display:flex;align-items:center;justify-content:center;padding:70px 0}.paper{background:linear-gradient(120deg,rgba(255,255,255,.45),rgba(255,255,255,.04));border:1px solid rgba(75,53,43,.13);box-shadow:var(--shadow)}
 .kicker{text-transform:uppercase;letter-spacing:.32em;font:600 10px/1.4 Montserrat,sans-serif;color:var(--sage);margin-bottom:15px}.script{font-family:Italianno,cursive;font-weight:400}.serif{font-family:"DM Serif Display",serif}h1,h2,h3,p{margin-top:0}h2{font:400 clamp(48px,7vw,92px)/.86 "DM Serif Display",serif;margin-bottom:22px;color:var(--red)}.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);width:190px;margin:20px auto}.smallcaps{text-transform:uppercase;letter-spacing:.18em;font:500 9px/1.6 Montserrat,sans-serif}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(77,50,40,.35);background:rgba(255,255,255,.62);color:var(--ink);text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font:600 9px Montserrat,sans-serif;padding:14px 20px;min-width:160px}.btn.dark{background:var(--red);border-color:var(--red);color:white}.btn:active{transform:translateY(1px)}
 /* botanical frame */
-.botanical{position:absolute;inset:0;pointer-events:none;z-index:-1}.branch{position:absolute;width:330px;height:330px;opacity:.86}.branch svg{width:100%;height:100%;overflow:visible}.branch.tl{top:-55px;left:-40px}.branch.br{right:-45px;bottom:-45px;transform:rotate(180deg)}.branch.tr{right:-55px;top:-50px;transform:scaleX(-1)}.branch.bl{left:-55px;bottom:-45px;transform:scale(-1)}.stem{fill:none;stroke:var(--sage);stroke-width:2;stroke-linecap:round}.leaf{fill:#879783;opacity:.72}.leaf2{fill:#aab4a4;opacity:.7}.petal{position:absolute;width:11px;height:20px;border-radius:80% 20% 80% 20%;background:var(--red2);opacity:.25;transform:rotate(25deg)}.p1{left:16%;top:24%}.p2{right:19%;top:19%;transform:rotate(85deg)}.p3{left:23%;bottom:18%;transform:rotate(-35deg)}.p4{right:13%;bottom:25%;transform:rotate(45deg)}
+/* watercolor flower system — inspired by the original invitation reference */
+.flower-decor{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}.flower-decor .floral{position:absolute;width:390px;height:390px;opacity:.94}.flower-decor .floral.tl{left:-58px;top:-58px}.flower-decor .floral.tr{right:-62px;top:-58px;transform:scaleX(-1)}.flower-decor .floral.br{right:-62px;bottom:-62px;transform:rotate(180deg)}.flower-decor .floral.bl{left:-62px;bottom:-62px;transform:rotate(180deg) scaleX(-1)}
+.flower-decor svg{width:100%;height:100%;overflow:visible}.flower-decor .stem{fill:none;stroke:#75836f;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:.82}.flower-decor .twig{fill:none;stroke:#8e6f5e;stroke-width:1.25;stroke-linecap:round;opacity:.52}.flower-decor .leaf{fill:#74846f;opacity:.68}.flower-decor .leaf-light{fill:#aeb7a5;opacity:.72}.flower-decor .leaf-dark{fill:#60715f;opacity:.56}.flower-decor .flower-petal{fill:#8f2732;opacity:.76}.flower-decor .flower-petal-light{fill:#b94b52;opacity:.58}.flower-decor .flower-shadow{fill:#7e1f2b;opacity:.2}.flower-decor .flower-center{fill:#c7a46f;opacity:.9}.flower-decor .bud{fill:#a63843;opacity:.68}.flower-decor .berry{fill:#7c2631;opacity:.45}.flower-decor .wash{fill:#fff8ef;opacity:.23}
+/* make the flowers feel painted rather than geometric */
+.flower-decor .soft{filter:url(#watercolorSoft)}
+.page>.flower-decor~.inner{z-index:2}
+.cover .flower-decor{z-index:3}.cover .cover-paper{z-index:4}.final .flower-decor{z-index:3}.final .final-copy{z-index:4}
+.floral-caption{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font:500 8px Montserrat,sans-serif;letter-spacing:.24em;color:var(--sage);text-transform:uppercase;opacity:.65}
+
+.botanical{position:absolute;inset:0;pointer-events:none;z-index:0}.branch{position:absolute;width:330px;height:330px;opacity:.86}.branch svg{width:100%;height:100%;overflow:visible}.branch.tl{top:-55px;left:-40px}.branch.br{right:-45px;bottom:-45px;transform:rotate(180deg)}.branch.tr{right:-55px;top:-50px;transform:scaleX(-1)}.branch.bl{left:-55px;bottom:-45px;transform:scale(-1)}.stem{fill:none;stroke:var(--sage);stroke-width:2;stroke-linecap:round}.leaf{fill:#879783;opacity:.72}.leaf2{fill:#aab4a4;opacity:.7}.petal{position:absolute;width:11px;height:20px;border-radius:80% 20% 80% 20%;background:var(--red2);opacity:.25;transform:rotate(25deg)}.p1{left:16%;top:24%}.p2{right:19%;top:19%;transform:rotate(85deg)}.p3{left:23%;bottom:18%;transform:rotate(-35deg)}.p4{right:13%;bottom:25%;transform:rotate(45deg)}
 /* cover */
 .cover{color:white;background:#3b302c}.cover-photo{position:absolute;inset:0;background:url('images/cover.webp') center 42%/cover no-repeat;transform:scale(1.015)}.cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,12,.1),rgba(20,12,10,.22) 45%,rgba(20,12,10,.7))}.cover-paper{position:absolute;inset:8%;border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,rgba(42,26,20,.05),rgba(42,26,20,.18));backdrop-filter:blur(1px)}.cover-copy{position:relative;z-index:2}.cover .kicker{color:#efe5d7}.cover h1{font:400 clamp(70px,12vw,145px)/.74 "DM Serif Display",serif;margin:0;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.18)}.cover h1 em{font:400 clamp(58px,9vw,110px) Italianno,cursive;color:#f4d9d0}.cover-date{margin-top:26px;font:500 10px Montserrat,sans-serif;letter-spacing:.35em}.open{margin-top:34px;color:white;border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.12)}.guest{margin-top:20px;font-size:18px}.scrollhint{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font:500 8px Montserrat,sans-serif;letter-spacing:.28em;opacity:.8}
 /* editorial photo sections */
@@ -37,11 +46,41 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 @media(max-width:760px){body:before{opacity:.12}#app{width:100%;box-shadow:none}.inner{width:90%;padding:48px 0}.branch{width:240px;height:240px;opacity:.7}.cover-paper{inset:5%}.cover h1{font-size:80px}.photo-wrap,.photo-wrap.reverse{display:flex;flex-direction:column;width:100%;height:auto;min-height:0}.photo{width:100%;height:58svh;min-height:0}.photo-caption,.reverse .photo-caption{width:88%;margin:-55px auto 0;padding:32px 27px 35px}.photo-caption h2{font-size:52px}.photo-caption p{font-size:18px}.collage{grid-template-columns:1fr 1fr;gap:10px}.polaroid:nth-child(1){margin-top:0}.polaroid:nth-child(3){margin-top:25px}.polaroid:nth-child(2){grid-column:1/-1;width:74%;justify-self:center;order:-1}.collage-copy{margin-top:15px}.event-grid{grid-template-columns:1fr;gap:14px}.event-card{min-height:420px;padding:34px 28px}.event-card h2{font-size:48px}.timer{gap:3px}.timer .num{font-size:43px}.card{padding:32px 25px}.card h2{font-size:52px}.row{grid-template-columns:1fr}.copy{float:none;margin:18px 0 0}.final h2{font-size:90px}#dots{right:10px}}
 @media(min-width:761px){.snap{height:100svh;overflow-y:auto}.page{min-height:100svh}.photo-section .inner{align-items:center}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+.cover .flower-decor{opacity:.88}.cover .flower-decor .flower-petal,.cover .flower-decor .flower-petal-light{opacity:.78}.cover .flower-decor .leaf,.cover .flower-decor .leaf-light{opacity:.72}
+.final .flower-decor{opacity:.34}.final .flower-decor .flower-petal,.final .flower-decor .flower-petal-light{fill:#e5b3a8}.final .flower-decor .stem{stroke:#c8b7a8}.final .flower-decor .leaf,.final .flower-decor .leaf-light{fill:#c8c0ae}
+.event .flower-decor .floral,.forms .flower-decor .floral{opacity:.78}
+@media(max-width:760px){.flower-decor .floral{width:255px;height:255px}.flower-decor .floral.tl{left:-48px;top:-48px}.flower-decor .floral.tr{right:-50px;top:-48px}.flower-decor .floral.br{right:-50px;bottom:-50px}.flower-decor .floral.bl{left:-50px;bottom:-50px}.cover .flower-decor .floral{width:285px;height:285px}}
+
 </style>
 </head>
 <body>
+<svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
+  <filter id="watercolorSoft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs></svg>
 <div id="app" class="snap">
 <section class="page cover" id="cover">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
   <div class="cover-photo"></div><div class="cover-paper"><div class="cover-copy">
     <div class="kicker reveal">The Wedding of</div>
     <h1 class="reveal delay1">Fabi <em>&amp;</em> Oca</h1>
@@ -52,19 +91,91 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 </section>
 
 <section class="page photo-section" id="intro">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
  <div class="botanical"><div class="branch tl"><svg viewBox="0 0 300 300"><path class="stem" d="M15 270C70 220 105 160 205 60"/><ellipse class="leaf" cx="76" cy="217" rx="11" ry="34" transform="rotate(-45 76 217)"/><ellipse class="leaf2" cx="108" cy="180" rx="11" ry="34" transform="rotate(42 108 180)"/><ellipse class="leaf" cx="146" cy="139" rx="11" ry="34" transform="rotate(-42 146 139)"/></svg></div></div>
  <div class="inner"><div class="photo-wrap"><div class="photo"><img src="images/books.webp" alt="Fabi dan Oca bersama buku" loading="lazy"></div><div class="photo-caption reveal"><div class="photo-number">01 / OUR STORY</div><div class="script">A story worth telling</div><h2>Berawal dari<br>sebuah cerita.</h2><p>Di antara halaman yang dibuka bersama, kami menemukan bahwa kisah terbaik bukan hanya untuk dibaca — tetapi untuk dijalani berdua.</p></div></div></div>
 </section>
 
 <section class="page photo-section" id="faith">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
  <div class="inner"><div class="photo-wrap reverse"><div class="photo-caption reveal"><div class="photo-number">02 / WITH FAITH</div><div class="script">Where our hearts are guided</div><h2>Dalam doa,<br>kami bertumbuh.</h2><p>Di tempat yang tenang ini, kami belajar bahwa cinta bukan hanya tentang hari ini, tetapi tentang memilih satu sama lain, setiap hari.</p></div><div class="photo"><img src="images/church-wide.webp" alt="Fabi dan Oca di dalam gereja" loading="lazy"></div></div></div>
 </section>
 
 <section class="page photo-section">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
  <div class="inner"><div class="photo-wrap"><div class="photo"><img src="images/church-altar.webp" alt="Fabi dan Oca di altar gereja" loading="lazy"></div><div class="photo-caption reveal"><div class="photo-number">03 / THE PROMISE</div><div class="script">One promise, one forever</div><h2>Menuju<br>sebuah janji.</h2><p>Dan pada akhirnya, semua langkah membawa kami ke satu hari: ketika dua nama dipertemukan dalam satu janji seumur hidup.</p></div></div></div>
 </section>
 
 <section class="page photo-section" id="moments" style="background:#eaded3">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
  <div class="inner"><div class="collage">
    <div class="polaroid"><img src="images/playful.webp" alt="Pre-wedding Fabi dan Oca" loading="lazy"><div class="caption">just being us</div></div>
    <div class="polaroid"><img src="images/sunflower.webp" alt="Pre-wedding dengan bunga matahari" loading="lazy"><div class="caption">a little sunshine</div></div>
@@ -74,6 +185,24 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 </section>
 
 <section class="page event" id="events">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
  <div class="botanical"><div class="branch tr"><svg viewBox="0 0 300 300"><path class="stem" d="M30 45C92 96 150 165 270 265"/><ellipse class="leaf2" cx="86" cy="92" rx="11" ry="34" transform="rotate(-40 86 92)"/><ellipse class="leaf" cx="128" cy="136" rx="11" ry="34" transform="rotate(42 128 136)"/><ellipse class="leaf2" cx="174" cy="178" rx="11" ry="34" transform="rotate(-40 174 178)"/></svg></div></div>
  <div class="inner"><div style="width:100%"><div class="kicker" style="text-align:center">Save The Date</div><h2 style="text-align:center" class="reveal">Hari yang kami tunggu.</h2><div class="event-grid">
    <article class="event-card reveal"><div class="event-num">01</div><div class="kicker">Akad Pernikahan</div><h2>Akad</h2><div class="date-line">RABU · 30 DESEMBER 2026</div><div class="time">10.00 WIB</div><div class="venue">Gereja St. Antonius Padua<br>Purbayan Surakarta</div><div class="address">Jl. Arifin No.1, Kp. Baru,<br>Kec. Ps. Kliwon, Kota Surakarta,<br>Jawa Tengah 57111</div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gereja+St.+Antonius+Padua+Purbayan+Surakarta">Lihat Lokasi</a><div class="event-note">Dalam doa, kami mengikat janji.</div></article>
@@ -81,13 +210,85 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
  </div></div></div>
 </section>
 
-<section class="page count" id="countdown"><div class="inner"><div class="count-inner reveal"><div class="kicker">The Countdown</div><h2>Menuju hari bahagia kami.</h2><p class="count-sub">Rabu, 30 Desember 2026 · Surakarta, Jawa Tengah</p><div class="timer"><div><div id="days" class="num">00</div><div class="lab">HARI</div></div><div><div id="hours" class="num">00</div><div class="lab">JAM</div></div><div><div id="mins" class="num">00</div><div class="lab">MENIT</div></div><div><div id="secs" class="num">00</div><div class="lab">DETIK</div></div></div><button id="calendar" class="btn dark">Simpan ke Kalender</button></div></div></section>
+<section class="page count" id="countdown">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="count-inner reveal"><div class="kicker">The Countdown</div><h2>Menuju hari bahagia kami.</h2><p class="count-sub">Rabu, 30 Desember 2026 · Surakarta, Jawa Tengah</p><div class="timer"><div><div id="days" class="num">00</div><div class="lab">HARI</div></div><div><div id="hours" class="num">00</div><div class="lab">JAM</div></div><div><div id="mins" class="num">00</div><div class="lab">MENIT</div></div><div><div id="secs" class="num">00</div><div class="lab">DETIK</div></div></div><button id="calendar" class="btn dark">Simpan ke Kalender</button></div></div></section>
 
-<section class="page forms" id="rsvp"><div class="inner"><div class="card reveal"><div class="kicker">RSVP</div><h2>Apakah kamu<br>akan hadir?</h2><p class="lede">Mohon konfirmasi sebelum <strong>20 Desember 2026</strong>. Pesanmu akan otomatis disiapkan untuk dikirim melalui WhatsApp.</p><form id="rsvpForm"><div class="field"><label>Nama</label><input id="nama" required placeholder="Nama lengkap"></div><div class="row"><div class="field"><label>Kehadiran</label><select id="hadir"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select></div><div class="field"><label>Jumlah Tamu</label><input id="jumlah" type="number" min="1" max="6" value="1"></div></div><div class="field"><label>Doa & Ucapan</label><textarea id="ucapan" rows="4" placeholder="Tulis pesan untuk Fabi & Oca"></textarea></div><button class="btn dark submit" type="submit">Kirim Konfirmasi</button></form><div id="thanks" class="thanks">Terima kasih, <span id="thanksName"></span> ✦</div></div></div></section>
+<section class="page forms" id="rsvp">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="card reveal"><div class="kicker">RSVP</div><h2>Apakah kamu<br>akan hadir?</h2><p class="lede">Mohon konfirmasi sebelum <strong>20 Desember 2026</strong>. Pesanmu akan otomatis disiapkan untuk dikirim melalui WhatsApp.</p><form id="rsvpForm"><div class="field"><label>Nama</label><input id="nama" required placeholder="Nama lengkap"></div><div class="row"><div class="field"><label>Kehadiran</label><select id="hadir"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select></div><div class="field"><label>Jumlah Tamu</label><input id="jumlah" type="number" min="1" max="6" value="1"></div></div><div class="field"><label>Doa & Ucapan</label><textarea id="ucapan" rows="4" placeholder="Tulis pesan untuk Fabi & Oca"></textarea></div><button class="btn dark submit" type="submit">Kirim Konfirmasi</button></form><div id="thanks" class="thanks">Terima kasih, <span id="thanksName"></span> ✦</div></div></div></section>
 
-<section class="page forms" id="gift"><div class="inner"><div class="gift-card reveal"><div class="kicker">Tanda Kasih</div><h2>Kirim hadiah,<br>jika berkenan.</h2><p class="lede">Kehadiran dan doa restu adalah hadiah terindah. Jika ingin mengirim tanda kasih dari jauh, berikut detailnya.</p><div class="bank"><div class="bank-top"><span>BCA</span><span>TRANSFER</span></div><div class="bank-number">1234567890</div><div style="font-size:16px;color:#6a5d55">a.n. Fabianus Siltian Simbarja</div><button id="copyBank" class="copy">Salin Nomor</button></div></div></div></section>
+<section class="page forms" id="gift">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="gift-card reveal"><div class="kicker">Tanda Kasih</div><h2>Kirim hadiah,<br>jika berkenan.</h2><p class="lede">Kehadiran dan doa restu adalah hadiah terindah. Jika ingin mengirim tanda kasih dari jauh, berikut detailnya.</p><div class="bank"><div class="bank-top"><span>BCA</span><span>TRANSFER</span></div><div class="bank-number">1234567890</div><div style="font-size:16px;color:#6a5d55">a.n. Fabianus Siltian Simbarja</div><button id="copyBank" class="copy">Salin Nomor</button></div></div></div></section>
 
-<section class="page final"><div class="final-photo"></div><div class="inner"><div class="final-copy reveal"><div class="kicker">Until We Meet</div><div class="script">Thank you for being part of our story.</div><h2>Fabi<br>&amp; Oca</h2><div class="final-date">30 · 12 · 2026 · SURAKARTA</div><button id="share" class="btn">Bagikan Undangan</button></div></div></section>
+<section class="page final">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="final-photo"></div><div class="inner"><div class="final-copy reveal"><div class="kicker">Until We Meet</div><div class="script">Thank you for being part of our story.</div><h2>Fabi<br>&amp; Oca</h2><div class="final-date">30 · 12 · 2026 · SURAKARTA</div><button id="share" class="btn">Bagikan Undangan</button></div></div></section>
 </div>
 <div id="dots" aria-label="Navigasi halaman"></div>
 <script>
