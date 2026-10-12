@@ -462,6 +462,107 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 }
 
+
+/* ===== PERBAIKAN LAYOUT FOTO: desktop, laptop, dan layar sempit ===== */
+.photo-page .content{
+  width:min(1180px,calc(100% - 64px));
+  max-width:1180px;
+  margin:0 auto;
+}
+.photo-page .content > .center{
+  width:100%;
+  max-width:100%;
+  min-width:0;
+}
+.photo-feature-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+  align-items:start;
+  justify-content:center;
+  width:100%;
+  max-width:1000px;
+  margin:34px auto 0;
+  gap:clamp(16px,2.5vw,28px);
+}
+.photo-feature-main,.photo-feature-side{min-width:0;}
+.photo-feature-main img,.photo-feature-side img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+.moment-portrait-feature{
+  display:grid;
+  grid-template-columns:minmax(0,360px) minmax(0,430px);
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  max-width:900px;
+  margin:42px auto 0;
+  gap:clamp(24px,4vw,48px);
+}
+.moment-portrait-card{width:100%;min-width:0;}
+.moment-portrait-card img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:none;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:center 42%;
+}
+.moment-portrait-copy{min-width:0;}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:start;
+  width:100%;
+  max-width:1000px;
+  margin:34px auto 0;
+  gap:clamp(12px,2vw,22px);
+}
+.gallery-card{width:100%;min-width:0;}
+.gallery-card img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  object-position:center;
+}
+.gallery-card:nth-child(1) img{object-position:center 45%;}
+.gallery-card:nth-child(2) img{object-position:center 55%;}
+.gallery-card:nth-child(3) img{object-position:center 50%;}
+.gallery-card:nth-child(4) img{object-position:center 50%;}
+
+/* Pada laptop/tablet, gunakan dua kolom agar kartu tidak terlalu sempit. */
+@media(max-width:1000px){
+  .photo-page .content{width:calc(100% - 64px);}
+  .gallery-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:720px;
+    gap:18px;
+  }
+  .moment-portrait-feature{
+    grid-template-columns:minmax(0,1fr);
+    max-width:560px;
+    gap:22px;
+    margin-top:32px;
+  }
+  .moment-portrait-card{width:min(100%,340px);margin:0 auto;}
+  .moment-portrait-copy{text-align:center;}
+  .photo-feature-layout{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:520px){
+  .photo-page .content{width:84%;}
+  .photo-feature-layout{grid-template-columns:minmax(0,1fr);gap:16px;}
+  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .gallery-card{padding:5px;}
+  .gallery-card img{aspect-ratio:3/4;}
+  .gallery-card figcaption{font-size:8px;letter-spacing:.08em;}
+}
+
 </style></head>
 
 
