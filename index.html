@@ -2,7 +2,15 @@
 
 
 
+
+
+
+
 <html lang="id">
+
+
+
+
 
 
 
@@ -10,7 +18,15 @@
 
 
 
+
+
+
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+
+
+
 
 
 
@@ -18,7 +34,15 @@
 
 
 
+
+
+
+
 <title>The Wedding of Fabi & Oca</title>
+
+
+
+
 
 
 
@@ -26,7 +50,15 @@
 
 
 
+
+
+
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+
+
 
 
 
@@ -34,7 +66,15 @@
 
 
 
+
+
+
+
 :root{--wine:#4b0508;--wine2:#650b10;--wine3:#2a0305;--gold:#d9a85e;--gold2:#f1d39b;--cream:#fff5df;--muted:#d8b98a;--line:rgba(217,168,94,.5)}
+
+
+
+
 
 
 
@@ -44,40 +84,83 @@
 
 
 
+
+
+
+
+
+
 /* Halaman foto tambahan: layout mengikuti orientasi foto */
+
 .photo-feature-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px;text-align:left;align-items:start}
+
 .photo-feature-main,.photo-feature-side figure,.gallery-card,.moment-portrait-card{margin:0;border:1px solid var(--line);padding:8px;background:rgba(25,0,0,.28);min-width:0}
+
 .photo-feature-layout figure{overflow:hidden}
+
 .photo-feature-layout img{display:block;width:100%;height:auto;object-fit:contain;background:rgba(15,0,0,.3)}
+
 .photo-feature-main img,.photo-feature-side img{aspect-ratio:4/3;object-fit:cover}
+
 .photo-feature-main img{object-position:center 42%}
+
 .photo-feature-side{display:block;min-width:0}
+
 .photo-feature-side figure{display:block}
+
 .photo-feature-side img{object-position:center 50%}
+
 .photo-feature-main figcaption,.photo-feature-side figcaption,.gallery-card figcaption,.moment-portrait-card figcaption{font:10px Montserrat,sans-serif;letter-spacing:.15em;color:var(--gold2);text-align:center;padding:12px 4px 5px;text-transform:uppercase}
+
 .moment-portrait-feature{display:grid;grid-template-columns:minmax(220px,360px) minmax(0,390px);justify-content:center;align-items:center;gap:clamp(24px,5vw,64px);margin:42px auto 0;text-align:left}
+
 .moment-portrait-card img{display:block;width:100%;height:auto;max-height:560px;aspect-ratio:3/4;object-fit:cover;object-position:center 42%}
+
 .moment-portrait-copy .script{font-size:42px}
+
 .moment-portrait-copy p{margin:12px 0}
+
 .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:32px;text-align:left}
+
 .gallery-card img{display:block;width:100%;height:clamp(230px,34vw,390px);object-fit:cover;object-position:center}
+
 .gallery-card:nth-child(1) img{object-position:center 45%}
+
 .gallery-card:nth-child(2) img{object-position:center 55%}
+
 .gallery-card:nth-child(3) img{object-position:center 50%}
+
 .photo-page .content{width:min(1100px,88%)}
+
 @media(max-width:700px){
- .photo-feature-layout{grid-template-columns:1fr;gap:14px}
- .photo-feature-main img,.photo-feature-side img{aspect-ratio:4/3}
- .moment-portrait-feature{grid-template-columns:minmax(0,1fr);gap:20px;margin-top:28px;max-width:420px}
- .moment-portrait-card{width:min(100%,340px);margin:0 auto}
- .moment-portrait-copy{text-align:center}
- .moment-portrait-copy .script{font-size:38px}
- .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
- .gallery-card{padding:5px}
- .gallery-card img{height:auto;aspect-ratio:3/4}
- .gallery-card figcaption{font-size:8px;letter-spacing:.08em}
+
+ .photo-feature-layout{grid-template-columns:1fr;gap:14px}
+
+ .photo-feature-main img,.photo-feature-side img{aspect-ratio:4/3}
+
+ .moment-portrait-feature{grid-template-columns:minmax(0,1fr);gap:20px;margin-top:28px;max-width:420px}
+
+ .moment-portrait-card{width:min(100%,340px);margin:0 auto}
+
+ .moment-portrait-copy{text-align:center}
+
+ .moment-portrait-copy .script{font-size:38px}
+
+ .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+
+ .gallery-card{padding:5px}
+
+ .gallery-card img{height:auto;aspect-ratio:3/4}
+
+ .gallery-card figcaption{font-size:8px;letter-spacing:.08em}
+
 }
+
 @media(max-width:700px){.page:before{inset:10px}.page:after{inset:17px}.content{width:84%;padding:72px 0}.cover-photo-frame{width:min(72vw,340px);height:min(72vw,340px);transform:translate(-50%,-78%) rotate(45deg)}.cover-copy{padding-top:clamp(280px,42vh,360px)}.cover h1{font-size:clamp(43px,12vw,68px)}.cover-corner{width:22vw;height:22vw}.intro-grid{grid-template-columns:1fr;gap:45px}.diamond-photo{width:min(68vw,270px)}.intro-copy{text-align:center}.intro-copy h2{font-size:49px}.event-grid{grid-template-columns:1fr;gap:25px}.event-card{padding:28px 18px}.photo-pair{gap:12px}.photo-pair figcaption{font-size:8px}.count-grid{grid-template-columns:repeat(2,minmax(80px,110px))}.nav-dots{right:7px;gap:8px}.nav-dots a{width:6px;height:6px}.story-photo img{max-height:420px}p{font-size:18px}}
+
+
+
+
 
 
 
@@ -87,51 +170,124 @@
 
 
 
+
+
+
+
+
+
 /* ===== INTERAKSI HALUS: SCROLL, REVEAL, HOVER ===== */
+
 html{scroll-behavior:smooth;scroll-padding-top:18px}
+
 .page{--pointer-x:50%;--pointer-y:50%}
+
 .page:after{transition:inset .8s ease,border-color .8s ease}
+
 .page.is-active:after{inset:32px;border-color:rgba(217,168,94,.32)}
+
 .gold-rule{position:relative;overflow:visible}
+
 .gold-rule:before,.gold-rule:after{background-size:200% 100%;animation:goldLine 5s ease-in-out infinite}
+
 @keyframes goldLine{0%,100%{opacity:.55;background-position:100% 0}50%{opacity:1;background-position:0 0}}
+
 .cover-photo-frame{animation:coverFloat 7s ease-in-out infinite;will-change:transform}
+
 @keyframes coverFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
+
 .cover-photo-frame img{transition:filter .7s ease,object-position .7s ease}
+
 .cover-photo-frame:hover img{filter:saturate(1.12) contrast(1.04)}
+
 .btn{position:relative;overflow:hidden;isolation:isolate}
+
 .btn:before{content:"";position:absolute;inset:-1px;z-index:-1;background:linear-gradient(110deg,transparent 25%,rgba(241,211,155,.28) 48%,transparent 70%);transform:translateX(-130%);transition:transform .7s ease}
+
 .btn:hover:before{transform:translateX(130%)}
+
 .photo-feature-main,.photo-feature-side figure,.gallery-card,.moment-portrait-card,.story-photo,.photo-pair figure,.event-card,.count-cell,.form-card{transition:transform .55s cubic-bezier(.2,.7,.2,1),border-color .45s ease,box-shadow .55s ease}
+
 .photo-feature-main:hover,.photo-feature-side figure:hover,.gallery-card:hover,.moment-portrait-card:hover,.story-photo:hover,.photo-pair figure:hover,.event-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 42px rgba(0,0,0,.22)}
+
 .photo-feature-main img,.photo-feature-side img,.gallery-card img,.moment-portrait-card img,.story-photo img,.photo-pair img,.diamond-photo img{transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .7s ease}
+
 .photo-feature-main:hover img,.photo-feature-side figure:hover img,.gallery-card:hover img,.moment-portrait-card:hover img,.story-photo:hover img,.photo-pair figure:hover img{transform:scale(1.035);filter:saturate(1.08)}
+
 .diamond-photo img{will-change:transform}
+
 .diamond-photo:hover img{transform:rotate(-45deg) scale(1.52)}
-.nav-dots a{position:relative;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+
+.nav-dots a{position:relative;transition:transform .25s ease,*background* .25s ease,box-shadow .25s ease}
+
 .nav-dots a:hover,.nav-dots a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 12px rgba(217,168,94,.65)}
+
 /* Reveal dinyalakan hanya ketika JavaScript aktif agar konten tetap terbaca jika JS gagal. */
+
 .motion-ready .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+
 .motion-ready .reveal.from-left{transform:translateX(-28px)}
+
 .motion-ready .reveal.from-right{transform:translateX(28px)}
+
 .motion-ready .reveal.zoom-in{transform:scale(.94) translateY(12px)}
+
 .motion-ready .reveal.is-visible{opacity:1;transform:translate(0,0) scale(1)}
+
 .motion-ready .reveal-image{clip-path:inset(7% 7% 7% 7%);transition:clip-path 1s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+
 .motion-ready .reveal-image.is-visible{clip-path:inset(0 0 0 0)}
+
 .script{display:inline-block;animation:scriptBreathe 6s ease-in-out infinite}
+
 @keyframes scriptBreathe{0%,100%{text-shadow:0 0 0 rgba(241,211,155,0)}50%{text-shadow:0 0 14px rgba(241,211,155,.16)}}
+
 .count-cell b{transition:transform .25s ease}
+
 .count-cell:hover b{transform:translateY(-3px)}
+
 /* Kilau kecil bergerak pada ornamen, tanpa menambah elemen yang mengganggu foto. */
+
 .ornament{background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));background-size:200% auto;-webkit-background-clip:text;background-clip:text;animation:ornamentShimmer 7s linear infinite}
+
 @keyframes ornamentShimmer{to{background-position:200% center}}
+
 @media(prefers-reduced-motion:reduce){
- html{scroll-behavior:auto}
- *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
- .motion-ready .reveal{opacity:1;transform:none;clip-path:none}
+
+ html{scroll-behavior:auto}
+
+ *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+
+ .motion-ready .reveal{opacity:1;transform:none;clip-path:none}
+
 }
 
+
+
+
+/* Kontrol musik: tetap terlihat, nyaman di desktop dan mobile */
+.music-control{
+  position:fixed;left:18px;bottom:18px;z-index:30;
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:44px;padding:12px 16px;border:1px solid var(--gold);
+  border-radius:999px;background:rgba(42,3,5,.92);color:var(--gold2);
+  box-shadow:0 8px 28px rgba(0,0,0,.28);backdrop-filter:blur(8px);
+  font:500 10px Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase;
+  cursor:pointer;transition:background .25s ease,transform .25s ease,color .25s ease;
+}
+.music-control:hover{background:var(--gold);color:var(--wine);transform:translateY(-2px)}
+.music-control:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+.music-control .music-icon{font-size:16px;line-height:1}
+@media(max-width:700px){
+  .music-control{left:12px;bottom:12px;min-height:42px;padding:11px 13px;font-size:9px}
+}
+@media(prefers-reduced-motion:reduce){.music-control{transition:none}}
+
 </style></head>
+
+
+
+
 
 
 
@@ -139,11 +295,26 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 <nav class="nav-dots" aria-label="Navigasi halaman"><a href="#cover" aria-label="Sampul"></a><a href="#intro" aria-label="Mempelai"></a><a href="#story" aria-label="Cerita"></a><a href="#moments" aria-label="Momen bersama"></a><a href="#gallery" aria-label="Galeri foto"></a><a href="#events" aria-label="Acara"></a><a href="#rsvp" aria-label="RSVP"></a></nav>
 
+<audio id="weddingAudio" src="Lagu/lagu-wedding.mp3" preload="auto" loop></audio>
+<button class="music-control" id="musicToggle" type="button" aria-label="Putar musik undangan" aria-pressed="false"><span class="music-icon" aria-hidden="true">♫</span><span id="musicLabel">Putar Musik</span></button>
 
 
-<section class="page cover" id="cover"><div class="cover-corner tl"></div><div class="cover-corner br"></div><div class="cover-photo-frame"><img src="images/cover.png" alt="Foto prewedding Fabi dan Oca"></div><div class="content"><div class="cover-copy"><div class="kicker">The Wedding Of</div><h1>Odelia Ocarina<br><em>&</em><br>Fabianus Siltian</h1><div class="ornament">— ✦ —</div><div class="cover-date">RABU · 30 DESEMBER 2026 · SURAKARTA</div><div class="guest" id="guest"></div><a class="btn" href="#intro">Buka Undangan <span>↘</span></a></div></div></section>
+
+
+
+
+
+<section class="page cover" id="cover"><div class="cover-corner tl"></div><div class="cover-corner br"></div><div class="cover-photo-frame"><img src="images/cover.png" alt="Foto prewedding Fabi dan Oca"></div><div class="content"><div class="cover-copy"><div class="kicker">The Wedding Of</div><h1>Odelia Ocarina<br><em>&</em><br>Fabianus Siltian</h1><div class="ornament">— ✦ —</div><div class="cover-date">RABU · 30 DESEMBER 2026 · SURAKARTA</div><div class="guest" id="guest"></div><a class="btn" id="openInvitation" href="#intro">Buka Undangan <span>↘</span></a></div></div></section>
+
+
+
+
 
 
 
@@ -151,95 +322,85 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 <section class="page" id="story"><div class="content"><div class="story-copy center"><div class="kicker">01 / Our Story</div><div class="script">A story worth telling</div><h2>Dua Hati,<br>Satu Perjalanan.</h2><div class="gold-rule"><span>❦</span></div><p>Setiap kisah memiliki awalnya sendiri. Dengan rasa syukur, kami melangkah bersama menuju babak baru—membangun kehidupan yang dipenuhi kasih, iman, tawa, dan harapan.</p><div class="story-photo"><img src="images/books.jpg" alt="Fabi dan Oca bersama buku" loading="lazy"></div><div class="photo-pair"><figure><img src="images/playful.png" alt="Momen ceria Fabi dan Oca" loading="lazy"><figcaption>Our Little Joy</figcaption></figure><figure><img src="images/sunflower.png" alt="Fabi dan Oca dengan bunga matahari" loading="lazy"><figcaption>Our Sunshine</figcaption></figure></div></div></div></section>
 
 
 
+
+
+
+
 <section class="page photo-page" id="moments">
-  <div class="content">
-    <div class="center" style="width:100%">
-      <div class="kicker">02 / Moments We Keep</div>
-      <div class="script">In every little moment</div>
-      <h2>Dalam Setiap<br>Langkah.</h2>
-      <div class="gold-rule"><span>❦</span></div>
-      <p>Potongan kecil dari perjalanan kami—dalam doa, percakapan sederhana, dan kebahagiaan yang tumbuh bersama.</p>
-
-      <div class="photo-feature-layout">
-        <figure class="photo-feature-main">
-          <img src="images/foto1.jpg" alt="Fabi dan Oca berdoa di dalam gereja" loading="lazy">
-          <figcaption>In His Grace</figcaption>
-        </figure>
-        <div class="photo-feature-side">
-          <figure>
-            <img src="images/foto2.jpg" alt="Fabi dan Oca berbagi momen bersama" loading="lazy">
-            <figcaption>Little Adventures</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="moment-portrait-feature">
-        <figure class="moment-portrait-card">
-          <img src="images/foto3.jpg" alt="Fabi dan Oca tersenyum bersama" loading="lazy">
-          <figcaption>A Moment Together</figcaption>
-        </figure>
-        <div class="moment-portrait-copy">
-          <div class="kicker">A Little Reminder</div>
-          <div class="script">The beauty is in the little things</div>
-          <p>Di antara langkah-langkah sederhana, kami menemukan alasan baru untuk bersyukur, tertawa, dan terus memilih satu sama lain.</p>
-          <div class="gold-rule"><span>✦</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="page photo-page" id="gallery">
 
   <div class="content">
 
     <div class="center" style="width:100%">
 
-      <div class="kicker">03 / Our Gallery</div>
+      <div class="kicker">02 / Moments We Keep</div>
 
-      <div class="script">A thousand little memories</div>
+      <div class="script">In every little moment</div>
 
-      <h2>Kenangan<br>yang Kami Simpan.</h2>
+      <h2>Dalam Setiap<br>Langkah.</h2>
 
-      <div class="gold-rule"><span>✦</span></div>
+      <div class="gold-rule"><span>❦</span></div>
 
-      <p>Tiga bingkai, tiga cerita, dan banyak alasan untuk selalu tersenyum saat mengingat hari-hari ini.</p>
+      <p>Potongan kecil dari perjalanan kami—dalam doa, percakapan sederhana, dan kebahagiaan yang tumbuh bersama.</p>
 
-      <div class="gallery-grid">
 
-        <figure class="gallery-card">
 
-          <img src="images/foto4.png" alt="Fabi dan Oca berfoto di taman berbunga" loading="lazy">
+      <div class="photo-feature-layout">
 
-          <figcaption>Under the Blossoms</figcaption>
+        <figure class="photo-feature-main">
 
-        </figure>
+          <img src="images/foto1.jpg" alt="Fabi dan Oca berdoa di dalam gereja" loading="lazy">
 
-        <figure class="gallery-card">
-
-          <img src="images/foto5.png" alt="Foto Fabi dan Oca dari sudut atas di tangga" loading="lazy">
-
-          <figcaption>From Another View</figcaption>
+          <figcaption>In His Grace</figcaption>
 
         </figure>
 
-        <figure class="gallery-card">
+        <div class="photo-feature-side">
 
-          <img src="images/foto6.png" alt="Fabi dan Oca mengenakan busana merah" loading="lazy">
+          <figure>
 
-          <figcaption>In Our Own Colors</figcaption>
+            <img src="images/foto2.jpg" alt="Fabi dan Oca berbagi momen bersama" loading="lazy">
 
-        </figure>
+            <figcaption>Little Adventures</figcaption>
+
+          </figure>
+
+        </div>
 
       </div>
 
-      <a class="btn" href="#events" style="margin-top:30px">Lanjut ke Informasi Acara ↓</a>
+
+
+      <div class="moment-portrait-feature">
+
+        <figure class="moment-portrait-card">
+
+          <img src="images/foto3.jpg" alt="Fabi dan Oca tersenyum bersama" loading="lazy">
+
+          <figcaption>A Moment Together</figcaption>
+
+        </figure>
+
+        <div class="moment-portrait-copy">
+
+          <div class="kicker">A Little Reminder</div>
+
+          <div class="script">The beauty is in the little things</div>
+
+          <p>Di antara langkah-langkah sederhana, kami menemukan alasan baru untuk bersyukur, tertawa, dan terus memilih satu sama lain.</p>
+
+          <div class="gold-rule"><span>✦</span></div>
+
+        </div>
+
+      </div>
 
     </div>
 
@@ -249,7 +410,123 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
+<section class="page photo-page" id="gallery">
+
+
+
+  <div class="content">
+
+
+
+    <div class="center" style="width:100%">
+
+
+
+      <div class="kicker">03 / Our Gallery</div>
+
+
+
+      <div class="script">A thousand little memories</div>
+
+
+
+      <h2>Kenangan<br>yang Kami Simpan.</h2>
+
+
+
+      <div class="gold-rule"><span>✦</span></div>
+
+
+
+      <p>Tiga bingkai, tiga cerita, dan banyak alasan untuk selalu tersenyum saat mengingat hari-hari ini.</p>
+
+
+
+      <div class="gallery-grid">
+
+
+
+        <figure class="gallery-card">
+
+
+
+          <img src="images/foto4.png" alt="Fabi dan Oca berfoto di taman berbunga" loading="lazy">
+
+
+
+          <figcaption>Under the Blossoms</figcaption>
+
+
+
+        </figure>
+
+
+
+        <figure class="gallery-card">
+
+
+
+          <img src="images/foto5.png" alt="Foto Fabi dan Oca dari sudut atas di tangga" loading="lazy">
+
+
+
+          <figcaption>From Another View</figcaption>
+
+
+
+        </figure>
+
+
+
+        <figure class="gallery-card">
+
+
+
+          <img src="images/foto6.png" alt="Fabi dan Oca mengenakan busana merah" loading="lazy">
+
+
+
+          <figcaption>In Our Own Colors</figcaption>
+
+
+
+        </figure>
+
+
+
+      </div>
+
+
+
+      <a class="btn" href="#events" style="margin-top:30px">Lanjut ke Informasi Acara ↓</a>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+</section>
+
+
+
+
+
+
+
 <section class="page" id="events"><div class="content"><div class="center" style="width:100%"><div class="kicker">Save The Date</div><h2>Hari yang Kami<br>Tunggu.</h2><div class="gold-rule"><span>✦</span></div><p>Merupakan kebahagiaan bagi kami apabila Anda berkenan hadir dan menjadi bagian dari hari istimewa ini.</p><div class="event-grid"><article class="event-card"><div class="num">01</div><div class="kicker">Pemberkatan Pernikahan</div><h3>Akad / Pemberkatan</h3><div class="date">RABU · 30 DESEMBER 2026</div><div class="time">10.00 WIB</div><div class="venue">Gereja St. Antonius Padua<br>Purbayan Surakarta</div><div class="address">Jl. Arifin No. 1, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57111</div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gereja+St.+Antonius+Padua+Purbayan+Surakarta" target="_blank" rel="noopener">Lihat Lokasi ↗</a></article><article class="event-card"><div class="num">02</div><div class="kicker">Perayaan Pernikahan</div><h3>Resepsi</h3><div class="date">RABU · 30 DESEMBER 2026</div><div class="time">18.00 WIB</div><div class="venue">Graha Perhutani<br>Surakarta</div><div class="address">Jl. Slamet Riyadi No. 473, Pajang, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146</div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Graha+Perhutani+Surakarta+Jl+Slamet+Riyadi+473" target="_blank" rel="noopener">Lihat Lokasi ↗</a></article></div><button class="btn" id="calendar" style="margin-top:34px">Simpan ke Kalender ↓</button></div></div></section>
+
+
+
+
 
 
 
@@ -257,7 +534,15 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 <section class="page" id="rsvp"><div class="content"><div class="form-card"><div class="center"><div class="kicker">Kindly Reply</div><h2 style="font-size:52px">Konfirmasi Kehadiran</h2><div class="gold-rule"><span>✦</span></div><p>Mohon luangkan waktu untuk mengisi konfirmasi kehadiran dan ucapan untuk kami.</p></div><form id="rsvpForm"><label for="nama">Nama</label><input id="nama" name="nama" required placeholder="Nama Anda"><label for="hadir">Konfirmasi kehadiran</label><select id="hadir" name="hadir"><option>Hadir</option><option>Maaf, belum bisa hadir</option></select><label for="jumlah">Jumlah tamu</label><select id="jumlah" name="jumlah"><option>1 orang</option><option>2 orang</option><option>3 orang</option><option>4 orang</option></select><label for="ucapan">Doa & ucapan</label><textarea id="ucapan" name="ucapan" placeholder="Tuliskan doa dan ucapan..."></textarea><button class="btn" type="submit">Kirim RSVP via WhatsApp ↗</button></form><p class="small-note center" style="margin:20px 0 0">Nomor WhatsApp RSVP perlu disesuaikan pada kode sebelum website dipublikasikan.</p></div></div></section>
+
+
+
+
 
 
 
@@ -265,7 +550,15 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 <section class="page final"><div class="final-photo"><img src="images/cover.png" alt="" loading="lazy"></div><div class="final-overlay"></div><div class="content"><div class="center"><div class="kicker">With Love & Gratitude</div><div class="cross">✧</div><h2>Fabi <span class="script">&</span> Oca</h2><div class="gold-rule"><span>❦</span></div><p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir serta memberikan doa restu.</p><p class="script" style="font-size:38px">Sampai bertemu di hari bahagia kami.</p><div class="cover-date">30 DESEMBER 2026 · SURAKARTA</div></div></div></section>
+
+
+
+
 
 
 
@@ -273,7 +566,15 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 <script>
+
+
+
+
 
 
 
@@ -281,89 +582,240 @@ html{scroll-behavior:smooth;scroll-padding-top:18px}
 
 
 
+
+
+
+
 </script><script>
 
+
+
 /* Interaksi scroll untuk setiap halaman */
+
 (()=>{
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const pages = [...document.querySelectorAll('.page')];
-  const revealTargets = document.querySelectorAll(
-    '.page .kicker, .page h1, .page h2, .page h3, .page .script, .page .gold-rule, .page p, .page .family, .page .cover-date, .page .guest, .page .btn, .page figure, .page .event-card, .page .count-cell, .page .form-card, .page .cross, .page .gift-number'
-  );
 
-  revealTargets.forEach((el, index)=>{
-    el.classList.add('reveal');
-    if(el.matches('figure, .story-photo, .diamond-photo, .cover-photo-frame')) el.classList.add('reveal-image');
-    if(el.matches('.intro-copy, .moment-portrait-copy')) el.classList.add('from-right');
-    else if(el.matches('.diamond-photo, .photo-feature-main, .moment-portrait-card')) el.classList.add('from-left');
-    else if(el.matches('.gallery-card, .photo-pair figure, .count-cell')) el.classList.add('zoom-in');
-  });
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  document.body.classList.add('motion-ready');
+  const pages = [...document.querySelectorAll('.page')];
 
-  if(reduceMotion || !('IntersectionObserver' in window)){
-    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));
-  } else {
-    const observer = new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {threshold:0.12, rootMargin:'0px 0px -45px 0px'});
+  const revealTargets = document.querySelectorAll(
 
-    document.querySelectorAll('.reveal').forEach((el)=>{
-      const parent = el.closest('.photo-feature-layout, .moment-portrait-feature, .gallery-grid, .photo-pair, .event-grid, .count-grid');
-      if(parent){
-        const siblings = [...parent.querySelectorAll('.reveal')];
-        const idx = siblings.indexOf(el);
-        el.style.setProperty('--reveal-delay', `${Math.min(idx,5)*100}ms`);
-      }
-      observer.observe(el);
-    });
-  }
+    '.page .kicker, .page h1, .page h2, .page h3, .page .script, .page .gold-rule, .page p, .page .family, .page .cover-date, .page .guest, .page .btn, .page figure, .page .event-card, .page .count-cell, .page .form-card, .page .cross, .page .gift-number'
 
-  // Titik navigasi mengikuti halaman yang sedang terlihat.
-  const navLinks = [...document.querySelectorAll('.nav-dots a')];
-  if('IntersectionObserver' in window){
-    const pageObserver = new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          pages.forEach(page=>page.classList.toggle('is-active', page===entry.target));
-          navLinks.forEach(link=>{
-            const active = link.getAttribute('href') === `#${entry.target.id}`;
-            link.classList.toggle('active', active);
-            if(active) link.setAttribute('aria-current','location');
-            else link.removeAttribute('aria-current');
-          });
-        }
-      });
-    }, {threshold:0.35});
-    pages.forEach(page=>pageObserver.observe(page));
-  }
+  );
 
-  // Efek gerak parallax yang sangat ringan pada foto saat halaman digeser.
-  let ticking = false;
-  const parallaxItems = document.querySelectorAll('.story-photo img, .photo-feature-layout img, .moment-portrait-card img, .gallery-card img, .photo-pair img');
-  const updateParallax = ()=>{
-    const vh = window.innerHeight || 800;
-    parallaxItems.forEach(img=>{
-      const rect = img.getBoundingClientRect();
-      if(rect.bottom < -100 || rect.top > vh + 100) return;
-      const progress = (rect.top + rect.height/2 - vh/2) / vh;
-      img.style.setProperty('--scroll-drift', `${Math.max(-5,Math.min(5,progress*5))}px`);
-    });
-    ticking = false;
-  };
-  if(!reduceMotion){
-    parallaxItems.forEach(img=>{img.style.willChange='transform';});
-    window.addEventListener('scroll', ()=>{
-      if(!ticking){ticking=true;window.requestAnimationFrame(updateParallax);}
-    }, {passive:true});
-    updateParallax();
-  }
+
+
+  revealTargets.forEach((el, index)=>{
+
+    el.classList.add('reveal');
+
+    if(el.matches('figure, .story-photo, .diamond-photo, .cover-photo-frame')) el.classList.add('reveal-image');
+
+    if(el.matches('.intro-copy, .moment-portrait-copy')) el.classList.add('from-right');
+
+    else if(el.matches('.diamond-photo, .photo-feature-main, .moment-portrait-card')) el.classList.add('from-left');
+
+    else if(el.matches('.gallery-card, .photo-pair figure, .count-cell')) el.classList.add('zoom-in');
+
+  });
+
+
+
+  document.body.classList.add('motion-ready');
+
+
+
+  if(reduceMotion || !('IntersectionObserver' in window)){
+
+    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));
+
+  } else {
+
+    const observer = new IntersectionObserver(entries=>{
+
+      entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add('is-visible');
+
+          observer.unobserve(entry.target);
+
+        }
+
+      });
+
+    }, {threshold:0.12, rootMargin:'0px 0px -45px 0px'});
+
+
+
+    document.querySelectorAll('.reveal').forEach((el)=>{
+
+      const parent = el.closest('.photo-feature-layout, .moment-portrait-feature, .gallery-grid, .photo-pair, .event-grid, .count-grid');
+
+      if(parent){
+
+        const siblings = [...parent.querySelectorAll('.reveal')];
+
+        const idx = siblings.indexOf(el);
+
+        el.style.setProperty('--reveal-delay', `${Math.min(idx,5)*100}ms`);
+
+      }
+
+      observer.observe(el);
+
+    });
+
+  }
+
+
+
+  // Titik navigasi mengikuti halaman yang sedang terlihat.
+
+  const navLinks = [...document.querySelectorAll('.nav-dots a')];
+
+  if('IntersectionObserver' in window){
+
+    const pageObserver = new IntersectionObserver(entries=>{
+
+      entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+          pages.forEach(page=>page.classList.toggle('is-active', page===entry.target));
+
+          navLinks.forEach(link=>{
+
+            const active = link.getAttribute('href') === `#${entry.target.id}`;
+
+            link.classList.toggle('active', active);
+
+            if(active) link.setAttribute('aria-current','location');
+
+            else link.removeAttribute('aria-current');
+
+          });
+
+        }
+
+      });
+
+    }, {threshold:0.35});
+
+    pages.forEach(page=>pageObserver.observe(page));
+
+  }
+
+
+
+  // Efek gerak parallax yang sangat ringan pada foto saat halaman digeser.
+
+  let ticking = false;
+
+  const parallaxItems = document.querySelectorAll('.story-photo img, .photo-feature-layout img, .moment-portrait-card img, .gallery-card img, .photo-pair img');
+
+  const updateParallax = ()=>{
+
+    const vh = window.innerHeight || 800;
+
+    parallaxItems.forEach(img=>{
+
+      const rect = img.getBoundingClientRect();
+
+      if(rect.bottom < -100 || rect.top > vh + 100) return;
+
+      const progress = (rect.top + rect.height/2 - vh/2) / vh;
+
+      img.style.setProperty('--scroll-drift', `${Math.max(-5,Math.min(5,progress*5))}px`);
+
+    });
+
+    ticking = false;
+
+  };
+
+  if(!reduceMotion){
+
+    parallaxItems.forEach(img=>{img.style.willChange='transform';});
+
+    window.addEventListener('scroll', ()=>{
+
+      if(!ticking){ticking=true;window.requestAnimationFrame(updateParallax);}
+
+    }, {passive:true});
+
+    updateParallax();
+
+  }
+
 })();
 
+
+
 </script>
+
+
+<script>
+/* Musik undangan: mulai setelah interaksi pengguna agar sesuai kebijakan autoplay browser. */
+(() => {
+  const audio = document.getElementById('weddingAudio');
+  const toggle = document.getElementById('musicToggle');
+  const label = document.getElementById('musicLabel');
+  const openInvitation = document.getElementById('openInvitation');
+  if (!audio || !toggle || !label) return;
+
+  audio.volume = 0.45;
+
+  function updateMusicButton() {
+    if (audio.paused) {
+      label.textContent = 'Putar Musik';
+      toggle.setAttribute('aria-label', 'Putar musik undangan');
+      toggle.setAttribute('aria-pressed', 'false');
+    } else if (audio.muted) {
+      label.textContent = 'Unmute Musik';
+      toggle.setAttribute('aria-label', 'Nyalakan suara musik undangan');
+      toggle.setAttribute('aria-pressed', 'false');
+    } else {
+      label.textContent = 'Mute Musik';
+      toggle.setAttribute('aria-label', 'Matikan suara musik undangan');
+      toggle.setAttribute('aria-pressed', 'true');
+    }
+  }
+
+  async function playMusic() {
+    try {
+      audio.muted = false;
+      await audio.play();
+      updateMusicButton();
+    } catch (error) {
+      label.textContent = 'Putar Musik';
+      toggle.setAttribute('aria-label', 'Putar musik undangan');
+      /* Jika browser menolak pemutaran, pengunjung bisa menekan tombol musik. */
+    }
+  }
+
+  toggle.addEventListener('click', async () => {
+    if (audio.paused) {
+      await playMusic();
+      return;
+    }
+    audio.muted = !audio.muted;
+    updateMusicButton();
+  });
+
+  if (openInvitation) {
+    openInvitation.addEventListener('click', () => {
+      if (audio.paused) playMusic();
+    });
+  }
+
+  audio.addEventListener('play', updateMusicButton);
+  audio.addEventListener('pause', updateMusicButton);
+  audio.addEventListener('volumechange', updateMusicButton);
+  updateMusicButton();
+})();
+</script>
+
 </body></html>
