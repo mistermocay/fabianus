@@ -37,15 +37,16 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .event{background:linear-gradient(135deg,var(--paper),#f1e6da)}.event-grid{width:min(980px,94%);display:grid;grid-template-columns:1fr 1fr;gap:25px}.event-card{position:relative;padding:46px 38px;background:rgba(255,255,255,.48);border:1px solid rgba(70,45,35,.14);min-height:500px;display:flex;flex-direction:column;justify-content:center}.event-card .event-num{font:400 54px "DM Serif Display",serif;color:rgba(142,36,48,.2);position:absolute;right:25px;top:18px}.event-card h2{font-size:55px;margin:0 0 15px}.date-line{font:500 11px Montserrat,sans-serif;letter-spacing:.12em;line-height:1.7}.time{font:400 40px "DM Serif Display",serif;color:var(--red);margin:14px 0}.venue{font-size:23px;line-height:1.15}.address{font-size:17px;line-height:1.35;color:#665b54;margin:10px 0 22px}.event-card .btn{align-self:flex-start}.event-note{font:400 31px Italianno,cursive;color:var(--sage);margin-top:25px}
 /* countdown */
 .count{background:#e8ded3}.count-inner{width:min(850px,92%);text-align:center}.count h2{margin-bottom:8px}.count-sub{font-size:21px;line-height:1.4}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:35px 0}.timer .num{font:400 clamp(42px,7vw,70px)/1 "DM Serif Display",serif;color:var(--red)}.timer .lab{font:500 8px Montserrat,sans-serif;letter-spacing:.2em;color:var(--sage)}
-/* RSVP / gift */
+/* gift styles */
 .forms{background:#f5eee6}.card{width:min(650px,92%);padding:46px;background:rgba(255,255,255,.62);border:1px solid rgba(68,48,40,.14);box-shadow:var(--shadow)}.card h2{font-size:62px}.lede{font-size:19px;line-height:1.45;color:#5d524b}.field{margin:16px 0}.field label{display:block;font:600 8px Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid rgba(72,53,45,.22);background:rgba(255,255,255,.72);padding:13px 14px;color:var(--ink);outline:none}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.submit{width:100%;cursor:pointer}.thanks{display:none;margin-top:15px;color:var(--sage);font-size:17px}.gift-card{width:min(620px,92%);text-align:center}.bank{background:#faf5ee;border:1px solid rgba(70,48,40,.16);padding:28px;text-align:left;margin-top:25px}.bank-top{display:flex;justify-content:space-between;align-items:center;font:600 9px Montserrat,sans-serif;letter-spacing:.18em;color:var(--sage)}.bank-number{font:400 31px "DM Serif Display",serif;color:var(--red);letter-spacing:.05em;margin-top:12px}.copy{float:right;margin-top:-34px;cursor:pointer;border:1px solid rgba(70,48,40,.25);background:white;padding:8px 12px;font:600 8px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.15em}
 /* final */
 .final{background:#3d312d;color:white}.final-photo{position:absolute;inset:0;background:url('images/cover.png') center/cover no-repeat;filter:grayscale(.12)}.final-photo:after{content:"";position:absolute;inset:0;background:rgba(38,24,20,.67)}.final-copy{text-align:center;position:relative;z-index:2}.final .kicker{color:#e8d5c8}.final h2{font-size:clamp(74px,12vw,135px);color:white;margin:18px 0 8px}.final .script{font-size:45px;color:#edcfc7}.final-date{font:500 10px Montserrat,sans-serif;letter-spacing:.32em;margin-top:20px}.final .btn{margin-top:30px;color:white;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.55)}
 #dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:8px}#dots button{width:6px;height:6px;border-radius:50%;border:0;padding:0;background:rgba(50,35,30,.25);cursor:pointer}#dots button.active{height:22px;border-radius:5px;background:var(--red)}#music{position:fixed;left:18px;bottom:18px;z-index:60;width:42px;height:42px;border:1px solid rgba(70,48,40,.28);background:rgba(248,242,233,.85);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer}.bars{display:flex;gap:3px;align-items:flex-end;height:15px}.bars i{width:2px;background:var(--red);height:7px;animation:wave .8s infinite ease-in-out}.bars i:nth-child(2){height:13px;animation-delay:.15s}.bars i:nth-child(3){height:9px;animation-delay:.3s}@keyframes wave{50%{transform:scaleY(.45)}}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}.page.in .reveal{opacity:1;transform:none}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}
+ .page>.inner{transform:translateY(16px);transition:transform .8s cubic-bezier(.2,.7,.2,1)}.page.in>.inner{transform:translateY(0)}
 @media(max-width:760px){body:before{opacity:.12}#app{width:100%;box-shadow:none}.inner{width:90%;padding:48px 0}.branch{width:240px;height:240px;opacity:.7}.cover-paper{inset:5%}.cover h1{font-size:80px}.photo-wrap,.photo-wrap.reverse{display:flex;flex-direction:column;width:100%;height:auto;min-height:0}.photo{width:100%;height:58svh;min-height:0}.photo-caption,.reverse .photo-caption{width:88%;margin:-55px auto 0;padding:32px 27px 35px}.photo-caption h2{font-size:52px}.photo-caption p{font-size:18px}.collage{grid-template-columns:1fr 1fr;gap:10px}.polaroid:nth-child(1){margin-top:0}.polaroid:nth-child(3){margin-top:25px}.polaroid:nth-child(2){grid-column:1/-1;width:74%;justify-self:center;order:-1}.collage-copy{margin-top:15px}.event-grid{grid-template-columns:1fr;gap:14px}.event-card{min-height:420px;padding:34px 28px}.event-card h2{font-size:48px}.timer{gap:3px}.timer .num{font-size:43px}.card{padding:32px 25px}.card h2{font-size:52px}.row{grid-template-columns:1fr}.copy{float:none;margin:18px 0 0}.final h2{font-size:90px}#dots{right:10px}}
 @media(min-width:761px){.snap{height:100svh;overflow-y:auto}.page{min-height:100svh}.photo-section .inner{align-items:center}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.page>.inner{transform:none}}
 
 .cover .flower-decor{opacity:.88}.cover .flower-decor .flower-petal,.cover .flower-decor .flower-petal-light{opacity:.78}.cover .flower-decor .leaf,.cover .flower-decor .leaf-light{opacity:.72}
 .final .flower-decor{opacity:.34}.final .flower-decor .flower-petal,.final .flower-decor .flower-petal-light{fill:#e5b3a8}.final .flower-decor .stem{stroke:#c8b7a8}.final .flower-decor .leaf,.final .flower-decor .leaf-light{fill:#c8c0ae}
@@ -121,7 +122,7 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:var(--red)}
 .timer .lab{color:#d0d9c8}
 .count .btn.dark{background:transparent;border-color:#d2b477;color:#f5ead2}
 .count .btn.dark:hover{background:#d2b477;color:#203f30}
-/* RSVP and gift */
+/* gift styling */
 .forms{background:linear-gradient(135deg,#f5f1e7,#e8e5d7)!important}
 .card,.gift-card{background:rgba(250,248,240,.88);border:1px solid rgba(190,160,104,.5);box-shadow:0 24px 70px rgba(23,47,32,.12)}
 .card{padding:clamp(28px,4vw,48px)}
@@ -592,6 +593,7 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   .cover .flower-decor .floral{width:180px;height:180px;opacity:.6}
 
   .photo-section .inner{display:block;width:100%;min-height:0;padding:30px 0 42px}
+  #faith.page.photo-section{min-height:0}
   .photo-wrap,.photo-wrap.reverse{display:flex;width:calc(100% - 36px);height:auto;min-height:0;margin:0 auto;flex-direction:column;align-items:stretch;gap:0}
   .photo{width:100%;height:auto;min-height:0;aspect-ratio:auto;line-height:0;background:transparent;box-shadow:none}
   .photo img{display:block;width:100%;height:auto;max-height:68svh;object-fit:contain;object-position:center;background:transparent}
@@ -886,26 +888,6 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   </svg></div>
 </div><div class="inner"><div class="count-inner reveal"><div class="kicker">The Countdown</div><h2>Menuju hari bahagia kami.</h2><p class="count-sub">Rabu, 30 Desember 2026 · Surakarta, Jawa Tengah</p><div class="timer"><div><div id="days" class="num">00</div><div class="lab">HARI</div></div><div><div id="hours" class="num">00</div><div class="lab">JAM</div></div><div><div id="mins" class="num">00</div><div class="lab">MENIT</div></div><div><div id="secs" class="num">00</div><div class="lab">DETIK</div></div></div><button id="calendar" class="btn dark">Simpan ke Kalender</button></div></div></section>
 
-<section class="page forms" id="rsvp">
-<div class="flower-decor" aria-hidden="true">
-  <div class="floral tl soft"><svg viewBox="0 0 390 390">
-    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
-    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
-    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
-    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
-    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
-    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
-    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
-    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
-  </svg></div>
-  <div class="floral br soft"><svg viewBox="0 0 390 390">
-    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
-    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
-    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
-    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
-  </svg></div>
-</div><div class="inner"><div class="card reveal"><div class="kicker">RSVP</div><h2>Apakah kamu<br>akan hadir?</h2><p class="lede">Mohon konfirmasi sebelum <strong>20 Desember 2026</strong>. Pesanmu akan otomatis disiapkan untuk dikirim melalui WhatsApp.</p><form id="rsvpForm"><div class="field"><label>Nama</label><input id="nama" required placeholder="Nama lengkap"></div><div class="row"><div class="field"><label>Kehadiran</label><select id="hadir"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select></div><div class="field"><label>Jumlah Tamu</label><input id="jumlah" type="number" min="1" max="6" value="1"></div></div><div class="field"><label>Doa & Ucapan</label><textarea id="ucapan" rows="4" placeholder="Tulis pesan untuk Fabi & Oca"></textarea></div><button class="btn dark submit" type="submit">Kirim Konfirmasi</button></form><div id="thanks" class="thanks">Terima kasih, <span id="thanksName"></span> ✦</div></div></div></section>
-
 <section class="page forms" id="gift">
 <div class="flower-decor" aria-hidden="true">
   <div class="floral tl soft"><svg viewBox="0 0 390 390">
@@ -954,14 +936,22 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
  const dots=document.getElementById('dots');
  pages.forEach((p,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Halaman '+(i+1));b.onclick=()=>p.scrollIntoView({behavior:'smooth'});dots.appendChild(b)});
  const dotBtns=[...dots.children];
- const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');const i=pages.indexOf(e.target);dotBtns.forEach((d,j)=>d.classList.toggle('active',j===i))}}),{root,threshold:.55});
+ const observerRoot=window.matchMedia('(min-width: 761px)').matches?root:null;
+ const visiblePages=new Map();
+ const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+   if(e.isIntersecting&&e.intersectionRatio>=.35){e.target.classList.add('in');visiblePages.set(e.target,e.intersectionRatio)}
+   else{e.target.classList.remove('in');visiblePages.delete(e.target)}
+  });
+  let currentPage=null,currentRatio=0;
+  visiblePages.forEach((ratio,page)=>{if(ratio>currentRatio){currentPage=page;currentRatio=ratio}});
+  dotBtns.forEach((d,j)=>d.classList.toggle('active',pages[j]===currentPage));
+ },{root:observerRoot,threshold:[0,.35,.55]});
  pages.forEach(p=>io.observe(p));
  const guest=new URLSearchParams(location.search).get('to'); if(guest){document.getElementById('guest').innerHTML='Untuk <strong>'+guest.replace(/[<>]/g,'')+'</strong>'}
  const target=new Date('2026-12-30T10:00:00+07:00').getTime();
  function tick(){let d=Math.max(0,target-Date.now());const day=Math.floor(d/86400000);d%=86400000;const h=Math.floor(d/3600000);d%=3600000;const m=Math.floor(d/60000);const s=Math.floor((d%60000)/1000);document.getElementById('days').textContent=String(day).padStart(2,'0');document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0')};tick();setInterval(tick,1000);
  document.getElementById('calendar').onclick=()=>{const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Fabi & Oca//ID','BEGIN:VEVENT','DTSTART:20261230T030000Z','DTEND:20261230T120000Z','SUMMARY:Pernikahan Fabi & Oca','DESCRIPTION:Akad 10.00 WIB di Gereja St. Antonius Padua Purbayan Surakarta. Resepsi 18.00 WIB di Graha Perhutani Surakarta.','LOCATION:Surakarta, Jawa Tengah','END:VEVENT','END:VCALENDAR'].join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='Fabi-Oca-Wedding.ics';a.click();URL.revokeObjectURL(a.href)};
- const wa='6281234567890';
- document.getElementById('rsvpForm').onsubmit=e=>{e.preventDefault();const n=document.getElementById('nama').value.trim();const h=document.getElementById('hadir').value;const j=document.getElementById('jumlah').value;const u=document.getElementById('ucapan').value.trim();const msg=`Halo Fabi & Oca, saya ${n}.\n\nKonfirmasi: ${h}\nJumlah tamu: ${j}\n${u?'Doa & ucapan: '+u:''}`;window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank');document.getElementById('thanksName').textContent=n;document.getElementById('thanks').style.display='block'};
  document.getElementById('copyBank').onclick=async()=>{try{await navigator.clipboard.writeText('1234567890');document.getElementById('copyBank').textContent='Tersalin ✓';setTimeout(()=>document.getElementById('copyBank').textContent='Salin Nomor',1600)}catch(e){alert('Nomor rekening: 1234567890')}};
  document.getElementById('share').onclick=async()=>{const data={title:'Fabi & Oca — 30 Desember 2026',text:'Undangan Pernikahan Fabi & Oca',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{await navigator.clipboard?.writeText(location.href);alert('Link undangan sudah disalin.')}};
  root.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)<8)return},{passive:true});
