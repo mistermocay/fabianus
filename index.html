@@ -478,6 +478,95 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   #intro .photo-caption h2{font-size:clamp(34px,9.6vw,41px) !important}
 }
 
+
+/* V8 — centered mobile layout for the three-photo moments page */
+@media (max-width: 700px){
+  #moments .inner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    box-sizing:border-box;
+    padding:30px 0 42px;
+  }
+  #moments .collage{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    gap:22px;
+    width:calc(100% - 36px);
+    max-width:500px;
+    margin:0 auto;
+    padding:0;
+    box-sizing:border-box;
+  }
+  #moments .polaroid,
+  #moments .polaroid:nth-child(1),
+  #moments .polaroid:nth-child(2),
+  #moments .polaroid:nth-child(3){
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    max-width:100%;
+    margin:0 auto;
+    padding:9px 9px 18px;
+    box-sizing:border-box;
+    transform:none;
+    justify-self:center;
+    grid-column:auto;
+    order:initial;
+    border-radius:0;
+    background:#fff9ef;
+    border:1px solid rgba(191,141,97,.42);
+    box-shadow:0 12px 28px rgba(95,58,35,.11);
+  }
+  #moments .polaroid img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-height:68svh;
+    aspect-ratio:auto;
+    object-fit:contain;
+    object-position:center;
+    margin:0 auto;
+    background:#f2e5d8;
+  }
+  #moments .polaroid .caption{
+    width:100%;
+    box-sizing:border-box;
+    text-align:center;
+    padding:10px 4px 0;
+    font-size:22px;
+    line-height:1.15;
+  }
+  #moments .collage-copy{
+    width:100%;
+    margin:8px auto 0;
+    padding:0 5px;
+    box-sizing:border-box;
+    text-align:center;
+    align-self:stretch;
+  }
+  #moments .collage-copy h2{
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:clamp(36px,9.5vw,48px);
+    line-height:1.02;
+    text-align:center;
+  }
+  #moments .collage-copy p{
+    max-width:38ch;
+    margin:0 auto;
+    text-align:center;
+    font-size:17px;
+    line-height:1.5;
+  }
+}
+
 </style>
 </head>
 <body>
