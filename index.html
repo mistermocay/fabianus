@@ -192,6 +192,30 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
 @media(max-width:760px){.photo-caption,.reverse .photo-caption{border-color:rgba(185,137,86,.42)}}
 /* ===== end Cocoa Bloom ===== */
 
+
+/* ===== Expanded photo album ===== */
+.extra-gallery{background:linear-gradient(135deg,#fbf2e6,#eddbc9)!important}
+.extra-gallery .inner{padding:48px 0}
+.extra-gallery-content{width:min(1040px,94%);position:relative;z-index:2}
+.gallery-heading{text-align:center;margin:0 auto 22px;max-width:700px}
+.gallery-heading h2{font-size:clamp(42px,5.5vw,68px);line-height:.94;margin-bottom:12px}
+.gallery-heading h2 em{font-family:Italianno,cursive;font-weight:400;color:#c47768}
+.gallery-heading p{font-size:18px;color:#665244;margin-bottom:0}
+.extra-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.extra-photo{margin:0;background:#fff9ef;padding:8px 8px 11px;border:1px solid rgba(191,141,97,.38);box-shadow:0 14px 35px rgba(95,58,35,.12);min-width:0}
+.extra-photo img{display:block;width:100%;height:clamp(135px,20vh,205px);object-fit:cover;background:#ead8c5}
+.extra-photo figcaption{text-align:center;padding:8px 2px 0;font:500 8px Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#927258}
+@media(max-width:760px){
+ .extra-gallery .inner{padding:45px 0}
+ .extra-gallery-content{width:94%}
+ .gallery-heading{margin-bottom:18px}
+ .gallery-heading h2{font-size:clamp(39px,10vw,52px)}
+ .gallery-heading p{font-size:16px}
+ .extra-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .extra-photo{padding:6px 6px 9px}
+ .extra-photo img{height:clamp(130px,20vh,190px)}
+}
+
 </style>
 </head>
 <body>
@@ -272,7 +296,7 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
     <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
   </svg></div>
 </div>
- <div class="inner"><div class="photo-wrap reverse"><div class="photo-caption reveal"><div class="photo-number">02 / WITH FAITH</div><div class="script">Where our hearts are guided</div><h2>Dalam doa,<br>kami bertumbuh.</h2><p>Di tempat yang tenang ini, kami belajar bahwa cinta bukan hanya tentang hari ini, tetapi tentang memilih satu sama lain, setiap hari.</p></div><div class="photo"><img src="images/church-wide.jpg" alt="Fabi dan Oca di dalam gereja" loading="lazy"></div></div></div>
+ <div class="inner"><div class="photo-wrap reverse"><div class="photo-caption reveal"><div class="photo-number">02 / WITH FAITH</div><div class="script">Where our hearts are guided</div><h2>Dalam doa,<br>kami bertumbuh.</h2><p>Di tempat yang tenang ini, kami belajar bahwa cinta bukan hanya tentang hari ini, tetapi tentang memilih satu sama lain, setiap hari.</p></div><div class="photo"><img src="images/foto1.jpg" alt="Fabi dan Oca di dalam gereja" loading="lazy"></div></div></div>
 </section>
 
 <section class="page photo-section">
@@ -322,6 +346,30 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
    <div class="polaroid"><img src="images/foto1.jpg" alt="Momen playful Fabi dan Oca" loading="lazy"><div class="caption">our kind of crazy</div></div>
    <div class="collage-copy reveal"><div class="kicker">04 / OUR LITTLE MOMENTS</div><h2>Dan tentu saja,<br>kami juga suka bersenang-senang.</h2><p>Karena di balik cerita yang serius, selalu ada tawa, permainan kecil, dan momen-momen yang membuat perjalanan ini terasa seperti rumah.</p></div>
  </div></div>
+</section>
+
+
+<section class="page extra-gallery" id="gallery">
+  <div class="flower-decor" aria-hidden="true">
+    <div class="floral tl"><svg viewBox="0 0 390 390"><path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/><ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><g transform="translate(285 50)"><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g></svg></div>
+  </div>
+  <div class="inner">
+    <div class="extra-gallery-content">
+      <div class="gallery-heading reveal">
+        <div class="kicker">05 / THE PHOTO ALBUM</div>
+        <h2>More of our<br><em>little memories.</em></h2>
+        <p>Potongan-potongan cerita yang ingin kami simpan lebih lama.</p>
+      </div>
+      <div class="extra-photo-grid">
+        <figure class="extra-photo reveal"><img src="images/foto2.jpg" alt="Kenangan Fabi dan Oca 1" loading="lazy"><figcaption>Kenangan · 01</figcaption></figure>
+        <figure class="extra-photo reveal delay1"><img src="images/foto3.jpg" alt="Kenangan Fabi dan Oca 2" loading="lazy"><figcaption>Kenangan · 02</figcaption></figure>
+        <figure class="extra-photo reveal delay2"><img src="images/foto4.png" alt="Kenangan Fabi dan Oca 3" loading="lazy"><figcaption>Kenangan · 03</figcaption></figure>
+        <figure class="extra-photo reveal"><img src="images/foto5.png" alt="Kenangan Fabi dan Oca 4" loading="lazy"><figcaption>Kenangan · 04</figcaption></figure>
+        <figure class="extra-photo reveal delay1"><img src="images/foto6.png" alt="Kenangan Fabi dan Oca 5" loading="lazy"><figcaption>Kenangan · 05</figcaption></figure>
+        <figure class="extra-photo reveal delay2"><img src="images/foto7.png" alt="Kenangan Fabi dan Oca 6" loading="lazy"><figcaption>Kenangan · 06</figcaption></figure>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="page event" id="events">
