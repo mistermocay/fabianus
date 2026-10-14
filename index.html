@@ -252,6 +252,103 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
  .extra-photo figcaption{padding-top:8px}
 }
 
+
+
+/* ===== MOBILE-FIRST PASS: photo-led styling, no forced landscape image boxes ===== */
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{width:100%;min-width:0;overflow-x:hidden}
+#app{width:100%;max-width:100%;margin:0 auto}
+img,svg{max-width:100%}
+button,a,.btn{ -webkit-tap-highlight-color:transparent }
+.extra-photo-grid{align-items:start}
+/* Keep the scrapbook/card style, but let each photo determine its own proportions. */
+.extra-photo{height:auto;align-self:start;overflow:hidden}
+.extra-photo img{width:100%;height:auto;max-height:62svh;object-fit:contain;object-position:center;background:transparent}
+.extra-photo figcaption{width:100%;overflow-wrap:anywhere;font-size:clamp(9px,2.5vw,11px);line-height:1.5;letter-spacing:.12em}
+.extra-gallery .inner{height:auto;min-height:100svh;align-items:center;padding:clamp(28px,6vh,58px) 0}
+.extra-gallery-content{width:min(100% - 32px,680px);margin:0 auto}
+.gallery-heading{padding:0 2px;margin-bottom:clamp(18px,4vh,28px)}
+.gallery-heading h2{font-size:clamp(36px,9.5vw,58px);line-height:.98;overflow-wrap:break-word}
+.gallery-heading p{font-size:clamp(16px,4.2vw,19px);line-height:1.45}
+@media(max-width:760px){
+  html{scroll-snap-type:none}
+  .snap{height:auto;min-height:100svh;overflow:visible;scroll-snap-type:none}
+  .page{min-height:100svh;height:auto;overflow:hidden;scroll-snap-align:none}
+  .inner{width:calc(100% - 32px);min-height:100svh;height:auto;padding:42px 0}
+  .cover{min-height:100svh}
+  .cover-paper{inset:16px}
+  .cover-copy{padding:20px 8px;max-width:100%}
+  .cover h1{font-size:clamp(58px,17vw,82px);line-height:.82;overflow-wrap:anywhere}
+  .cover h1 em{font-size:clamp(48px,14vw,68px)}
+  .cover .kicker{font-size:9px;letter-spacing:.18em;line-height:1.7}
+  .cover-date{font-size:9px;letter-spacing:.18em;line-height:1.8}
+  .guest{font-size:16px;overflow-wrap:anywhere}
+  .photo-section .inner{padding:34px 0}
+  .photo-wrap,.photo-wrap.reverse{display:flex;flex-direction:column;width:100%;height:auto;min-height:0;gap:0}
+  .photo{width:100%;height:auto;min-height:0;aspect-ratio:4/5}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .photo-caption,.reverse .photo-caption{width:calc(100% - 22px);margin:-20px auto 0;padding:25px 20px 26px}
+  .photo-caption .script{font-size:clamp(38px,11vw,48px)}
+  .photo-caption h2{font-size:clamp(38px,10vw,50px);line-height:.98}
+  .photo-caption p{font-size:17px;line-height:1.5}
+  .collage{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:8px 0}
+  .polaroid{padding:7px 7px 18px;min-width:0}
+  .polaroid img{aspect-ratio:3/4;object-fit:cover}
+  .polaroid:nth-child(1),.polaroid:nth-child(3){margin-top:0}
+  .polaroid:nth-child(2){grid-column:1/-1;width:min(76%,260px);justify-self:center;order:-1}
+  .polaroid .caption{font-size:21px;line-height:1.1}
+  .collage-copy{margin-top:14px}
+  .collage-copy h2{font-size:clamp(38px,10vw,50px);line-height:1}
+  .collage-copy p{font-size:17px;line-height:1.5;padding:0 4px}
+  .event-grid{width:100%;grid-template-columns:minmax(0,1fr);gap:14px}
+  .event-card{min-height:0;padding:34px 24px}
+  .event-card h2{font-size:clamp(38px,10vw,50px);line-height:1}
+  .date-line{font-size:10px;line-height:1.8}
+  .time{font-size:36px}
+  .venue{font-size:22px;line-height:1.25;overflow-wrap:anywhere}
+  .address{font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+  .event-card .btn,.btn{min-height:44px;max-width:100%;white-space:normal;line-height:1.5;text-align:center;padding:13px 15px}
+  .timer{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}
+  .timer .num{font-size:clamp(36px,11vw,48px)}
+  .timer .lab{font-size:9px;letter-spacing:.12em}
+  .card,.gift-card{width:100%;max-width:100%;padding:26px 20px}
+  .card h2,.gift-card h2{font-size:clamp(38px,10vw,50px);line-height:1}
+  .row{grid-template-columns:minmax(0,1fr);gap:12px}
+  input,select,textarea{width:100%;min-width:0;font-size:16px}
+  .bank{padding:20px 16px;overflow-wrap:anywhere}
+  .bank-top{gap:12px;flex-wrap:wrap;font-size:9px}
+  .bank-number{font-size:clamp(22px,6.5vw,30px);overflow-wrap:anywhere}
+  .copy{float:none;margin:14px 0 0;min-height:40px}
+  .final-copy{width:calc(100% - 32px);margin:auto}
+  .final h2{font-size:clamp(58px,16vw,88px);line-height:.9;overflow-wrap:anywhere}
+  .final .script{font-size:38px}
+  .final-date{font-size:9px;letter-spacing:.16em;line-height:1.8}
+  #dots{right:7px;gap:7px}
+  #dots button{width:5px;height:5px}
+  #dots button.active{height:17px}
+  #music{left:12px;bottom:12px;width:42px;height:42px}
+  .flower-decor .floral{width:190px;height:190px;opacity:.65}
+  .cover .flower-decor .floral{width:215px;height:215px}
+  .extra-gallery .inner{padding:30px 0 38px}
+  .extra-gallery-content{width:calc(100% - 32px);padding:0}
+  .gallery-heading{margin-bottom:18px}
+  .gallery-heading .kicker{font-size:9px;letter-spacing:.2em}
+  .gallery-heading h2{font-size:clamp(36px,9.5vw,50px);line-height:1.02}
+  .gallery-heading p{font-size:16px;line-height:1.5}
+  .extra-photo-grid{grid-template-columns:minmax(0,1fr);gap:18px;max-width:480px;width:100%}
+  .extra-photo{padding:8px 8px 11px;border-radius:5px!important;transform:none!important}
+  .extra-photo img{width:100%;height:auto;max-height:64svh;object-fit:contain;background:transparent}
+  .gallery-soft .extra-photo{border-radius:54px 54px 5px 5px!important;padding-top:14px}
+  .extra-photo figcaption{padding-top:9px;font-size:9px;letter-spacing:.13em}
+}
+@media(max-width:360px){
+  .inner{width:calc(100% - 24px)}
+  .extra-gallery-content{width:calc(100% - 24px)}
+  .cover h1{font-size:56px}
+  .photo-caption,.reverse .photo-caption{padding:22px 16px}
+  .event-card{padding:28px 18px}
+}
+
 </style>
 </head>
 <body>
