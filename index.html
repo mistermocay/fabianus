@@ -216,6 +216,42 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
  .extra-photo img{height:min(48svh,440px);max-height:440px}
 }
 
+
+/* ===== Three distinct photo chapters: max 2 photos per page ===== */
+.extra-gallery .inner{min-height:100svh}
+.extra-gallery-content{width:min(1080px,92%);padding:12px 0}
+.gallery-heading{margin-bottom:clamp(20px,3vh,34px)}
+.gallery-heading .kicker{font-size:9px}
+.gallery-heading p{max-width:650px;margin-left:auto;margin-right:auto;line-height:1.45}
+.extra-photo-grid{gap:clamp(14px,2.6vw,28px);max-width:1040px}
+.extra-photo{padding:clamp(8px,1.2vw,14px) clamp(8px,1.2vw,14px) 12px;transition:transform .35s ease}
+.extra-photo img{height:clamp(260px,52svh,570px);object-fit:contain;background:#f4e7d8}
+.extra-photo figcaption{font-size:9px;letter-spacing:.13em;line-height:1.5}
+.gallery-days .extra-photo{border-radius:2px;transform:rotate(-1deg)}
+.gallery-days .extra-photo:nth-child(2){transform:rotate(1deg)}
+.gallery-days .gallery-heading h2{color:#76503a}
+.gallery-days .extra-photo figcaption{color:#a56c55}
+.gallery-soft{background:linear-gradient(135deg,#f7e8df,#ead8cf)!important}
+.gallery-soft .extra-photo{background:#fff8f4;border-color:rgba(190,124,111,.38);box-shadow:0 20px 48px rgba(113,68,57,.14);border-radius:80px 80px 3px 3px;padding-top:18px}
+.gallery-soft .extra-photo img{background:#f1dfd6}
+.gallery-soft .gallery-heading h2{color:#925d59}
+.gallery-soft .gallery-heading h2 em{color:#c47783}
+.gallery-soft .extra-photo figcaption{color:#a16b6b}
+.gallery-color{background:linear-gradient(135deg,#f9efd9,#f2dfc9)!important}
+.gallery-color .extra-photo{border:2px solid rgba(224,169,94,.52);box-shadow:8px 8px 0 rgba(201,109,96,.12),0 18px 40px rgba(95,58,35,.1)}
+.gallery-color .gallery-heading h2{color:#76503a}
+.gallery-color .gallery-heading h2 em{color:#c96d60}
+.gallery-color .extra-photo figcaption{color:#a76d49}
+@media(max-width:760px){
+ .extra-gallery .inner{padding:30px 0}
+ .extra-gallery-content{padding:0}
+ .extra-photo-grid{grid-template-columns:1fr;gap:12px;max-width:490px}
+ .extra-photo img{height:min(37svh,340px);max-height:340px}
+ .gallery-heading{margin-bottom:15px}
+ .gallery-heading p{font-size:15px}
+ .extra-photo figcaption{padding-top:8px}
+}
+
 </style>
 </head>
 <body>
@@ -349,35 +385,35 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
 </section>
 
 
-<section class="page extra-gallery" id="gallery">
+<section class="page extra-gallery gallery-days" id="gallery">
   <div class="flower-decor" aria-hidden="true"><div class="floral tl"><svg viewBox="0 0 390 390"><path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/><ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><g transform="translate(285 50)"><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g></svg></div></div>
   <div class="inner"><div class="extra-gallery-content">
-    <div class="gallery-heading reveal"><div class="kicker">05 / THE PHOTO ALBUM</div><h2>More of our<br><em>little memories.</em></h2><p>Potongan cerita yang ingin kami simpan lebih lama.</p></div>
+    <div class="gallery-heading reveal"><div class="kicker">05 / THE EVERYDAY CHAPTER</div><h2>Frames from<br><em>our days.</em></h2><p>Hari-hari biasa terasa istimewa saat dijalani bersama. Dua potret kecil dari perjalanan yang terus kami tulis.</p></div>
     <div class="extra-photo-grid">
-        <figure class="extra-photo reveal "><img src="images/foto2.jpg" alt="Foto kenangan Fabi dan Oca 01" loading="lazy"><figcaption>Kenangan · 01</figcaption></figure>
-        <figure class="extra-photo reveal delay1"><img src="images/foto3.jpg" alt="Foto kenangan Fabi dan Oca 02" loading="lazy"><figcaption>Kenangan · 02</figcaption></figure>
+        <figure class="extra-photo reveal "><img src="images/foto2.jpg" alt="Foto kenangan Fabi dan Oca 01" loading="lazy"><figcaption>A day to remember</figcaption></figure>
+        <figure class="extra-photo reveal delay1"><img src="images/foto3.jpg" alt="Foto kenangan Fabi dan Oca 02" loading="lazy"><figcaption>Together, in a frame</figcaption></figure>
     </div>
   </div></div>
 </section>
 
-<section class="page extra-gallery" id="gallery-two">
+<section class="page extra-gallery gallery-soft" id="gallery-two">
   <div class="flower-decor" aria-hidden="true"><div class="floral tl"><svg viewBox="0 0 390 390"><path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/><ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><g transform="translate(285 50)"><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g></svg></div></div>
   <div class="inner"><div class="extra-gallery-content">
-    <div class="gallery-heading reveal"><div class="kicker">06 / THE PHOTO ALBUM</div><h2>Moments we’ll<br><em>keep close.</em></h2><p>Tidak harus sempurna, cukup menjadi bagian dari cerita kami.</p></div>
+    <div class="gallery-heading reveal"><div class="kicker">06 / THE QUIET SIDE</div><h2>Soft days,<br><em>warm hearts.</em></h2><p>Di antara banyak hal yang berubah, kami ingin tetap mengingat rasa nyaman saat bisa menjadi diri sendiri di dekat satu sama lain.</p></div>
     <div class="extra-photo-grid">
-        <figure class="extra-photo reveal "><img src="images/foto4.png" alt="Foto kenangan Fabi dan Oca 03" loading="lazy"><figcaption>Kenangan · 03</figcaption></figure>
-        <figure class="extra-photo reveal delay1"><img src="images/foto5.png" alt="Foto kenangan Fabi dan Oca 04" loading="lazy"><figcaption>Kenangan · 04</figcaption></figure>
+        <figure class="extra-photo reveal "><img src="images/foto4.png" alt="Foto kenangan Fabi dan Oca 03" loading="lazy"><figcaption>A quiet kind of joy</figcaption></figure>
+        <figure class="extra-photo reveal delay1"><img src="images/foto5.png" alt="Foto kenangan Fabi dan Oca 04" loading="lazy"><figcaption>The comfort of us</figcaption></figure>
     </div>
   </div></div>
 </section>
 
-<section class="page extra-gallery" id="gallery-three">
+<section class="page extra-gallery gallery-color" id="gallery-three">
   <div class="flower-decor" aria-hidden="true"><div class="floral tl"><svg viewBox="0 0 390 390"><path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/><ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><g transform="translate(285 50)"><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g></svg></div></div>
   <div class="inner"><div class="extra-gallery-content">
-    <div class="gallery-heading reveal"><div class="kicker">07 / THE PHOTO ALBUM</div><h2>A few more<br><em>favorite frames.</em></h2><p>Dua hati, banyak cerita, dan kenangan yang terus bertambah.</p></div>
+    <div class="gallery-heading reveal"><div class="kicker">07 / LITTLE THINGS, BIG LOVE</div><h2>Collected in<br><em>color.</em></h2><p>Senyum, warna, dan detail kecil yang mungkin sederhana bagi orang lain, tetapi punya tempat tersendiri dalam cerita kami.</p></div>
     <div class="extra-photo-grid">
-        <figure class="extra-photo reveal "><img src="images/foto6.png" alt="Foto kenangan Fabi dan Oca 05" loading="lazy"><figcaption>Kenangan · 05</figcaption></figure>
-        <figure class="extra-photo reveal delay1"><img src="images/foto7.png" alt="Foto kenangan Fabi dan Oca 06" loading="lazy"><figcaption>Kenangan · 06</figcaption></figure>
+        <figure class="extra-photo reveal "><img src="images/foto6.png" alt="Foto kenangan Fabi dan Oca 05" loading="lazy"><figcaption>Little things we love</figcaption></figure>
+        <figure class="extra-photo reveal delay1"><img src="images/foto7.png" alt="Foto kenangan Fabi dan Oca 06" loading="lazy"><figcaption>Another page of us</figcaption></figure>
     </div>
   </div></div>
 </section>
