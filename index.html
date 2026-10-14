@@ -1,649 +1,455 @@
 <!doctype html>
-
 <html lang="id">
-
 <head>
-
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-
-<meta name="theme-color" content="#4b0508"><meta name="description" content="Undangan pernikahan Fabianus Siltian Simbarja & Odelia Ocarina Oktoberlian — 30 Desember 2026, Surakarta.">
-
-<title>The Wedding of Fabi & Oca</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6a4633">
+<title>The Wedding of Fabi & Oca — Cocoa Bloom</title>
+<meta name="description" content="Undangan pernikahan Fabianus Siltian Simbarja & Odelia Ocarina Oktoberlian — 30 Desember 2026, Surakarta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
 <style>
+:root{--paper:#f6f0e7;--paper2:#eee4d8;--ink:#282421;--red:#8e2430;--red2:#b84a50;--sage:#6f806e;--sage2:#aab3a5;--gold:#b89a72;--line:rgba(62,47,40,.22);--shadow:0 28px 90px rgba(54,38,30,.22)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#cfc2b8;color:var(--ink);font-family:"Cormorant Garamond",serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button,a{touch-action:manipulation}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.18;background-image:radial-gradient(#7f6d61 .55px,transparent .55px);background-size:5px 5px;mix-blend-mode:multiply}
+#app{max-width:1280px;margin:auto;background:var(--paper);box-shadow:0 0 90px rgba(30,20,15,.18)}
+.page{min-height:100svh;position:relative;overflow:hidden;scroll-snap-align:start;isolation:isolate}.snap{scroll-snap-type:y mandatory}.inner{width:min(1120px,92%);height:100%;min-height:100svh;margin:auto;position:relative;display:flex;align-items:center;justify-content:center;padding:70px 0}.paper{background:linear-gradient(120deg,rgba(255,255,255,.45),rgba(255,255,255,.04));border:1px solid rgba(75,53,43,.13);box-shadow:var(--shadow)}
+.kicker{text-transform:uppercase;letter-spacing:.32em;font:600 10px/1.4 Montserrat,sans-serif;color:var(--sage);margin-bottom:15px}.script{font-family:Italianno,cursive;font-weight:400}.serif{font-family:"DM Serif Display",serif}h1,h2,h3,p{margin-top:0}h2{font:400 clamp(48px,7vw,92px)/.86 "DM Serif Display",serif;margin-bottom:22px;color:var(--red)}.rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);width:190px;margin:20px auto}.smallcaps{text-transform:uppercase;letter-spacing:.18em;font:500 9px/1.6 Montserrat,sans-serif}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(77,50,40,.35);background:rgba(255,255,255,.62);color:var(--ink);text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font:600 9px Montserrat,sans-serif;padding:14px 20px;min-width:160px}.btn.dark{background:var(--red);border-color:var(--red);color:white}.btn:active{transform:translateY(1px)}
+/* botanical frame */
+/* watercolor flower system — inspired by the original invitation reference */
+.flower-decor{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}.flower-decor .floral{position:absolute;width:390px;height:390px;opacity:.94}.flower-decor .floral.tl{left:-58px;top:-58px}.flower-decor .floral.tr{right:-62px;top:-58px;transform:scaleX(-1)}.flower-decor .floral.br{right:-62px;bottom:-62px;transform:rotate(180deg)}.flower-decor .floral.bl{left:-62px;bottom:-62px;transform:rotate(180deg) scaleX(-1)}
+.flower-decor svg{width:100%;height:100%;overflow:visible}.flower-decor .stem{fill:none;stroke:#75836f;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;opacity:.82}.flower-decor .twig{fill:none;stroke:#8e6f5e;stroke-width:1.25;stroke-linecap:round;opacity:.52}.flower-decor .leaf{fill:#74846f;opacity:.68}.flower-decor .leaf-light{fill:#aeb7a5;opacity:.72}.flower-decor .leaf-dark{fill:#60715f;opacity:.56}.flower-decor .flower-petal{fill:#8f2732;opacity:.76}.flower-decor .flower-petal-light{fill:#b94b52;opacity:.58}.flower-decor .flower-shadow{fill:#7e1f2b;opacity:.2}.flower-decor .flower-center{fill:#c7a46f;opacity:.9}.flower-decor .bud{fill:#a63843;opacity:.68}.flower-decor .berry{fill:#7c2631;opacity:.45}.flower-decor .wash{fill:#fff8ef;opacity:.23}
+/* make the flowers feel painted rather than geometric */
+.flower-decor .soft{filter:url(#watercolorSoft)}
+.page>.flower-decor~.inner{z-index:2}
+.cover .flower-decor{z-index:3}.cover .cover-paper{z-index:4}.final .flower-decor{z-index:3}.final .final-copy{z-index:4}
+.floral-caption{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);font:500 8px Montserrat,sans-serif;letter-spacing:.24em;color:var(--sage);text-transform:uppercase;opacity:.65}
 
-:root{--wine:#4b0508;--wine2:#650b10;--wine3:#2a0305;--gold:#d9a85e;--gold2:#f1d39b;--cream:#fff5df;--muted:#d8b98a;--line:rgba(217,168,94,.5)}
+.botanical{position:absolute;inset:0;pointer-events:none;z-index:0}.branch{position:absolute;width:330px;height:330px;opacity:.86}.branch svg{width:100%;height:100%;overflow:visible}.branch.tl{top:-55px;left:-40px}.branch.br{right:-45px;bottom:-45px;transform:rotate(180deg)}.branch.tr{right:-55px;top:-50px;transform:scaleX(-1)}.branch.bl{left:-55px;bottom:-45px;transform:scale(-1)}.stem{fill:none;stroke:var(--sage);stroke-width:2;stroke-linecap:round}.leaf{fill:#879783;opacity:.72}.leaf2{fill:#aab4a4;opacity:.7}.petal{position:absolute;width:11px;height:20px;border-radius:80% 20% 80% 20%;background:var(--red2);opacity:.25;transform:rotate(25deg)}.p1{left:16%;top:24%}.p2{right:19%;top:19%;transform:rotate(85deg)}.p3{left:23%;bottom:18%;transform:rotate(-35deg)}.p4{right:13%;bottom:25%;transform:rotate(45deg)}
+/* cover */
+.cover{color:white;background:#3b302c}.cover-photo{position:absolute;inset:0;background:url('data:image/webp;base64,cover.webp') center 42%/cover no-repeat;transform:scale(1.015)}.cover-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,12,.1),rgba(20,12,10,.22) 45%,rgba(20,12,10,.7))}.cover-paper{position:absolute;inset:8%;border:1px solid rgba(255,255,255,.6);display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(180deg,rgba(42,26,20,.05),rgba(42,26,20,.18));backdrop-filter:blur(1px)}.cover-copy{position:relative;z-index:2}.cover .kicker{color:#efe5d7}.cover h1{font:400 clamp(70px,12vw,145px)/.74 "DM Serif Display",serif;margin:0;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.18)}.cover h1 em{font:400 clamp(58px,9vw,110px) Italianno,cursive;color:#f4d9d0}.cover-date{margin-top:26px;font:500 10px Montserrat,sans-serif;letter-spacing:.35em}.open{margin-top:34px;color:white;border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.12)}.guest{margin-top:20px;font-size:18px}.scrollhint{position:absolute;bottom:25px;left:50%;transform:translateX(-50%);font:500 8px Montserrat,sans-serif;letter-spacing:.28em;opacity:.8}
+/* editorial photo sections */
+.photo-section .inner{padding:60px 0}.photo-wrap{position:relative;width:min(980px,94%);height:min(78svh,760px);display:grid;grid-template-columns:1.12fr .88fr;gap:0;align-items:center}.photo-wrap.reverse{grid-template-columns:.88fr 1.12fr}.photo{height:100%;min-height:480px;position:relative;overflow:hidden;background:#ddd}.photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.92) contrast(.96)}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(130deg,rgba(255,246,232,.12),transparent 50%,rgba(116,28,37,.09))}.photo-tall img{object-position:center}.photo-caption{position:relative;z-index:2;margin-left:-65px;background:rgba(247,241,232,.95);padding:45px 45px 50px;box-shadow:0 25px 55px rgba(60,35,25,.15);border:1px solid rgba(73,52,43,.12)}.reverse .photo-caption{margin-left:0;margin-right:-65px}.photo-caption .script{font-size:50px;color:var(--red);line-height:.8;margin-bottom:14px}.photo-caption h2{font-size:clamp(44px,6vw,76px);margin-bottom:16px}.photo-caption p{font-size:20px;line-height:1.35;color:#514842}.photo-number{font:600 8px Montserrat,sans-serif;letter-spacing:.2em;color:var(--sage);margin-bottom:20px}
+/* story collage */
+.collage{width:min(1000px,94%);display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:18px;align-items:center}.polaroid{background:#fbf7f0;padding:10px 10px 28px;box-shadow:0 20px 55px rgba(50,30,20,.15);border:1px solid rgba(70,50,40,.1)}.polaroid img{width:100%;aspect-ratio:1/1.12;object-fit:cover;display:block}.polaroid:nth-child(1){transform:rotate(-5deg);margin-top:55px}.polaroid:nth-child(2){transform:rotate(2deg);z-index:2}.polaroid:nth-child(3){transform:rotate(5deg);margin-top:40px}.polaroid .caption{font:400 24px Italianno,cursive;color:var(--red);text-align:center;padding-top:8px}.collage-copy{text-align:center;grid-column:1/-1;margin-top:8px}.collage-copy h2{margin-bottom:8px}.collage-copy p{font-size:20px;max-width:620px;margin:0 auto;line-height:1.45}
+/* event */
+.event{background:linear-gradient(135deg,var(--paper),#f1e6da)}.event-grid{width:min(980px,94%);display:grid;grid-template-columns:1fr 1fr;gap:25px}.event-card{position:relative;padding:46px 38px;background:rgba(255,255,255,.48);border:1px solid rgba(70,45,35,.14);min-height:500px;display:flex;flex-direction:column;justify-content:center}.event-card .event-num{font:400 54px "DM Serif Display",serif;color:rgba(142,36,48,.2);position:absolute;right:25px;top:18px}.event-card h2{font-size:55px;margin:0 0 15px}.date-line{font:500 11px Montserrat,sans-serif;letter-spacing:.12em;line-height:1.7}.time{font:400 40px "DM Serif Display",serif;color:var(--red);margin:14px 0}.venue{font-size:23px;line-height:1.15}.address{font-size:17px;line-height:1.35;color:#665b54;margin:10px 0 22px}.event-card .btn{align-self:flex-start}.event-note{font:400 31px Italianno,cursive;color:var(--sage);margin-top:25px}
+/* countdown */
+.count{background:#e8ded3}.count-inner{width:min(850px,92%);text-align:center}.count h2{margin-bottom:8px}.count-sub{font-size:21px;line-height:1.4}.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:35px 0}.timer .num{font:400 clamp(42px,7vw,70px)/1 "DM Serif Display",serif;color:var(--red)}.timer .lab{font:500 8px Montserrat,sans-serif;letter-spacing:.2em;color:var(--sage)}
+/* RSVP / gift */
+.forms{background:#f5eee6}.card{width:min(650px,92%);padding:46px;background:rgba(255,255,255,.62);border:1px solid rgba(68,48,40,.14);box-shadow:var(--shadow)}.card h2{font-size:62px}.lede{font-size:19px;line-height:1.45;color:#5d524b}.field{margin:16px 0}.field label{display:block;font:600 8px Montserrat,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid rgba(72,53,45,.22);background:rgba(255,255,255,.72);padding:13px 14px;color:var(--ink);outline:none}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.submit{width:100%;cursor:pointer}.thanks{display:none;margin-top:15px;color:var(--sage);font-size:17px}.gift-card{width:min(620px,92%);text-align:center}.bank{background:#faf5ee;border:1px solid rgba(70,48,40,.16);padding:28px;text-align:left;margin-top:25px}.bank-top{display:flex;justify-content:space-between;align-items:center;font:600 9px Montserrat,sans-serif;letter-spacing:.18em;color:var(--sage)}.bank-number{font:400 31px "DM Serif Display",serif;color:var(--red);letter-spacing:.05em;margin-top:12px}.copy{float:right;margin-top:-34px;cursor:pointer;border:1px solid rgba(70,48,40,.25);background:white;padding:8px 12px;font:600 8px Montserrat,sans-serif;text-transform:uppercase;letter-spacing:.15em}
+/* final */
+.final{background:#3d312d;color:white}.final-photo{position:absolute;inset:0;background:url('data:image/webp;base64,cover.webp') center/cover no-repeat;filter:grayscale(.12)}.final-photo:after{content:"";position:absolute;inset:0;background:rgba(38,24,20,.67)}.final-copy{text-align:center;position:relative;z-index:2}.final .kicker{color:#e8d5c8}.final h2{font-size:clamp(74px,12vw,135px);color:white;margin:18px 0 8px}.final .script{font-size:45px;color:#edcfc7}.final-date{font:500 10px Montserrat,sans-serif;letter-spacing:.32em;margin-top:20px}.final .btn{margin-top:30px;color:white;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.55)}
+#dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:8px}#dots button{width:6px;height:6px;border-radius:50%;border:0;padding:0;background:rgba(50,35,30,.25);cursor:pointer}#dots button.active{height:22px;border-radius:5px;background:var(--red)}#music{position:fixed;left:18px;bottom:18px;z-index:60;width:42px;height:42px;border:1px solid rgba(70,48,40,.28);background:rgba(248,242,233,.85);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer}.bars{display:flex;gap:3px;align-items:flex-end;height:15px}.bars i{width:2px;background:var(--red);height:7px;animation:wave .8s infinite ease-in-out}.bars i:nth-child(2){height:13px;animation-delay:.15s}.bars i:nth-child(3){height:9px;animation-delay:.3s}@keyframes wave{50%{transform:scaleY(.45)}}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}.page.in .reveal{opacity:1;transform:none}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}
+@media(max-width:760px){body:before{opacity:.12}#app{width:100%;box-shadow:none}.inner{width:90%;padding:48px 0}.branch{width:240px;height:240px;opacity:.7}.cover-paper{inset:5%}.cover h1{font-size:80px}.photo-wrap,.photo-wrap.reverse{display:flex;flex-direction:column;width:100%;height:auto;min-height:0}.photo{width:100%;height:58svh;min-height:0}.photo-caption,.reverse .photo-caption{width:88%;margin:-55px auto 0;padding:32px 27px 35px}.photo-caption h2{font-size:52px}.photo-caption p{font-size:18px}.collage{grid-template-columns:1fr 1fr;gap:10px}.polaroid:nth-child(1){margin-top:0}.polaroid:nth-child(3){margin-top:25px}.polaroid:nth-child(2){grid-column:1/-1;width:74%;justify-self:center;order:-1}.collage-copy{margin-top:15px}.event-grid{grid-template-columns:1fr;gap:14px}.event-card{min-height:420px;padding:34px 28px}.event-card h2{font-size:48px}.timer{gap:3px}.timer .num{font-size:43px}.card{padding:32px 25px}.card h2{font-size:52px}.row{grid-template-columns:1fr}.copy{float:none;margin:18px 0 0}.final h2{font-size:90px}#dots{right:10px}}
+@media(min-width:761px){.snap{height:100svh;overflow-y:auto}.page{min-height:100svh}.photo-section .inner{align-items:center}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--wine);color:var(--cream);font-family:'Cormorant Garamond',serif;overflow-x:hidden}a{color:inherit}button,input,select,textarea{font:inherit}.page{min-height:100svh;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 45%,#650d12 0%,var(--wine) 65%,var(--wine3) 100%);isolation:isolate}.page:before,.page:after{content:'';position:absolute;pointer-events:none;z-index:-1}.page:before{inset:18px;border:1px solid var(--line)}.page:after{inset:27px;border:1px solid rgba(217,168,94,.18)}.ornament{color:var(--gold);font-size:24px;letter-spacing:.35em}.kicker{font:500 10px/1.6 Montserrat,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--gold2)}.script{font-family:Italianno,cursive;color:var(--gold2);font-weight:400}.serif{font-family:'DM Serif Display',serif}.gold-rule{display:flex;align-items:center;justify-content:center;gap:12px;color:var(--gold);margin:22px auto}.gold-rule:before,.gold-rule:after{content:'';height:1px;width:64px;background:linear-gradient(90deg,transparent,var(--gold))}.gold-rule:after{transform:rotate(180deg)}.gold-rule span{font-size:17px}.content{width:min(1040px,88%);margin:auto;min-height:100svh;padding:90px 0;display:flex;align-items:center;justify-content:center;position:relative}.center{text-align:center}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:1px solid var(--gold);color:var(--gold2);padding:13px 22px;background:rgba(37,0,2,.35);font:500 10px Montserrat,sans-serif;letter-spacing:.15em;text-transform:uppercase;transition:.25s;cursor:pointer}.btn:hover{background:var(--gold);color:var(--wine)}.cover{min-height:100svh}.cover .content{padding:65px 0}.cover-copy{position:relative;z-index:2;text-align:center;width:100%;padding-top:clamp(320px,43vh,450px)}.cover .kicker{margin-bottom:8px}.cover h1{font:400 clamp(46px,8vw,88px)/.9 'DM Serif Display',serif;color:var(--gold2);margin:12px 0}.cover h1 em{font-family:Italianno,cursive;font-size:1.05em;font-weight:400}.cover-date{font:500 10px Montserrat,sans-serif;letter-spacing:.28em;color:var(--gold);margin:20px 0 28px}.cover-photo-frame{position:absolute;top:50%;left:50%;width:min(63vw,500px);height:min(63vw,500px);transform:translate(-50%,-70%) rotate(45deg);overflow:hidden;border:1px solid var(--gold);padding:9px;background:var(--wine);box-shadow:0 0 0 8px rgba(217,168,94,.08),0 25px 80px rgba(0,0,0,.35)}.cover-photo-frame img{width:100%;height:100%;object-fit:cover;transform:rotate(-45deg) scale(1.42);object-position:center 38%}.cover-corner{position:absolute;width:24vw;height:24vw;border-color:var(--gold);opacity:.65}.cover-corner.tl{left:7%;top:8%;border-top:1px solid;border-left:1px solid}.cover-corner.br{right:7%;bottom:8%;border-right:1px solid;border-bottom:1px solid}.cross{color:var(--gold);font-size:28px;margin:12px 0}.guest{color:var(--gold2);font-size:18px;margin:14px 0 22px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.diamond-photo{width:min(100%,390px);aspect-ratio:1;transform:rotate(45deg);overflow:hidden;border:1px solid var(--gold);padding:8px;margin:0 auto;background:var(--wine2)}.diamond-photo img{width:100%;height:100%;object-fit:cover;transform:rotate(-45deg) scale(1.42)}h2{font:400 clamp(38px,5.5vw,66px)/.98 'DM Serif Display',serif;color:var(--gold2);margin:12px 0 22px}p{font-size:20px;line-height:1.45;color:#f0dfc4}.intro-copy .script{font-size:40px}.family{font-size:17px;line-height:1.5;color:var(--muted)}.story-photo{position:relative;width:min(100%,480px);margin:auto;border:1px solid var(--gold);padding:9px;background:rgba(20,0,0,.25)}.story-photo img{display:block;width:100%;max-height:550px;object-fit:cover}.story-copy{max-width:570px;margin:auto}.story-copy .script{font-size:44px}.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:35px}.photo-pair figure{margin:0;border:1px solid var(--line);padding:7px;background:rgba(25,0,0,.25)}.photo-pair img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}.photo-pair figcaption{font:10px Montserrat,sans-serif;letter-spacing:.15em;color:var(--gold2);text-align:center;padding:12px 4px 7px;text-transform:uppercase}.event-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;width:100%;margin-top:34px}.event-card{border:1px solid var(--gold);outline:1px solid rgba(217,168,94,.18);outline-offset:6px;padding:34px 24px;text-align:center;background:linear-gradient(145deg,rgba(109,15,21,.7),rgba(34,1,3,.45))}.event-card .num{font:italic 18px 'DM Serif Display',serif;color:var(--gold)}.event-card h3{font:400 39px 'DM Serif Display',serif;color:var(--gold2);margin:8px 0}.event-card .date{font:10px Montserrat,sans-serif;letter-spacing:.16em;color:var(--gold);margin:17px 0}.event-card .time{font:400 32px 'DM Serif Display',serif;color:var(--cream)}.event-card .venue{font-size:22px;line-height:1.2;margin:12px 0}.event-card .address{font-size:16px;color:var(--muted);line-height:1.45;margin-bottom:20px}.count-grid{display:grid;grid-template-columns:repeat(4,minmax(0,110px));gap:0;justify-content:center;margin:32px auto;max-width:520px}.count-cell{border:0;border-right:1px solid var(--line);padding:12px 18px;background:transparent;min-width:0}.count-cell:last-child{border-right:0}.count-cell b{display:block;font:400 clamp(30px,4vw,42px) 'DM Serif Display',serif;color:var(--gold2);line-height:1.1}.count-cell span{display:block;margin-top:8px;font:9px Montserrat,sans-serif;letter-spacing:.15em;color:var(--gold);text-transform:uppercase}.form-card{width:min(600px,100%);border:1px solid var(--gold);padding:clamp(24px,5vw,46px);background:rgba(34,0,2,.3);text-align:left}.form-card label{display:block;font:10px Montserrat,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold2);margin:15px 0 7px}.form-card input,.form-card select,.form-card textarea{width:100%;border:1px solid rgba(217,168,94,.4);background:#300306;color:var(--cream);padding:12px;outline:none}.form-card textarea{min-height:95px;resize:vertical}.form-card .btn{width:100%;margin-top:20px}.gift-number{font:400 clamp(24px,4vw,38px) 'DM Serif Display',serif;color:var(--gold2);letter-spacing:.08em;margin:20px 0}.final-photo{position:absolute;inset:0;z-index:-1;opacity:.19}.final-photo img{width:100%;height:100%;object-fit:cover;filter:sepia(.5) saturate(.65)}.final-overlay{position:absolute;inset:0;background:linear-gradient(0deg,var(--wine) 0%,rgba(75,5,8,.88) 60%,var(--wine) 100%);z-index:-1}.final h2{font-size:clamp(54px,9vw,100px)}.final .content{min-height:85svh}.small-note{font-size:15px;color:var(--muted)}.nav-dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:10;display:grid;gap:10px}.nav-dots a{width:7px;height:7px;border:1px solid var(--gold);border-radius:50%;display:block;background:transparent}.nav-dots a:hover{background:var(--gold)}.footer{padding:16px;text-align:center;font:9px Montserrat,sans-serif;letter-spacing:.18em;color:var(--muted);background:var(--wine3)}
+.cover .flower-decor{opacity:.88}.cover .flower-decor .flower-petal,.cover .flower-decor .flower-petal-light{opacity:.78}.cover .flower-decor .leaf,.cover .flower-decor .leaf-light{opacity:.72}
+.final .flower-decor{opacity:.34}.final .flower-decor .flower-petal,.final .flower-decor .flower-petal-light{fill:#e5b3a8}.final .flower-decor .stem{stroke:#c8b7a8}.final .flower-decor .leaf,.final .flower-decor .leaf-light{fill:#c8c0ae}
+.event .flower-decor .floral,.forms .flower-decor .floral{opacity:.78}
+@media(max-width:760px){.flower-decor .floral{width:255px;height:255px}.flower-decor .floral.tl{left:-48px;top:-48px}.flower-decor .floral.tr{right:-50px;top:-48px}.flower-decor .floral.br{right:-50px;bottom:-50px}.flower-decor .floral.bl{left:-50px;bottom:-50px}.cover .flower-decor .floral{width:285px;height:285px}}
 
-/* Halaman foto tambahan: layout mengikuti orientasi foto */
 
-.photo-feature-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(16px,2.2vw,28px);margin:34px auto 0;text-align:left;align-items:start;width:100%;max-width:1000px}
-
-.photo-feature-main,.photo-feature-side figure,.gallery-card,.moment-portrait-card{margin:0;border:1px solid var(--line);padding:8px;background:rgba(25,0,0,.28);min-width:0}
-
-.photo-feature-layout figure{overflow:hidden}
-
-.photo-feature-layout img{display:block;width:100%;height:auto;object-fit:contain;background:rgba(15,0,0,.3)}
-
-.photo-feature-main img,.photo-feature-side img{display:block;width:100%;aspect-ratio:4/3;height:auto;object-fit:cover}
-
-.photo-feature-main img{object-position:center 42%}
-
-.photo-feature-side{display:block;min-width:0}
-
-.photo-feature-side figure{display:block}
-
-.photo-feature-side img{object-position:center 50%}
-
-.photo-feature-main figcaption,.photo-feature-side figcaption,.gallery-card figcaption,.moment-portrait-card figcaption{font:10px Montserrat,sans-serif;letter-spacing:.15em;color:var(--gold2);text-align:center;padding:12px 4px 5px;text-transform:uppercase}
-
-.moment-portrait-feature{display:grid;grid-template-columns:minmax(220px,360px) minmax(0,430px);justify-content:center;align-items:center;gap:clamp(24px,5vw,64px);margin:48px auto 0;text-align:left;width:100%;max-width:900px}
-
-.moment-portrait-card img{display:block;width:100%;height:auto;max-height:560px;aspect-ratio:3/4;object-fit:cover;object-position:center 42%}
-
-.moment-portrait-copy .script{font-size:42px}
-
-.moment-portrait-copy p{margin:12px 0}
-
-.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,2vw,22px);margin:34px auto 0;text-align:left;width:100%;max-width:1000px}
-
-.gallery-card img{display:block;width:100%;height:clamp(230px,34vw,390px);object-fit:cover;object-position:center}
-
-.gallery-card:nth-child(1) img{object-position:center 45%}
-
-.gallery-card:nth-child(2) img{object-position:center 55%}
-
-.gallery-card:nth-child(3) img{object-position:center 50%}
-
-.photo-page .content{display:flex;flex-direction:column;align-items:stretch;justify-content:center;width:min(1180px,calc(100% - 80px));max-width:1180px;min-height:100svh;margin:0 auto;padding:clamp(70px,8vh,100px) 0;box-sizing:border-box}.photo-page .content>.center{display:block;flex:1 1 auto;width:100%;min-width:0;max-width:100%;margin:0 auto}.photo-page h2{max-width:760px;margin-left:auto;margin-right:auto}.photo-page p{max-width:760px;margin-left:auto;margin-right:auto}
-
-@media(max-width:700px){
-
- .photo-feature-layout{grid-template-columns:1fr;gap:14px}
-
- .photo-feature-main img,.photo-feature-side img{aspect-ratio:4/3}
-
- .moment-portrait-feature{grid-template-columns:minmax(0,1fr);gap:20px;margin-top:28px;max-width:420px}
-
- .moment-portrait-card{width:min(100%,340px);margin:0 auto}
-
- .moment-portrait-copy{text-align:center}
-
- .moment-portrait-copy .script{font-size:38px}
-
- .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-
- .gallery-card{padding:5px}
-
- .gallery-card img{height:auto;aspect-ratio:3/4}
-
- .gallery-card figcaption{font-size:8px;letter-spacing:.08em}
-
+/* ===== LUXURY GARDEN: original Fabi & Oca photos + data, bespoke styling ===== */
+:root{--paper:#f4f0e6;--paper2:#e7e1d1;--ink:#202d25;--red:#244d3b;--red2:#4f775e;--sage:#71846a;--sage2:#b2bda7;--gold:#c3a46b;--line:rgba(195,164,107,.5);--shadow:0 26px 80px rgba(13,35,25,.15)}
+body{background:#172b22;color:var(--ink);font-family:"Cormorant Garamond",serif}
+body:before{opacity:.10;background-image:radial-gradient(#bda775 .45px,transparent .55px);mix-blend-mode:soft-light}
+#app{background:var(--paper);box-shadow:0 0 100px rgba(0,0,0,.28)}
+.page{background-color:var(--paper)}
+.kicker{color:#687b61;letter-spacing:.30em}
+h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:var(--red)}
+.btn{border-color:rgba(36,77,59,.4);color:var(--red);background:rgba(255,255,255,.58);transition:background .25s,color .25s,border-color .25s}
+.btn.dark{background:var(--red);border-color:var(--gold);color:#f9f3e7}
+.btn.dark:hover{background:#183b2c}
+/* Cover: cinematic forest green with champagne frame */
+.cover{background:#18392b;color:#f7f1e5}
+.cover-photo{background-position:center 43%;filter:saturate(.82)}
+.cover-photo:after{background:linear-gradient(180deg,rgba(8,25,17,.34),rgba(8,25,17,.42) 40%,rgba(8,25,17,.86))}
+.cover-paper{inset:5.5%;border:1px solid rgba(211,184,126,.9);outline:1px solid rgba(211,184,126,.28);outline-offset:7px;background:linear-gradient(150deg,rgba(12,35,24,.12),rgba(12,35,24,.34));backdrop-filter:blur(1.5px)}
+.cover-copy{padding:26px 14px}
+.cover .kicker{color:#e8d7b6}
+.cover h1{font-size:clamp(72px,12vw,142px);letter-spacing:.015em;text-shadow:0 4px 30px rgba(0,0,0,.25)}
+.cover h1 em{color:#e5c58b}
+.cover-date{color:#f0dfbd;letter-spacing:.34em}
+.open{border-color:#d5b779;background:rgba(18,52,37,.58);color:#f9f1df;min-width:205px}
+.open:hover{background:#d5b779;color:#18392b}
+.guest{color:#f3ead7}
+.scrollhint{color:#e9d7ae}
+/* Floral illustrations become muted botanical gold/sage rather than burgundy */
+.flower-decor .stem{stroke:#87947a}.flower-decor .twig{stroke:#b69a65}.flower-decor .leaf{fill:#617b62}.flower-decor .leaf-light{fill:#a7b39a}.flower-decor .leaf-dark{fill:#3f644e}.flower-decor .flower-petal{fill:#c6a46b}.flower-decor .flower-petal-light{fill:#e4d2a7}.flower-decor .flower-shadow{fill:#7e6a43}.flower-decor .flower-center{fill:#8a7448}.flower-decor .bud{fill:#a98a54}.flower-decor .berry{fill:#667b5d}
+.branch .stem{stroke:#819177}.branch .leaf{fill:#657c61}.branch .leaf2{fill:#b4bca3}.petal{background:#c5a36a}
+/* Photo story panels: warm ivory editorial cards */
+.photo-section{background:linear-gradient(135deg,#f6f2e8,#e9e4d5)!important}
+.photo-section .inner{padding:clamp(36px,5vw,68px) 0}
+.photo-wrap{width:min(1000px,92%);height:min(76svh,750px);gap:0}
+.photo{background:#d7d6c8;box-shadow:0 20px 60px rgba(20,44,31,.16)}
+.photo img{filter:saturate(.84) contrast(.98);transition:transform .8s ease}
+.photo:hover img{transform:scale(1.035)}
+.photo-caption{background:rgba(248,245,235,.97);border:1px solid rgba(186,154,95,.48);box-shadow:0 22px 60px rgba(25,48,34,.16);padding:clamp(28px,4vw,48px)}
+.photo-caption .script{color:#9d8050}
+.photo-caption h2{font-size:clamp(43px,5.8vw,74px);line-height:.94;letter-spacing:-.015em}
+.photo-caption p{color:#48554a;font-size:clamp(17px,1.8vw,21px);line-height:1.45}
+.photo-number{color:#7b8a6d}
+/* Gallery: album-like photo prints */
+#moments{background:linear-gradient(135deg,#e9e4d6,#f5f0e5)!important}
+.polaroid{background:#fbf8ef;border:1px solid rgba(190,160,104,.35);box-shadow:0 22px 50px rgba(21,42,29,.14)}
+.polaroid .caption{color:#8e7448}
+.collage-copy .kicker{color:#748366}
+.collage-copy h2{font-size:clamp(43px,6vw,76px)}
+.collage-copy p{color:#4b594d}
+/* Event cards: dark green headers through borders, clean ivory paper */
+.event{background:linear-gradient(135deg,#e5e3d5,#f4efe4)!important}
+.event-grid{gap:22px}
+.event-card{background:rgba(251,249,241,.86);border:1px solid rgba(190,160,104,.55);box-shadow:0 18px 55px rgba(25,48,34,.08);min-height:490px}
+.event-card:before{content:"";position:absolute;inset:9px;border:1px solid rgba(190,160,104,.22);pointer-events:none}
+.event-card .event-num{color:rgba(36,77,59,.15)}
+.event-card h2{font-size:clamp(45px,5vw,58px)}
+.event-card .time{color:#8e7448}
+.event-card .address{color:#667064}
+.event-card .event-note{color:#738467}
+.event-card .btn{position:relative;z-index:1}
+/* Countdown */
+.count{background:#203f30!important;color:#f6f0e4}
+.count .flower-decor{opacity:.4}
+.count .kicker{color:#d9c18d}
+.count h2{color:#f7f0e1}
+.count-sub{color:#e2e4d5}
+.timer .num{color:#e0c18a}
+.timer .lab{color:#d0d9c8}
+.count .btn.dark{background:transparent;border-color:#d2b477;color:#f5ead2}
+.count .btn.dark:hover{background:#d2b477;color:#203f30}
+/* RSVP and gift */
+.forms{background:linear-gradient(135deg,#f5f1e7,#e8e5d7)!important}
+.card,.gift-card{background:rgba(250,248,240,.88);border:1px solid rgba(190,160,104,.5);box-shadow:0 24px 70px rgba(23,47,32,.12)}
+.card{padding:clamp(28px,4vw,48px)}
+.card h2,.gift-card h2{color:var(--red)}
+.lede{color:#526054}
+.field label{color:#71836a}
+.field input,.field select,.field textarea{border-color:rgba(36,77,59,.2);background:rgba(255,255,255,.72);color:#20382a}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#b79a62}
+.bank{background:#f2eee2;border:1px solid rgba(190,160,104,.48)}
+.bank-top{color:#6f8268}
+.bank-number{color:#244d3b}
+.copy{border-color:rgba(36,77,59,.28);color:#244d3b;background:#fffdf6}
+.thanks{color:#55785d}
+/* Closing scene */
+.final{background:#17392a;color:#f8f1e5}
+.final-photo{filter:saturate(.72)}
+.final-photo:after{background:linear-gradient(135deg,rgba(13,41,28,.82),rgba(20,48,34,.72))}
+.final .flower-decor{opacity:.42}
+.final .flower-decor .flower-petal,.final .flower-decor .flower-petal-light{fill:#d5b77c}
+.final .flower-decor .stem{stroke:#b8bd9f}.final .flower-decor .leaf,.final .flower-decor .leaf-light{fill:#9daa8b}
+.final .kicker{color:#dfc48f}.final .script{color:#e0c38a}.final h2{color:#fff7e7}
+.final-date{color:#e5d8b9}
+.final .btn{border-color:#d1b477;color:#f8f0df;background:rgba(255,255,255,.06)}
+#dots button{background:rgba(226,213,185,.45)}#dots button.active{background:#c6a66c}
+#music{border-color:rgba(195,164,107,.65);background:rgba(31,62,46,.92)}.bars i{background:#d7b87b}
+@media(max-width:760px){
+ .cover-paper{inset:6%}.cover h1{font-size:clamp(66px,18vw,90px)}
+ .photo-section .inner{padding:38px 0}.photo{height:52svh;min-height:310px}
+ .photo-caption,.reverse .photo-caption{border:1px solid rgba(190,160,104,.48);padding:28px 24px 30px}
+ .photo-caption h2{font-size:clamp(42px,12vw,54px)}
+ .event-card{min-height:410px}.card h2{font-size:clamp(44px,12vw,54px)}
 }
-
-@media(max-width:700px){.page:before{inset:10px}.page:after{inset:17px}.content{width:84%;padding:72px 0}.cover-photo-frame{width:min(72vw,340px);height:min(72vw,340px);transform:translate(-50%,-78%) rotate(45deg)}.cover-copy{padding-top:clamp(280px,42vh,360px)}.cover h1{font-size:clamp(43px,12vw,68px)}.cover-corner{width:22vw;height:22vw}.intro-grid{grid-template-columns:1fr;gap:45px}.diamond-photo{width:min(68vw,270px)}.intro-copy{text-align:center}.intro-copy h2{font-size:49px}.event-grid{grid-template-columns:1fr;gap:25px}.event-card{padding:28px 18px}.photo-pair{gap:12px}.photo-pair figcaption{font-size:8px}.count-grid{grid-template-columns:repeat(2,minmax(0,120px));max-width:280px}.count-cell{padding:14px 10px;border-right:0;border-bottom:1px solid var(--line)}.count-cell:nth-child(odd){border-right:1px solid var(--line)}.count-cell:nth-child(n+3){border-bottom:0}.nav-dots{right:7px;gap:8px}.nav-dots a{width:6px;height:6px}.story-photo img{max-height:420px}p{font-size:18px}}
-
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-
-/* ===== INTERAKSI HALUS: SCROLL, REVEAL, HOVER ===== */
-
-html{scroll-behavior:smooth;scroll-padding-top:18px}
-
-.page{--pointer-x:50%;--pointer-y:50%}
-
-.page:after{transition:inset .8s ease,border-color .8s ease}
-
-.page.is-active:after{inset:32px;border-color:rgba(217,168,94,.32)}
-
-.gold-rule{position:relative;overflow:visible}
-
-.gold-rule:before,.gold-rule:after{background-size:200% 100%;animation:goldLine 5s ease-in-out infinite}
-
-@keyframes goldLine{0%,100%{opacity:.55;background-position:100% 0}50%{opacity:1;background-position:0 0}}
-
-.cover-photo-frame{animation:coverFloat 7s ease-in-out infinite;will-change:transform}
-
-@keyframes coverFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}
-
-.cover-photo-frame img{transition:filter .7s ease,object-position .7s ease}
-
-.cover-photo-frame:hover img{filter:saturate(1.12) contrast(1.04)}
-
-.btn{position:relative;overflow:hidden;isolation:isolate}
-
-.btn:before{content:"";position:absolute;inset:-1px;z-index:-1;background:linear-gradient(110deg,transparent 25%,rgba(241,211,155,.28) 48%,transparent 70%);transform:translateX(-130%);transition:transform .7s ease}
-
-.btn:hover:before{transform:translateX(130%)}
-
-.photo-feature-main,.photo-feature-side figure,.gallery-card,.moment-portrait-card,.story-photo,.photo-pair figure,.event-card,.count-cell,.form-card{transition:transform .55s cubic-bezier(.2,.7,.2,1),border-color .45s ease,box-shadow .55s ease}
-
-.photo-feature-main:hover,.photo-feature-side figure:hover,.gallery-card:hover,.moment-portrait-card:hover,.story-photo:hover,.photo-pair figure:hover,.event-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 18px 42px rgba(0,0,0,.22)}
-
-.photo-feature-main img,.photo-feature-side img,.gallery-card img,.moment-portrait-card img,.story-photo img,.photo-pair img,.diamond-photo img{transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .7s ease}
-
-.photo-feature-main:hover img,.photo-feature-side figure:hover img,.gallery-card:hover img,.moment-portrait-card:hover img,.story-photo:hover img,.photo-pair figure:hover img{transform:scale(1.035);filter:saturate(1.08)}
-
-.diamond-photo img{will-change:transform}
-
-.diamond-photo:hover img{transform:rotate(-45deg) scale(1.52)}
-
-.nav-dots a{position:relative;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
-
-.nav-dots a:hover,.nav-dots a.active{background:var(--gold);transform:scale(1.35);box-shadow:0 0 12px rgba(217,168,94,.65)}
-
-/* Reveal dinyalakan hanya ketika JavaScript aktif agar konten tetap terbaca jika JS gagal. */
-
-.motion-ready .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
-
-.motion-ready .reveal.from-left{transform:translateX(-28px)}
-
-.motion-ready .reveal.from-right{transform:translateX(28px)}
-
-.motion-ready .reveal.zoom-in{transform:scale(.94) translateY(12px)}
-
-.motion-ready .reveal.is-visible{opacity:1;transform:translate(0,0) scale(1)}
-
-.motion-ready .reveal-image{clip-path:inset(7% 7% 7% 7%);transition:clip-path 1s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
-
-.motion-ready .reveal-image.is-visible{clip-path:inset(0 0 0 0)}
-
-.script{display:inline-block;animation:scriptBreathe 6s ease-in-out infinite}
-
-@keyframes scriptBreathe{0%,100%{text-shadow:0 0 0 rgba(241,211,155,0)}50%{text-shadow:0 0 14px rgba(241,211,155,.16)}}
-
-.count-cell b{transition:transform .25s ease}
-
-.count-cell:hover b{transform:translateY(-3px)}
-
-/* Kilau kecil bergerak pada ornamen, tanpa menambah elemen yang mengganggu foto. */
-
-.ornament{background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));background-size:200% auto;-webkit-background-clip:text;background-clip:text;animation:ornamentShimmer 7s linear infinite}
-
-@keyframes ornamentShimmer{to{background-position:200% center}}
-
-@media(prefers-reduced-motion:reduce){
-
- html{scroll-behavior:auto}
-
- *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
-
- .motion-ready .reveal{opacity:1;transform:none;clip-path:none}
-
-}
-
-/* Kontrol musik: tetap terlihat, nyaman di desktop dan mobile */
-
-.music-control{
-
-  position:fixed;left:18px;bottom:18px;z-index:30;
-
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-
-  min-height:44px;padding:12px 16px;border:1px solid var(--gold);
-
-  border-radius:999px;background:rgba(42,3,5,.92);color:var(--gold2);
-
-  box-shadow:0 8px 28px rgba(0,0,0,.28);backdrop-filter:blur(8px);
-
-  font:500 10px Montserrat,sans-serif;letter-spacing:.12em;text-transform:uppercase;
-
-  cursor:pointer;transition:background .25s ease,transform .25s ease,color .25s ease;
-
-}
-
-.music-control:hover{background:var(--gold);color:var(--wine);transform:translateY(-2px)}
-
-.music-control:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
-
-.music-control .music-icon{font-size:16px;line-height:1}
-
-@media(max-width:700px){
-
-  .music-control{left:12px;bottom:12px;min-height:42px;padding:11px 13px;font-size:9px}
-
-}
-
-@media(prefers-reduced-motion:reduce){.music-control{transition:none}}
-
-
-/* RESET LAYOUT: mempertahankan desain utama, menstabilkan halaman Moments dan tombol musik */
-.photo-page .content{width:min(1180px,calc(100% - 80px));max-width:1180px;margin:0 auto;}
-.photo-page .content>.center{width:100%;max-width:100%;min-width:0;}
-.photo-feature-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);align-items:start;justify-content:center;width:100%;max-width:1000px;margin:34px auto 0;gap:26px;}
-.photo-feature-main{grid-column:1;grid-row:1;min-width:0;}
-.photo-feature-side{grid-column:2;grid-row:1;min-width:0;}
-.photo-feature-main img,.photo-feature-side img{width:100%;height:clamp(300px,32vw,470px);aspect-ratio:auto;object-fit:cover;display:block;}
-.photo-feature-main img{object-position:center 42%;}
-.photo-feature-side img{object-position:center 50%;}
-.moment-portrait-feature{display:grid;grid-template-columns:minmax(220px,360px) minmax(0,430px);align-items:center;justify-content:center;width:100%;max-width:900px;margin:48px auto 0;gap:48px;}
-.music-control{position:fixed!important;left:18px!important;right:auto!important;top:auto!important;bottom:18px!important;z-index:9999!important;display:inline-flex!important;visibility:visible!important;opacity:1!important;}
-@media(max-width:700px){
- .photo-page .content{width:84%;}
- .photo-feature-layout{grid-template-columns:minmax(0,1fr);gap:16px;}
- .photo-feature-main,.photo-feature-side{grid-column:1;grid-row:auto;}
- .photo-feature-main img,.photo-feature-side img{height:auto;aspect-ratio:4/3;}
- .moment-portrait-feature{grid-template-columns:minmax(0,1fr);gap:20px;}
- .music-control{left:12px!important;bottom:12px!important;}
-}
-</style></head>
-
+@media(prefers-reduced-motion:reduce){.photo img{transition:none}}
+/* ===== end Luxury Garden ===== */
+
+
+/* ===== COCOA BLOOM: warm brown + cheerful colorful flowers ===== */
+:root{--paper:#f8f0e5;--paper2:#ead8c5;--ink:#38291f;--red:#76503a;--red2:#c96d60;--sage:#8b725b;--sage2:#c5ad93;--gold:#b98a56;--line:rgba(117,78,53,.25);--shadow:0 24px 70px rgba(81,48,30,.14)}
+meta[name="theme-color"]{color:#6a4633}
+body{background:#cbb19a;color:var(--ink)}
+#app{background:var(--paper);box-shadow:0 0 90px rgba(75,45,28,.2)}
+.page{background-color:var(--paper)}
+.kicker,.photo-number,.collage-copy .kicker{color:#927258}
+h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:#76503a}
+.btn{border-color:rgba(118,80,58,.38);color:#76503a}
+.btn.dark{background:#76503a;border-color:#bd925e;color:#fff8ee}
+.btn.dark:hover{background:#573a2b}
+.cover{background:#5d3d2d;color:#fff7eb}
+.cover-photo{filter:saturate(.94) sepia(.12);background-position:center 43%}
+.cover-photo:after{background:linear-gradient(180deg,rgba(54,31,20,.18),rgba(54,31,20,.36) 40%,rgba(54,31,20,.82))}
+.cover-paper{border-color:rgba(239,205,155,.9);outline-color:rgba(239,205,155,.3);background:linear-gradient(150deg,rgba(74,45,29,.08),rgba(74,45,29,.28))}
+.cover .kicker{color:#f5dfc5}.cover h1 em{color:#ffd2b8}.cover-date,.scrollhint{color:#f7e2c7}
+.open{border-color:#edc995;background:rgba(91,57,37,.65);color:#fff5e7}.open:hover{background:#edc995;color:#573a2b}.guest{color:#fff1df}
+/* Cheerful watercolor florals: coral, rose, butter yellow, lilac and fresh leaves */
+.flower-decor .stem{stroke:#718768}.flower-decor .twig{stroke:#b18a67}.flower-decor .leaf{fill:#6f9b75}.flower-decor .leaf-light{fill:#a9c98e}.flower-decor .leaf-dark{fill:#47795a}
+.flower-decor .flower-petal{fill:#ef806f;opacity:.9}.flower-decor .flower-petal-light{fill:#f6b2a4;opacity:.88}.flower-decor .flower-shadow{fill:#cf5d62;opacity:.28}.flower-decor .flower-center{fill:#f3c84f;opacity:1}.flower-decor .bud{fill:#b88acb;opacity:.88}.flower-decor .berry{fill:#e5a0b4;opacity:.75}.flower-decor .wash{fill:#fff5df;opacity:.35}
+.branch .stem{stroke:#82976b}.branch .leaf{fill:#7fa77a}.branch .leaf2{fill:#b4ce91}.petal{background:#ee8a72;opacity:.42}
+.photo-section .inner{padding:clamp(36px,5vw,68px) 0}.photo-section{background:linear-gradient(135deg,#fbf3e8,#efe0d0)!important}
+.photo{background:#e4cbb4;box-shadow:0 20px 60px rgba(95,58,35,.15)}.photo img{filter:saturate(1.03) contrast(.97)}
+.photo-caption{background:rgba(255,248,238,.97);border-color:rgba(176,126,83,.4);box-shadow:0 22px 60px rgba(95,58,35,.13)}
+.photo-caption .script{color:#c47768}.photo-caption p{color:#5d4b3d}
+#moments{background:linear-gradient(135deg,#efe0d0,#fbf4e9)!important}.polaroid{background:#fff9ef;border-color:rgba(191,141,97,.38);box-shadow:0 22px 50px rgba(95,58,35,.13)}.polaroid .caption{color:#bf7565}.collage-copy p{color:#5d4b3d}
+.event{background:linear-gradient(135deg,#f0e0cf,#fbf2e6)!important}.event-card{background:rgba(255,249,240,.9);border-color:rgba(185,137,86,.52);box-shadow:0 18px 55px rgba(95,58,35,.08)}.event-card:before{border-color:rgba(202,153,102,.25)}.event-card .event-num{color:rgba(118,80,58,.16)}.event-card .time{color:#b77950}.event-card .address{color:#786556}.event-card .event-note{color:#a56c66}
+.count{background:#76503a!important;color:#fff4e6}.count .flower-decor{opacity:.7}.count .kicker{color:#f3c994}.count h2{color:#fff4e6}.count-sub{color:#f5e3d1}.timer .num{color:#ffd28e}.timer .lab{color:#f3dfc9}.count .btn.dark{background:transparent;border-color:#e9bd83;color:#fff0d9}.count .btn.dark:hover{background:#e9bd83;color:#65422f}
+.forms{background:linear-gradient(135deg,#fbf2e6,#efe1d1)!important}.card,.gift-card{background:rgba(255,249,240,.92);border-color:rgba(185,137,86,.45);box-shadow:0 24px 70px rgba(95,58,35,.1)}.card h2,.gift-card h2{color:#76503a}.lede{color:#665244}.field label{color:#927258}.field input,.field select,.field textarea{border-color:rgba(118,80,58,.22);background:rgba(255,255,255,.78);color:#38291f}.field input:focus,.field select:focus,.field textarea:focus{border-color:#d29a70}.bank{background:#f8ecdd;border-color:rgba(185,137,86,.42)}.bank-top{color:#9b7657}.bank-number{color:#76503a}.copy{border-color:rgba(118,80,58,.28);color:#76503a;background:#fffaf2}.thanks{color:#7b986e}
+.final{background:#5d3d2d;color:#fff5e8}.final-photo{filter:saturate(.9) sepia(.12)}.final-photo:after{background:linear-gradient(135deg,rgba(67,39,26,.84),rgba(89,53,34,.75))}.final .flower-decor{opacity:.85}.final .flower-decor .flower-petal{fill:#ef8c7c}.final .flower-decor .flower-petal-light{fill:#ffc0ad}.final .flower-decor .flower-center{fill:#f5ce59}.final .flower-decor .stem{stroke:#b5c78f}.final .flower-decor .leaf,.final .flower-decor .leaf-light{fill:#a8c78c}.final .kicker{color:#f3c994}.final .script{color:#ffd0b8}.final h2{color:#fff6e8}.final-date{color:#f5dfc4}.final .btn{border-color:#edc995;color:#fff5e8;background:rgba(255,255,255,.06)}
+#dots button{background:rgba(255,230,203,.5)}#dots button.active{background:#f1bd76}#music{border-color:rgba(185,137,86,.65);background:rgba(100,65,46,.94)}.bars i{background:#f3c994}
+@media(max-width:760px){.photo-caption,.reverse .photo-caption{border-color:rgba(185,137,86,.42)}}
+/* ===== end Cocoa Bloom ===== */
+
+</style>
+</head>
 <body>
-
-<nav class="nav-dots" aria-label="Navigasi halaman"><a href="#cover" aria-label="Sampul"></a><a href="#intro" aria-label="Mempelai"></a><a href="#story" aria-label="Cerita"></a><a href="#moments" aria-label="Momen bersama"></a><a href="#gallery" aria-label="Galeri foto"></a><a href="#events" aria-label="Acara"></a></nav>
-
-<audio id="weddingAudio" src="Lagu/lagu-wedding.mp3" preload="auto" loop></audio>
-
-<button class="music-control" id="musicToggle" type="button" aria-label="Putar musik undangan" aria-pressed="false"><span class="music-icon" aria-hidden="true">♫</span><span id="musicLabel">Putar Musik</span></button>
-
-<section class="page cover" id="cover"><div class="cover-corner tl"></div><div class="cover-corner br"></div><div class="cover-photo-frame"><img src="images/cover.png" alt="Foto prewedding Fabi dan Oca"></div><div class="content"><div class="cover-copy"><div class="kicker">The Wedding Of</div><h1>Odelia Ocarina<br><em>&</em><br>Fabianus Siltian</h1><div class="ornament">— ✦ —</div><div class="cover-date">RABU · 30 DESEMBER 2026 · SURAKARTA</div><div class="guest" id="guest"></div><a class="btn" id="openInvitation" href="#intro">Buka Undangan <span>↘</span></a></div></div></section>
-
-<section class="page" id="intro"><div class="content"><div class="intro-grid"><div class="diamond-photo"><img src="images/church-altar.jpg" alt="Fabi dan Oca di gereja" loading="lazy"></div><div class="intro-copy"><div class="kicker">Dengan penuh syukur</div><div class="script">Together in His grace</div><h2>Dengan Kasih,<br>Kami Mengundang.</h2><div class="gold-rule"><span>✦</span></div><p>Dengan penuh sukacita, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada hari pernikahan kami.</p><div class="family">Keluarga Bapak Petrus Sugiri Susila Simbarja<br>&<br>Keluarga Bapak Philippus Benetius Dwi Harsono</div></div></div></div></section>
-
-<section class="page" id="story"><div class="content"><div class="story-copy center"><div class="kicker">01 / Our Story</div><div class="script">A story worth telling</div><h2>Dua Hati,<br>Satu Perjalanan.</h2><div class="gold-rule"><span>❦</span></div><p>Setiap kisah memiliki awalnya sendiri. Dengan rasa syukur, kami melangkah bersama menuju babak baru—membangun kehidupan yang dipenuhi kasih, iman, tawa, dan harapan.</p><div class="story-photo"><img src="images/books.jpg" alt="Fabi dan Oca bersama buku" loading="lazy"></div><div class="photo-pair"><figure><img src="images/playful.png" alt="Momen ceria Fabi dan Oca" loading="lazy"><figcaption>Our Little Joy</figcaption></figure><figure><img src="images/sunflower.png" alt="Fabi dan Oca dengan bunga matahari" loading="lazy"><figcaption>Our Sunshine</figcaption></figure></div></div></div></section>
-
-<section class="page photo-page" id="moments">
-
-  <div class="content">
-
-    <div class="center" style="width:100%">
-
-      <div class="kicker">02 / Moments We Keep</div>
-
-      <div class="script">In every little moment</div>
-
-      <h2>Dalam Setiap<br>Langkah.</h2>
-
-      <div class="gold-rule"><span>❦</span></div>
-
-      <p>Potongan kecil dari perjalanan kami—dalam doa, percakapan sederhana, dan kebahagiaan yang tumbuh bersama.</p>
-
-      <div class="photo-feature-layout">
-
-        <figure class="photo-feature-main">
-
-          <img src="images/foto1.jpg" alt="Fabi dan Oca berdoa di dalam gereja" loading="lazy">
-
-          <figcaption>In His Grace</figcaption>
-
-        </figure>
-
-        <div class="photo-feature-side">
-
-          <figure>
-
-            <img src="images/foto2.jpg" alt="Fabi dan Oca berbagi momen bersama" loading="lazy">
-
-            <figcaption>Little Adventures</figcaption>
-
-          </figure>
-
-        </div>
-
-      </div>
-
-      <div class="moment-portrait-feature">
-
-        <figure class="moment-portrait-card">
-
-          <img src="images/foto3.jpg" alt="Fabi dan Oca tersenyum bersama" loading="lazy">
-
-          <figcaption>A Moment Together</figcaption>
-
-        </figure>
-
-        <div class="moment-portrait-copy">
-
-          <div class="kicker">A Little Reminder</div>
-
-          <div class="script">The beauty is in the little things</div>
-
-          <p>Di antara langkah-langkah sederhana, kami menemukan alasan baru untuk bersyukur, tertawa, dan terus memilih satu sama lain.</p>
-
-          <div class="gold-rule"><span>✦</span></div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
+  <filter id="watercolorSoft" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</defs></svg>
+<div id="app" class="snap">
+<section class="page cover" id="cover">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+  <div class="cover-photo"></div><div class="cover-paper"><div class="cover-copy">
+    <div class="kicker reveal">The Wedding of</div>
+    <h1 class="reveal delay1">Fabi <em>&amp;</em> Oca</h1>
+    <div class="cover-date reveal delay2">30 · 12 · 2026 · SURAKARTA</div>
+    <div id="guest" class="guest reveal delay2"></div>
+    <a class="btn open reveal delay3" href="#intro">Buka Undangan</a>
+  </div></div><div class="scrollhint">SCROLL TO EXPLORE ↓</div>
 </section>
 
-<section class="page photo-page" id="gallery">
-
-  <div class="content">
-
-    <div class="center" style="width:100%">
-
-      <div class="kicker">03 / Our Gallery</div>
-
-      <div class="script">A thousand little memories</div>
-
-      <h2>Kenangan<br>yang Kami Simpan.</h2>
-
-      <div class="gold-rule"><span>✦</span></div>
-
-      <p>Tiga bingkai, tiga cerita, dan banyak alasan untuk selalu tersenyum saat mengingat hari-hari ini.</p>
-
-      <div class="gallery-grid">
-
-        <figure class="gallery-card">
-
-          <img src="images/foto4.png" alt="Fabi dan Oca berfoto di taman berbunga" loading="lazy">
-
-          <figcaption>Under the Blossoms</figcaption>
-
-        </figure>
-
-        <figure class="gallery-card">
-
-          <img src="images/foto5.png" alt="Foto Fabi dan Oca dari sudut atas di tangga" loading="lazy">
-
-          <figcaption>From Another View</figcaption>
-
-        </figure>
-
-        <figure class="gallery-card">
-
-          <img src="images/foto6.png" alt="Fabi dan Oca mengenakan busana merah" loading="lazy">
-
-          <figcaption>In Our Own Colors</figcaption>
-
-        </figure>
-
-      </div>
-
-      <a class="btn" href="#events" style="margin-top:30px">Lanjut ke Informasi Acara ↓</a>
-
-    </div>
-
-  </div>
-
+<section class="page photo-section" id="intro">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+ <div class="botanical"><div class="branch tl"><svg viewBox="0 0 300 300"><path class="stem" d="M15 270C70 220 105 160 205 60"/><ellipse class="leaf" cx="76" cy="217" rx="11" ry="34" transform="rotate(-45 76 217)"/><ellipse class="leaf2" cx="108" cy="180" rx="11" ry="34" transform="rotate(42 108 180)"/><ellipse class="leaf" cx="146" cy="139" rx="11" ry="34" transform="rotate(-42 146 139)"/></svg></div></div>
+ <div class="inner"><div class="photo-wrap"><div class="photo"><img src="data:image/webp;base64,books.webp" alt="Fabi dan Oca bersama buku" loading="lazy"></div><div class="photo-caption reveal"><div class="photo-number">01 / OUR STORY</div><div class="script">A story worth telling</div><h2>Berawal dari<br>sebuah cerita.</h2><p>Di antara halaman yang dibuka bersama, kami menemukan bahwa kisah terbaik bukan hanya untuk dibaca — tetapi untuk dijalani berdua.</p></div></div></div>
 </section>
 
-<section class="page" id="events"><div class="content"><div class="center" style="width:100%"><div class="kicker">Save The Date</div><h2>Hari yang Kami<br>Tunggu.</h2><div class="gold-rule"><span>✦</span></div><p>Merupakan kebahagiaan bagi kami apabila Anda berkenan hadir dan menjadi bagian dari hari istimewa ini.</p><div class="event-grid"><article class="event-card"><div class="num">01</div><div class="kicker">Pemberkatan Pernikahan</div><h3>Akad / Pemberkatan</h3><div class="date">RABU · 30 DESEMBER 2026</div><div class="time">10.00 WIB</div><div class="venue">Gereja St. Antonius Padua<br>Purbayan Surakarta</div><div class="address">Jl. Arifin No. 1, Kp. Baru, Kec. Ps. Kliwon, Kota Surakarta, Jawa Tengah 57111</div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gereja+St.+Antonius+Padua+Purbayan+Surakarta" target="_blank" rel="noopener">Lihat Lokasi ↗</a></article><article class="event-card"><div class="num">02</div><div class="kicker">Perayaan Pernikahan</div><h3>Resepsi</h3><div class="date">RABU · 30 DESEMBER 2026</div><div class="time">18.00 WIB</div><div class="venue">Graha Perhutani<br>Surakarta</div><div class="address">Jl. Slamet Riyadi No. 473, Pajang, Kec. Laweyan, Kota Surakarta, Jawa Tengah 57146</div><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Graha+Perhutani+Surakarta+Jl+Slamet+Riyadi+473" target="_blank" rel="noopener">Lihat Lokasi ↗</a></article></div><button class="btn" id="calendar" style="margin-top:34px">Simpan ke Kalender ↓</button></div></div></section>
+<section class="page photo-section" id="faith">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+ <div class="inner"><div class="photo-wrap reverse"><div class="photo-caption reveal"><div class="photo-number">02 / WITH FAITH</div><div class="script">Where our hearts are guided</div><h2>Dalam doa,<br>kami bertumbuh.</h2><p>Di tempat yang tenang ini, kami belajar bahwa cinta bukan hanya tentang hari ini, tetapi tentang memilih satu sama lain, setiap hari.</p></div><div class="photo"><img src="data:image/webp;base64,church-wide.webp" alt="Fabi dan Oca di dalam gereja" loading="lazy"></div></div></div>
+</section>
 
-<section class="page" id="countdown"><div class="content"><div class="center"><div class="kicker">The Day Is Coming</div><h2>Menghitung Hari.</h2><div class="gold-rule"><span>✦</span></div><p>Menuju hari ketika dua perjalanan menjadi satu.</p><div class="count-grid"><div class="count-cell"><b id="days">00</b><span>Hari</span></div><div class="count-cell"><b id="hours">00</b><span>Jam</span></div><div class="count-cell"><b id="mins">00</b><span>Menit</span></div><div class="count-cell"><b id="secs">00</b><span>Detik</span></div></div><div class="cover-date">30 · 12 · 2026</div></div></div></section>
+<section class="page photo-section">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+ <div class="inner"><div class="photo-wrap"><div class="photo"><img src="data:image/webp;base64,church-altar.webp" alt="Fabi dan Oca di altar gereja" loading="lazy"></div><div class="photo-caption reveal"><div class="photo-number">03 / THE PROMISE</div><div class="script">One promise, one forever</div><h2>Menuju<br>sebuah janji.</h2><p>Dan pada akhirnya, semua langkah membawa kami ke satu hari: ketika dua nama dipertemukan dalam satu janji seumur hidup.</p></div></div></div>
+</section>
 
+<section class="page photo-section" id="moments" style="background:#eaded3">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+ <div class="inner"><div class="collage">
+   <div class="polaroid"><img src="data:image/webp;base64,playful.webp" alt="Pre-wedding Fabi dan Oca" loading="lazy"><div class="caption">just being us</div></div>
+   <div class="polaroid"><img src="data:image/webp;base64,sunflower.webp" alt="Pre-wedding dengan bunga matahari" loading="lazy"><div class="caption">a little sunshine</div></div>
+   <div class="polaroid"><img src="data:image/webp;base64,studio.webp" alt="Momen playful Fabi dan Oca" loading="lazy"><div class="caption">our kind of crazy</div></div>
+   <div class="collage-copy reveal"><div class="kicker">04 / OUR LITTLE MOMENTS</div><h2>Dan tentu saja,<br>kami juga suka bersenang-senang.</h2><p>Karena di balik cerita yang serius, selalu ada tawa, permainan kecil, dan momen-momen yang membuat perjalanan ini terasa seperti rumah.</p></div>
+ </div></div>
+</section>
 
+<section class="page event" id="events">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div>
+ <div class="botanical"><div class="branch tr"><svg viewBox="0 0 300 300"><path class="stem" d="M30 45C92 96 150 165 270 265"/><ellipse class="leaf2" cx="86" cy="92" rx="11" ry="34" transform="rotate(-40 86 92)"/><ellipse class="leaf" cx="128" cy="136" rx="11" ry="34" transform="rotate(42 128 136)"/><ellipse class="leaf2" cx="174" cy="178" rx="11" ry="34" transform="rotate(-40 174 178)"/></svg></div></div>
+ <div class="inner"><div style="width:100%"><div class="kicker" style="text-align:center">Save The Date</div><h2 style="text-align:center" class="reveal">Hari yang kami tunggu.</h2><div class="event-grid">
+   <article class="event-card reveal"><div class="event-num">01</div><div class="kicker">Akad Pernikahan</div><h2>Akad</h2><div class="date-line">RABU · 30 DESEMBER 2026</div><div class="time">10.00 WIB</div><div class="venue">Gereja St. Antonius Padua<br>Purbayan Surakarta</div><div class="address">Jl. Arifin No.1, Kp. Baru,<br>Kec. Ps. Kliwon, Kota Surakarta,<br>Jawa Tengah 57111</div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gereja+St.+Antonius+Padua+Purbayan+Surakarta">Lihat Lokasi</a><div class="event-note">Dalam doa, kami mengikat janji.</div></article>
+   <article class="event-card reveal delay1"><div class="event-num">02</div><div class="kicker">Resepsi</div><h2>Resepsi</h2><div class="date-line">RABU · 30 DESEMBER 2026</div><div class="time">18.00 WIB</div><div class="venue">Graha Perhutani<br>Surakarta</div><div class="address">Jl. Slamet Riyadi No.473, Pajang,<br>Kec. Laweyan, Kota Surakarta,<br>Jawa Tengah 57146</div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Graha+Perhutani+Surakarta+Jl+Slamet+Riyadi+473">Lihat Lokasi</a><div class="event-note">Bersama, merayakan awal dari selamanya.</div></article>
+ </div></div></div>
+</section>
 
-<section class="page" id="gift"><div class="content"><div class="center"><div class="kicker">A Token of Love</div><h2>Tanda Kasih.</h2><div class="gold-rule"><span>✦</span></div><p>Kehadiran dan doa restu Anda adalah hadiah terindah bagi kami. Jika ingin berbagi tanda kasih, informasi dapat ditambahkan di bagian ini.</p><div class="event-card" style="max-width:440px;margin:28px auto"><div class="ornament">❦</div><div class="venue">Terima kasih atas kasih dan perhatian Anda.</div><p class="small-note">Detail rekening atau alamat pengiriman hadiah dapat dimasukkan sebelum publikasi.</p></div><a class="btn" href="#cover">Kembali ke Sampul ↑</a></div></div></section>
+<section class="page count" id="countdown">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="count-inner reveal"><div class="kicker">The Countdown</div><h2>Menuju hari bahagia kami.</h2><p class="count-sub">Rabu, 30 Desember 2026 · Surakarta, Jawa Tengah</p><div class="timer"><div><div id="days" class="num">00</div><div class="lab">HARI</div></div><div><div id="hours" class="num">00</div><div class="lab">JAM</div></div><div><div id="mins" class="num">00</div><div class="lab">MENIT</div></div><div><div id="secs" class="num">00</div><div class="lab">DETIK</div></div></div><button id="calendar" class="btn dark">Simpan ke Kalender</button></div></div></section>
 
-<section class="page final"><div class="final-photo"><img src="images/cover.png" alt="" loading="lazy"></div><div class="final-overlay"></div><div class="content"><div class="center"><div class="kicker">With Love & Gratitude</div><div class="cross">✧</div><h2>Fabi <span class="script">&</span> Oca</h2><div class="gold-rule"><span>❦</span></div><p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir serta memberikan doa restu.</p><p class="script" style="font-size:38px">Sampai bertemu di hari bahagia kami.</p><div class="cover-date">30 DESEMBER 2026 · SURAKARTA</div></div></div></section>
+<section class="page forms" id="rsvp">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="card reveal"><div class="kicker">RSVP</div><h2>Apakah kamu<br>akan hadir?</h2><p class="lede">Mohon konfirmasi sebelum <strong>20 Desember 2026</strong>. Pesanmu akan otomatis disiapkan untuk dikirim melalui WhatsApp.</p><form id="rsvpForm"><div class="field"><label>Nama</label><input id="nama" required placeholder="Nama lengkap"></div><div class="row"><div class="field"><label>Kehadiran</label><select id="hadir"><option>Hadir</option><option>Tidak Hadir</option><option>Masih Ragu</option></select></div><div class="field"><label>Jumlah Tamu</label><input id="jumlah" type="number" min="1" max="6" value="1"></div></div><div class="field"><label>Doa & Ucapan</label><textarea id="ucapan" rows="4" placeholder="Tulis pesan untuk Fabi & Oca"></textarea></div><button class="btn dark submit" type="submit">Kirim Konfirmasi</button></form><div id="thanks" class="thanks">Terima kasih, <span id="thanksName"></span> ✦</div></div></div></section>
 
-<div class="footer">THE WEDDING OF FABI & OCA · 2026</div>
+<section class="page forms" id="gift">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="inner"><div class="gift-card reveal"><div class="kicker">Tanda Kasih</div><h2>Kirim hadiah,<br>jika berkenan.</h2><p class="lede">Kehadiran dan doa restu adalah hadiah terindah. Jika ingin mengirim tanda kasih dari jauh, berikut detailnya.</p><div class="bank"><div class="bank-top"><span>BCA</span><span>TRANSFER</span></div><div class="bank-number">1234567890</div><div style="font-size:16px;color:#6a5d55">a.n. Fabianus Siltian Simbarja</div><button id="copyBank" class="copy">Salin Nomor</button></div></div></div></section>
 
+<section class="page final">
+<div class="flower-decor" aria-hidden="true">
+  <div class="floral tl soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/>
+    <ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <ellipse class="leaf" cx="206" cy="126" rx="10" ry="32" transform="rotate(-38 206 126)"/><ellipse class="leaf-light" cx="240" cy="98" rx="10" ry="30" transform="rotate(45 240 98)"/>
+    <g transform="translate(285 50)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <g transform="translate(198 116) scale(.7)" class="soft"><ellipse class="flower-petal-light" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal-light" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal-light" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+    <circle class="bud" cx="252" cy="77" r="7"/><circle class="berry" cx="228" cy="102" r="5"/><circle class="berry" cx="273" cy="79" r="4"/>
+  </svg></div>
+  <div class="floral br soft"><svg viewBox="0 0 390 390">
+    <path class="stem" d="M18 352C74 286 104 215 182 138C210 110 239 82 302 54"/>
+    <path class="twig" d="M104 245C72 225 51 198 43 166M146 190C119 169 108 144 108 118M194 137C184 111 188 86 201 66"/>
+    <ellipse class="leaf" cx="73" cy="286" rx="12" ry="38" transform="rotate(-48 73 286)"/><ellipse class="leaf-light" cx="104" cy="239" rx="11" ry="35" transform="rotate(42 104 239)"/><ellipse class="leaf-dark" cx="135" cy="204" rx="11" ry="37" transform="rotate(-48 135 204)"/><ellipse class="leaf-light" cx="160" cy="168" rx="10" ry="32" transform="rotate(42 160 168)"/>
+    <g transform="translate(285 50) scale(.9)" class="soft"><ellipse class="flower-shadow" cx="0" cy="0" rx="31" ry="30"/><ellipse class="flower-petal" cx="0" cy="-18" rx="12" ry="24"/><ellipse class="flower-petal-light" cx="17" cy="-7" rx="12" ry="24" transform="rotate(72 17 -7)"/><ellipse class="flower-petal" cx="11" cy="14" rx="12" ry="24" transform="rotate(144 11 14)"/><ellipse class="flower-petal-light" cx="-11" cy="14" rx="12" ry="24" transform="rotate(-144 -11 14)"/><ellipse class="flower-petal" cx="-17" cy="-7" rx="12" ry="24" transform="rotate(-72 -17 -7)"/><circle class="flower-center" r="7"/></g>
+  </svg></div>
+</div><div class="final-photo"></div><div class="inner"><div class="final-copy reveal"><div class="kicker">Until We Meet</div><div class="script">Thank you for being part of our story.</div><h2>Fabi<br>&amp; Oca</h2><div class="final-date">30 · 12 · 2026 · SURAKARTA</div><button id="share" class="btn">Bagikan Undangan</button></div></div></section>
+</div>
+<div id="dots" aria-label="Navigasi halaman"></div>
 <script>
-
-(()=>{const guest=new URLSearchParams(location.search).get('to');if(guest)document.getElementById('guest').textContent='Kepada Yth. '+guest.replace(/[<>]/g,'');const target=new Date('2026-12-30T10:00:00+07:00').getTime();function tick(){let d=Math.max(0,target-Date.now());const day=Math.floor(d/86400000);d%=86400000;const h=Math.floor(d/3600000);d%=3600000;const m=Math.floor(d/60000);const s=Math.floor(d%60000/1000);document.getElementById('days').textContent=String(day).padStart(2,'0');document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0')}tick();setInterval(tick,1000);document.getElementById('calendar').onclick=()=>{const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Fabi & Oca//ID','BEGIN:VEVENT','DTSTART:20261230T030000Z','DTEND:20261230T120000Z','SUMMARY:Pernikahan Fabi & Oca','DESCRIPTION:Pemberkatan pukul 10.00 WIB. Resepsi pukul 18.00 WIB.','LOCATION:Surakarta, Jawa Tengah','END:VEVENT','END:VCALENDAR'].join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='Fabi-Oca-Wedding.ics';a.click();URL.revokeObjectURL(a.href)};})();
-
-</script><script>
-
-/* Interaksi scroll untuk setiap halaman */
-
-(()=>{
-
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  const pages = [...document.querySelectorAll('.page')];
-
-  const revealTargets = document.querySelectorAll(
-
-    '.page .kicker, .page h1, .page h2, .page h3, .page .script, .page .gold-rule, .page p, .page .family, .page .cover-date, .page .guest, .page .btn, .page figure, .page .event-card, .page .count-cell, .page .form-card, .page .cross, .page .gift-number'
-
-  );
-
-  revealTargets.forEach((el, index)=>{
-
-    el.classList.add('reveal');
-
-    if(el.matches('figure, .story-photo, .diamond-photo, .cover-photo-frame')) el.classList.add('reveal-image');
-
-    if(el.matches('.intro-copy, .moment-portrait-copy')) el.classList.add('from-right');
-
-    else if(el.matches('.diamond-photo, .photo-feature-main, .moment-portrait-card')) el.classList.add('from-left');
-
-    else if(el.matches('.gallery-card, .photo-pair figure, .count-cell')) el.classList.add('zoom-in');
-
-  });
-
-  document.body.classList.add('motion-ready');
-
-  if(reduceMotion || !('IntersectionObserver' in window)){
-
-    document.querySelectorAll('.reveal').forEach(el=>el.classList.add('is-visible'));
-
-  } else {
-
-    const observer = new IntersectionObserver(entries=>{
-
-      entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-          entry.target.classList.add('is-visible');
-
-          observer.unobserve(entry.target);
-
-        }
-
-      });
-
-    }, {threshold:0.12, rootMargin:'0px 0px -45px 0px'});
-
-    document.querySelectorAll('.reveal').forEach((el)=>{
-
-      const parent = el.closest('.photo-feature-layout, .moment-portrait-feature, .gallery-grid, .photo-pair, .event-grid, .count-grid');
-
-      if(parent){
-
-        const siblings = [...parent.querySelectorAll('.reveal')];
-
-        const idx = siblings.indexOf(el);
-
-        el.style.setProperty('--reveal-delay', `${Math.min(idx,5)*100}ms`);
-
-      }
-
-      observer.observe(el);
-
-    });
-
-  }
-
-  // Titik navigasi mengikuti halaman yang sedang terlihat.
-
-  const navLinks = [...document.querySelectorAll('.nav-dots a')];
-
-  if('IntersectionObserver' in window){
-
-    const pageObserver = new IntersectionObserver(entries=>{
-
-      entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-          pages.forEach(page=>page.classList.toggle('is-active', page===entry.target));
-
-          navLinks.forEach(link=>{
-
-            const active = link.getAttribute('href') === `#${entry.target.id}`;
-
-            link.classList.toggle('active', active);
-
-            if(active) link.setAttribute('aria-current','location');
-
-            else link.removeAttribute('aria-current');
-
-          });
-
-        }
-
-      });
-
-    }, {threshold:0.35});
-
-    pages.forEach(page=>pageObserver.observe(page));
-
-  }
-
-  // Efek gerak parallax yang sangat ringan pada foto saat halaman digeser.
-
-  let ticking = false;
-
-  const parallaxItems = document.querySelectorAll('.story-photo img, .photo-feature-layout img, .moment-portrait-card img, .gallery-card img, .photo-pair img');
-
-  const updateParallax = ()=>{
-
-    const vh = window.innerHeight || 800;
-
-    parallaxItems.forEach(img=>{
-
-      const rect = img.getBoundingClientRect();
-
-      if(rect.bottom < -100 || rect.top > vh + 100) return;
-
-      const progress = (rect.top + rect.height/2 - vh/2) / vh;
-
-      img.style.setProperty('--scroll-drift', `${Math.max(-5,Math.min(5,progress*5))}px`);
-
-    });
-
-    ticking = false;
-
-  };
-
-  if(!reduceMotion){
-
-    parallaxItems.forEach(img=>{img.style.willChange='transform';});
-
-    window.addEventListener('scroll', ()=>{
-
-      if(!ticking){ticking=true;window.requestAnimationFrame(updateParallax);}
-
-    }, {passive:true});
-
-    updateParallax();
-
-  }
-
-})();
-
-</script>
-
-<script>
-
-/* Musik undangan: mulai setelah interaksi pengguna agar sesuai kebijakan autoplay browser. */
-
 (() => {
-
-  const audio = document.getElementById('weddingAudio');
-
-  const toggle = document.getElementById('musicToggle');
-
-  const label = document.getElementById('musicLabel');
-
-  const openInvitation = document.getElementById('openInvitation');
-
-  if (!audio || !toggle || !label) return;
-
-  audio.volume = 0.45;
-
-  function updateMusicButton() {
-
-    if (audio.paused) {
-
-      label.textContent = 'Putar Musik';
-
-      toggle.setAttribute('aria-label', 'Putar musik undangan');
-
-      toggle.setAttribute('aria-pressed', 'false');
-
-    } else if (audio.muted) {
-
-      label.textContent = 'Unmute Musik';
-
-      toggle.setAttribute('aria-label', 'Nyalakan suara musik undangan');
-
-      toggle.setAttribute('aria-pressed', 'false');
-
-    } else {
-
-      label.textContent = 'Mute Musik';
-
-      toggle.setAttribute('aria-label', 'Matikan suara musik undangan');
-
-      toggle.setAttribute('aria-pressed', 'true');
-
-    }
-
-  }
-
-  async function playMusic() {
-
-    try {
-
-      audio.muted = false;
-
-      await audio.play();
-
-      updateMusicButton();
-
-    } catch (error) {
-
-      label.textContent = 'Putar Musik';
-
-      toggle.setAttribute('aria-label', 'Putar musik undangan');
-
-      /* Jika browser menolak pemutaran, pengunjung bisa menekan tombol musik. */
-
-    }
-
-  }
-
-  toggle.addEventListener('click', async () => {
-
-    if (audio.paused) {
-
-      await playMusic();
-
-      return;
-
-    }
-
-    audio.muted = !audio.muted;
-
-    updateMusicButton();
-
-  });
-
-  if (openInvitation) {
-
-    openInvitation.addEventListener('click', () => {
-
-      if (audio.paused) playMusic();
-
-    });
-
-  }
-
-  audio.addEventListener('play', updateMusicButton);
-
-  audio.addEventListener('pause', updateMusicButton);
-
-  audio.addEventListener('volumechange', updateMusicButton);
-
-  updateMusicButton();
-
+ const root=document.getElementById('app');
+ const pages=[...document.querySelectorAll('.page')];
+ const dots=document.getElementById('dots');
+ pages.forEach((p,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Halaman '+(i+1));b.onclick=()=>p.scrollIntoView({behavior:'smooth'});dots.appendChild(b)});
+ const dotBtns=[...dots.children];
+ const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');const i=pages.indexOf(e.target);dotBtns.forEach((d,j)=>d.classList.toggle('active',j===i))}}),{root,threshold:.55});
+ pages.forEach(p=>io.observe(p));
+ const guest=new URLSearchParams(location.search).get('to'); if(guest){document.getElementById('guest').innerHTML='Untuk <strong>'+guest.replace(/[<>]/g,'')+'</strong>'}
+ const target=new Date('2026-12-30T10:00:00+07:00').getTime();
+ function tick(){let d=Math.max(0,target-Date.now());const day=Math.floor(d/86400000);d%=86400000;const h=Math.floor(d/3600000);d%=3600000;const m=Math.floor(d/60000);const s=Math.floor((d%60000)/1000);document.getElementById('days').textContent=String(day).padStart(2,'0');document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0')};tick();setInterval(tick,1000);
+ document.getElementById('calendar').onclick=()=>{const ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Fabi & Oca//ID','BEGIN:VEVENT','DTSTART:20261230T030000Z','DTEND:20261230T120000Z','SUMMARY:Pernikahan Fabi & Oca','DESCRIPTION:Akad 10.00 WIB di Gereja St. Antonius Padua Purbayan Surakarta. Resepsi 18.00 WIB di Graha Perhutani Surakarta.','LOCATION:Surakarta, Jawa Tengah','END:VEVENT','END:VCALENDAR'].join('\r\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar'}));a.download='Fabi-Oca-Wedding.ics';a.click();URL.revokeObjectURL(a.href)};
+ const wa='6281234567890';
+ document.getElementById('rsvpForm').onsubmit=e=>{e.preventDefault();const n=document.getElementById('nama').value.trim();const h=document.getElementById('hadir').value;const j=document.getElementById('jumlah').value;const u=document.getElementById('ucapan').value.trim();const msg=`Halo Fabi & Oca, saya ${n}.\n\nKonfirmasi: ${h}\nJumlah tamu: ${j}\n${u?'Doa & ucapan: '+u:''}`;window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank');document.getElementById('thanksName').textContent=n;document.getElementById('thanks').style.display='block'};
+ document.getElementById('copyBank').onclick=async()=>{try{await navigator.clipboard.writeText('1234567890');document.getElementById('copyBank').textContent='Tersalin ✓';setTimeout(()=>document.getElementById('copyBank').textContent='Salin Nomor',1600)}catch(e){alert('Nomor rekening: 1234567890')}};
+ document.getElementById('share').onclick=async()=>{const data={title:'Fabi & Oca — 30 Desember 2026',text:'Undangan Pernikahan Fabi & Oca',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{await navigator.clipboard?.writeText(location.href);alert('Link undangan sudah disalin.')}};
+ root.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)<8)return},{passive:true});
+ document.querySelector('#cover').classList.add('in');dotBtns[0]?.classList.add('active');
 })();
-
 </script>
-
 </body></html>
