@@ -750,6 +750,11 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
 @media(max-width:760px){
   .cover-copy{padding:20px 10px clamp(92px,14vh,130px)}
 }
+#music.is-visible{display:flex}
+#music.is-muted .bars{display:none}
+#music .music-muted-icon{display:none;width:17px;height:17px;fill:none;stroke:var(--red);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#music.is-muted .music-muted-icon{display:block}
+#music:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 
 </style>
 </head>
@@ -1052,10 +1057,24 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   </svg></div>
 </div><div class="final-photo"></div><div class="inner"><div class="final-copy reveal"><div class="kicker">Until We Meet</div><div class="script">Thank you for being part of our story.</div><h2>Fabi<br>&amp; Oca</h2><div class="final-date">30 · 12 · 2026 · SURAKARTA</div><button id="share" class="btn">Bagikan Undangan</button></div></div></section>
 </div>
+<audio id="weddingMusic" src="Lagu/Kasih%203.mp3" preload="none" loop></audio>
+<button id="music" type="button" aria-label="Bisukan musik" aria-pressed="false" title="Bisukan musik">
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  <svg class="music-muted-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6m0-6-5 6"/></svg>
+</button>
 <div id="dots" aria-label="Navigasi halaman"></div>
 <script>
 (() => {
  const root=document.getElementById('app');
+ function showCover(){if(location.hash){try{history.replaceState(null,'',location.pathname+location.search)}catch{}}root.scrollTop=0;const behavior=document.documentElement.style.scrollBehavior;document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=behavior}
+ showCover();window.addEventListener('load',()=>requestAnimationFrame(()=>requestAnimationFrame(showCover)),{once:true});
+ const music=document.getElementById('weddingMusic');
+ const musicButton=document.getElementById('music');
+ const openButton=document.querySelector('.open');
+ function syncMusicButton(){const muted=music.muted;musicButton.classList.toggle('is-muted',muted);musicButton.setAttribute('aria-pressed',String(muted));const label=muted?'Nyalakan musik':'Bisukan musik';musicButton.setAttribute('aria-label',label);musicButton.title=label}
+ openButton.addEventListener('click',()=>{music.play().catch(()=>{})});
+ music.addEventListener('play',()=>{musicButton.classList.add('is-visible');syncMusicButton()});
+ musicButton.addEventListener('click',()=>{music.muted=!music.muted;syncMusicButton()});
  const pages=[...document.querySelectorAll('.page')];
  const dots=document.getElementById('dots');
  pages.forEach((p,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Halaman '+(i+1));b.onclick=()=>p.scrollIntoView({behavior:'smooth'});dots.appendChild(b)});
