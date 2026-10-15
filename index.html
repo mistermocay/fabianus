@@ -42,8 +42,8 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 /* final */
 .final{background:#3d312d;color:white}.final-photo{position:absolute;inset:0;background:url('images/cover.png') center/cover no-repeat;filter:grayscale(.12)}.final-photo:after{content:"";position:absolute;inset:0;background:rgba(38,24,20,.67)}.final-copy{text-align:center;position:relative;z-index:2}.final .kicker{color:#e8d5c8}.final h2{font-size:clamp(74px,12vw,135px);color:white;margin:18px 0 8px}.final .script{font-size:45px;color:#edcfc7}.final-date{font:500 10px Montserrat,sans-serif;letter-spacing:.32em;margin-top:20px}.final .btn{margin-top:30px;color:white;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.55)}
 #dots{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:8px}#dots button{width:6px;height:6px;border-radius:50%;border:0;padding:0;background:rgba(50,35,30,.25);cursor:pointer}#dots button.active{height:22px;border-radius:5px;background:var(--red)}#music{position:fixed;left:18px;bottom:18px;z-index:60;width:42px;height:42px;border:1px solid rgba(70,48,40,.28);background:rgba(248,242,233,.85);border-radius:50%;display:none;align-items:center;justify-content:center;cursor:pointer}.bars{display:flex;gap:3px;align-items:flex-end;height:15px}.bars i{width:2px;background:var(--red);height:7px;animation:wave .8s infinite ease-in-out}.bars i:nth-child(2){height:13px;animation-delay:.15s}.bars i:nth-child(3){height:9px;animation-delay:.3s}@keyframes wave{50%{transform:scaleY(.45)}}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s ease}.page.in .reveal{opacity:1;transform:none}.delay1{transition-delay:.12s}.delay2{transition-delay:.24s}.delay3{transition-delay:.36s}
- .page>.inner{transform:translateY(16px);transition:transform .8s cubic-bezier(.2,.7,.2,1)}.page.in>.inner{transform:translateY(0)}
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .55s cubic-bezier(.22,.61,.36,1),transform .55s cubic-bezier(.22,.61,.36,1)}.page.in .reveal{opacity:1;transform:none}.delay1{transition-delay:.05s}.delay2{transition-delay:.1s}.delay3{transition-delay:.15s}
+.page>.inner{transform:none;transition:none}.page.in>.inner{transform:none}
 @media(max-width:760px){body:before{opacity:.12}#app{width:100%;box-shadow:none}.inner{width:90%;padding:48px 0}.branch{width:240px;height:240px;opacity:.7}.cover-paper{inset:5%}.cover h1{font-size:80px}.photo-wrap,.photo-wrap.reverse{display:flex;flex-direction:column;width:100%;height:auto;min-height:0}.photo{width:100%;height:58svh;min-height:0}.photo-caption,.reverse .photo-caption{width:88%;margin:-55px auto 0;padding:32px 27px 35px}.photo-caption h2{font-size:52px}.photo-caption p{font-size:18px}.collage{grid-template-columns:1fr 1fr;gap:10px}.polaroid:nth-child(1){margin-top:0}.polaroid:nth-child(3){margin-top:25px}.polaroid:nth-child(2){grid-column:1/-1;width:74%;justify-self:center;order:-1}.collage-copy{margin-top:15px}.event-grid{grid-template-columns:1fr;gap:14px}.event-card{min-height:420px;padding:34px 28px}.event-card h2{font-size:48px}.timer{gap:3px}.timer .num{font-size:43px}.card{padding:32px 25px}.card h2{font-size:52px}.row{grid-template-columns:1fr}.copy{float:none;margin:18px 0 0}.final h2{font-size:90px}#dots{right:10px}}
 @media(min-width:761px){.snap{height:100svh;overflow-y:auto}.page{min-height:100svh}.photo-section .inner{align-items:center}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.page>.inner{transform:none}}
@@ -87,7 +87,7 @@ h2,.photo-caption h2,.event-card h2,.card h2,.gift-card h2{color:var(--red)}
 .photo-section .inner{padding:clamp(36px,5vw,68px) 0}
 .photo-wrap{width:min(1000px,92%);height:min(76svh,750px);gap:0}
 .photo{background:#d7d6c8;box-shadow:0 20px 60px rgba(20,44,31,.16)}
-.photo img{filter:saturate(.84) contrast(.98);transition:transform .8s ease}
+.photo img{filter:saturate(.84) contrast(.98);transition:transform .5s ease}
 .photo:hover img{transform:scale(1.035)}
 .photo-caption{background:rgba(248,245,235,.97);border:1px solid rgba(186,154,95,.48);box-shadow:0 22px 60px rgba(25,48,34,.16);padding:clamp(28px,4vw,48px)}
 .photo-caption .script{color:#9d8050}
@@ -676,6 +676,81 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   .card,.gift-card{padding:22px 16px}
 }
 
+#album{background:linear-gradient(145deg,#f7eee2,#edddcc)!important}
+#album .inner{height:auto;min-height:100svh;padding:clamp(34px,6vh,64px) 0}
+.album-content{width:min(1120px,calc(100% - 64px));margin:auto}
+.album-heading{text-align:center;max-width:680px;margin:0 auto clamp(24px,4vh,38px)}
+.album-heading h2{font-size:clamp(44px,6vw,76px);line-height:.98;margin-bottom:12px}
+.album-heading h2 em{font-family:Italianno,cursive;font-weight:400;color:#c47768}
+.album-heading p{font-size:19px;line-height:1.5;color:#665244;margin:0}
+.album-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:18px;align-items:center}
+.album-photo{grid-column:span 3;margin:0;padding:9px 9px 0;background:#fffaf2;border:1px solid rgba(185,137,86,.38);box-shadow:0 14px 35px rgba(95,58,35,.12);min-width:0}
+.album-photo--wide{grid-column:span 6}
+.album-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.album-photo figcaption{padding:10px 2px 11px;text-align:center;font:500 9px Montserrat,sans-serif;letter-spacing:.14em;color:#927258}
+@media(max-width:760px){
+  #album .inner{padding:42px 0 48px}
+  .album-content{width:calc(100% - 36px)}
+  .album-heading{margin-bottom:24px}
+  .album-heading h2{font-size:clamp(40px,10vw,54px)}
+  .album-heading p{font-size:16px}
+  .album-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+  .album-photo{grid-column:span 1;padding:6px 6px 0}
+  .album-photo--wide{grid-column:span 2}
+  .album-photo:nth-child(3){grid-column:1/-1;width:calc((100% - 12px)/2);justify-self:center}
+  .album-photo:first-child:not(.album-photo--wide),.album-photo:last-child:not(.album-photo--wide){grid-column:1/-1;width:calc((100% - 12px)/2);justify-self:center}
+  .album-photo figcaption{padding:8px 2px 9px;font-size:8px;letter-spacing:.1em}
+}
+@media(max-width:360px){.album-content{width:calc(100% - 28px)}.album-grid{gap:9px}}
+
+.bride-groom{background:linear-gradient(145deg,#fbf3e8,#edddcc)!important}
+.bride-groom .inner{height:auto;min-height:100svh;padding:clamp(34px,6vh,60px) 0}
+.couple-content{position:relative;z-index:2;width:100%;max-width:940px;margin:auto;text-align:center}
+.couple-cross{width:24px;height:30px;margin:0 auto 12px;color:#b98a56}
+.couple-cross svg{display:block;width:100%;height:100%;fill:currentColor}
+.couple-heading h2{font-size:clamp(46px,6.5vw,74px);line-height:.96;margin:0 0 16px}
+.couple-heading h2 em{font-family:Italianno,cursive;font-weight:400;color:#c47768}
+.couple-blessing{max-width:760px;margin:0 auto 30px;color:#665244;font-size:clamp(19px,2.2vw,24px);line-height:1.5}
+.couple-profiles{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:clamp(12px,3vw,30px);max-width:900px;margin:0 auto}
+.couple-profile{min-width:0}
+.couple-photo{width:min(100%,280px);margin:0 auto 15px;padding:7px;background:#fffaf2;border:1px solid rgba(185,137,86,.42);box-shadow:0 14px 35px rgba(95,58,35,.12)}
+.couple-photo img{display:block;width:100%;aspect-ratio:.562;object-fit:cover;background:#f4e7d8}
+.couple-profile .kicker{font-size:9px;margin-bottom:8px}
+.couple-profile h3{font:400 clamp(21px,2.5vw,30px)/1.08 "DM Serif Display",serif;color:#76503a;margin:0 0 10px;overflow-wrap:anywhere}
+.couple-lineage{font-size:17px;line-height:1.45;color:#665244;margin:0}
+.couple-lineage span{display:block}
+.couple-and{font:400 28px Italianno,cursive;color:#c47768}
+.couple-verse{max-width:740px;margin:30px auto 0;padding:22px 16px 0;border-top:1px solid rgba(185,137,86,.42);color:#665244}
+.couple-verse p{font-size:clamp(17px,1.9vw,21px);font-style:italic;line-height:1.5;margin:0 auto 10px}
+.couple-verse cite{font:600 9px Montserrat,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#927258}
+@media(max-width:760px){
+  .bride-groom .inner{padding:38px 0 42px}
+  .couple-cross{width:21px;height:27px;margin-bottom:10px}
+  .couple-heading h2{font-size:clamp(42px,11vw,54px);margin-bottom:12px}
+  .couple-blessing{font-size:17px;line-height:1.5;margin-bottom:23px}
+  .couple-profiles{gap:10px}
+  .couple-photo{padding:5px;margin-bottom:11px}
+  .couple-profile .kicker{font-size:8px;letter-spacing:.12em;margin-bottom:7px}
+  .couple-profile h3{font-size:clamp(18px,5vw,22px);line-height:1.05;margin-bottom:8px}
+  .couple-lineage{font-size:14px;line-height:1.4}
+  .couple-and{font-size:23px}
+  .couple-verse{margin-top:23px;padding:18px 4px 0}
+  .couple-verse p{font-size:16px;line-height:1.5}
+}
+@media(max-width:360px){
+  .couple-content{width:100%}
+  .couple-profiles{gap:7px}
+  .couple-and{font-size:20px}
+  .couple-profile h3{font-size:18px}
+  .couple-lineage{font-size:13px}
+}
+
+.cover-paper{align-items:flex-end}
+.cover-copy{padding:26px 14px clamp(86px,12vh,128px)}
+@media(max-width:760px){
+  .cover-copy{padding:20px 10px clamp(92px,14vh,130px)}
+}
+
 </style>
 </head>
 <body>
@@ -735,6 +810,36 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
 </div>
  <div class="botanical"><div class="branch tl"><svg viewBox="0 0 300 300"><path class="stem" d="M15 270C70 220 105 160 205 60"/><ellipse class="leaf" cx="76" cy="217" rx="11" ry="34" transform="rotate(-45 76 217)"/><ellipse class="leaf2" cx="108" cy="180" rx="11" ry="34" transform="rotate(42 108 180)"/><ellipse class="leaf" cx="146" cy="139" rx="11" ry="34" transform="rotate(-42 146 139)"/></svg></div></div>
  <div class="inner"><div class="photo-wrap"><div class="photo"><img src="images/books.jpg" alt="Fabi dan Oca bersama buku" loading="lazy"></div><div class="photo-caption reveal"><div class="photo-number">01 / OUR STORY</div><div class="script">A story worth telling</div><h2>Berawal dari<br>sebuah cerita.</h2><p>Di antara halaman yang dibuka bersama, kami menemukan bahwa kisah terbaik bukan hanya untuk dibaca — tetapi untuk dijalani berdua.</p></div></div></div>
+</section>
+
+<section class="page bride-groom" id="bride-groom">
+  <div class="inner"><div class="couple-content">
+    <header class="couple-heading reveal">
+      <div class="couple-cross" aria-hidden="true"><svg viewBox="0 0 24 28"><path d="M10 1h4v9h8v4h-8v13h-4V14H2v-4h8z"/></svg></div>
+      <div class="kicker">BRIDE &amp; GROOM</div>
+      <h2>Bride <em>&amp;</em> Groom</h2>
+      <p class="couple-blessing">“Penyertaan Tuhan selalu ada di setiap kisah cinta dan di waktu yang indah,<br>Dia mempersatukan putra dan putri kami dalam ikatan pernikahan Kudus.”</p>
+    </header>
+    <div class="couple-profiles">
+      <article class="couple-profile reveal">
+        <figure class="couple-photo"><img src="images/odelia-sendirian.jpg" alt="Odelia Ocarina Oktoberlian" loading="lazy"></figure>
+        <div class="kicker">THE BRIDE</div>
+        <h3>Odelia Ocarina Oktoberlian</h3>
+        <p class="couple-lineage"><span>Puteri pertama dari</span><span>keluarga Bapak Philippus Benetius Dwi Harsono</span></p>
+      </article>
+      <div class="couple-and" aria-label="dengan">dengan</div>
+      <article class="couple-profile reveal delay1">
+        <figure class="couple-photo"><img src="images/fabianus-sendiri.jpg" alt="Fabianus Siltian Simbarja" loading="lazy"></figure>
+        <div class="kicker">THE GROOM</div>
+        <h3>Fabianus Siltian Simbarja</h3>
+        <p class="couple-lineage"><span>Putera pertama dari</span><span>keluarga Bapak Petrus Sugiri Susila Simbarja</span></p>
+      </article>
+    </div>
+    <blockquote class="couple-verse reveal">
+      <p>“Hendaklah kamu selalu rendah hati, lemah lembut, dan sabar. Tunjukkanlah kasihmu dalam saling membantu. Dan berusahalah memelihara kesatuan Roh oleh ikatan damai sejahtera.”</p>
+      <cite>Efesus 4:2–3</cite>
+    </blockquote>
+  </div></div>
 </section>
 
 <section class="page photo-section" id="faith">
@@ -838,6 +943,26 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
     <div class="extra-photo-grid">
         <figure class="extra-photo reveal "><img src="images/foto6.png" alt="Foto kenangan Fabi dan Oca 05" loading="lazy"><figcaption>Little things we love</figcaption></figure>
         <figure class="extra-photo reveal delay1"><img src="images/foto7.png" alt="Foto kenangan Fabi dan Oca 06" loading="lazy"><figcaption>Another page of us</figcaption></figure>
+    </div>
+  </div></div>
+</section>
+
+<section class="page extra-gallery album-gallery" id="album">
+  <div class="inner"><div class="album-content">
+    <div class="album-heading reveal">
+      <div class="kicker">08 / OUR ALBUM</div>
+      <h2>Kisah kami,<br><em>dalam bingkai.</em></h2>
+      <p>Delapan potret kecil dari perjalanan menuju hari yang kami nantikan.</p>
+    </div>
+    <div class="album-grid">
+      <figure class="album-photo reveal"><img src="images/album1.png" alt="Potret prewedding Fabi dan Oca 1" loading="lazy"><figcaption>01 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo album-photo--wide reveal delay1"><img src="images/album2.png" alt="Potret prewedding Fabi dan Oca 2" loading="lazy"><figcaption>02 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo reveal delay2"><img src="images/album3.jpg" alt="Potret prewedding Fabi dan Oca 3" loading="lazy"><figcaption>03 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo album-photo--wide reveal"><img src="images/album4.jpg" alt="Potret prewedding Fabi dan Oca 4" loading="lazy"><figcaption>04 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo reveal delay1"><img src="images/album5.jpg" alt="Potret prewedding Fabi dan Oca 5" loading="lazy"><figcaption>05 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo reveal delay2"><img src="images/album6.jpg" alt="Potret prewedding Fabi dan Oca 6" loading="lazy"><figcaption>06 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo album-photo--wide reveal"><img src="images/album7.jpg" alt="Potret prewedding Fabi dan Oca 7" loading="lazy"><figcaption>07 / FABI &amp; OCA</figcaption></figure>
+      <figure class="album-photo reveal delay1"><img src="images/album8.jpg" alt="Potret prewedding Fabi dan Oca 8" loading="lazy"><figcaption>08 / FABI &amp; OCA</figcaption></figure>
     </div>
   </div></div>
 </section>
