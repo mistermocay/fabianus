@@ -1065,8 +1065,10 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
  const visiblePages=new Map();
  const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
-   if(e.isIntersecting&&e.intersectionRatio>=.35){e.target.classList.add('in');visiblePages.set(e.target,e.intersectionRatio)}
-   else{e.target.classList.remove('in');visiblePages.delete(e.target)}
+   if(e.isIntersecting)e.target.classList.add('in');
+   else e.target.classList.remove('in');
+   if(e.isIntersecting&&e.intersectionRatio>=.35)visiblePages.set(e.target,e.intersectionRatio);
+   else visiblePages.delete(e.target);
   });
   let currentPage=null,currentRatio=0;
   visiblePages.forEach((ratio,page)=>{if(ratio>currentRatio){currentPage=page;currentRatio=ratio}});
