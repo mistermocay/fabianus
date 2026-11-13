@@ -1146,7 +1146,7 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
  const rsvpCountField=document.getElementById('rsvpCountField');
  const rsvpCount=document.getElementById('rsvpCount');
  const rsvpStatus=document.getElementById('rsvpStatus');
- const waPhone='GANTI_DENGAN_NOMOR_WA';
+ const waPhone='6285117736156';
  const attendanceNeedsCount=value=>value!==''&&value!=='Tidak bisa hadir';
  rsvpAttendance.addEventListener('change',()=>{
   const needsCount=attendanceNeedsCount(rsvpAttendance.value);
@@ -1163,7 +1163,7 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   const attendance=rsvpAttendance.value;
   const message=['Halo Fabi & Oca! Saya ingin mengirim konfirmasi RSVP.','Nama: '+name,'Kehadiran: '+attendance];
   if(attendanceNeedsCount(attendance))message.push('Jumlah orang: '+rsvpCount.value);
-  window.open('https://wa.me/6285117736156'+waPhone+'?text='+encodeURIComponent(message.join('\n')),'_blank','noopener,noreferrer');
+  window.open('https://wa.me/'+waPhone+'?text='+encodeURIComponent(message.join('\n')),'_blank','noopener,noreferrer');
  });
  document.getElementById('copyBank').onclick=async()=>{try{await navigator.clipboard.writeText('1234567890');document.getElementById('copyBank').textContent='Tersalin ✓';setTimeout(()=>document.getElementById('copyBank').textContent='Salin Nomor',1600)}catch(e){alert('Nomor rekening: 1234567890')}};
  document.getElementById('share').onclick=async()=>{const data={title:'Fabi & Oca — 30 Desember 2026',text:'Undangan Pernikahan Fabi & Oca',url:location.href};if(navigator.share){try{await navigator.share(data)}catch(e){}}else{await navigator.clipboard?.writeText(location.href);alert('Link undangan sudah disalin.')}};
