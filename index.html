@@ -768,6 +768,162 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
 @media(max-width:760px){.polaroid{padding-bottom:7px}#album .album-photo{padding-bottom:6px}}
 @media(max-width:700px){#moments .polaroid,#moments .polaroid:nth-child(1),#moments .polaroid:nth-child(2),#moments .polaroid:nth-child(3){padding-bottom:8px}}
 
+/* ===== Page choreography and motion system ===== */
+.page{
+  --page-enter-x:14px;
+  overflow:hidden;
+  transform-origin:center center;
+  will-change:opacity,transform;
+}
+.page.enter-next{animation:pageEnterNext .42s cubic-bezier(.25,.46,.45,.94) both}
+.page.enter-prev{animation:pageEnterPrev .42s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes pageEnterNext{
+  0%{opacity:.55;transform:translateX(var(--page-enter-x))}
+  100%{opacity:1;transform:none}
+}
+@keyframes pageEnterPrev{
+  0%{opacity:.55;transform:translateX(calc(var(--page-enter-x)*-1))}
+  100%{opacity:1;transform:none}
+}
+
+.page::before{
+  content:"";
+  position:absolute;
+  inset:-12%;
+  z-index:0;
+  pointer-events:none;
+  opacity:0;
+  background:
+    radial-gradient(ellipse at 18% 28%,rgba(195,164,107,.18),transparent 42%),
+    radial-gradient(ellipse at 82% 72%,rgba(113,132,106,.16),transparent 44%);
+  background-size:160% 160%;
+  mix-blend-mode:soft-light;
+  transition:opacity 1.2s ease;
+}
+.page.cinematic-active::before{
+  opacity:.65;
+  animation:ambientLight 24s ease-in-out infinite alternate;
+}
+@keyframes ambientLight{
+  from{background-position:0% 30%}
+  to{background-position:100% 70%}
+}
+.page.cinematic-active .flower-decor .floral,
+.page.cinematic-active .botanical .branch{
+  animation:sceneDrift 10s ease-in-out infinite alternate;
+}
+.page.cinematic-active .flower-decor .floral:nth-child(even),
+.page.cinematic-active .botanical .branch:nth-child(even){
+  animation-delay:-5s;
+}
+@keyframes sceneDrift{
+  from{translate:0 0}
+  to{translate:0 -6px}
+}
+.page.cinematic-active .petal{
+  animation:petalDrift 8s ease-in-out infinite alternate;
+}
+@keyframes petalDrift{
+  from{translate:0 0}
+  to{translate:4px -9px}
+}
+.page.cinematic-active .cover-photo{
+  animation:coverDrift 24s ease-in-out infinite alternate;
+  will-change:transform,background-position;
+}
+.page.cinematic-active .final-photo{
+  animation:coverDrift 26s ease-in-out infinite alternate;
+  will-change:transform,background-position;
+}
+@keyframes coverDrift{
+  from{transform:scale(1.015);background-position:50% 43%}
+  to{transform:scale(1.06);background-position:54% 47%}
+}
+.page.cinematic-active .photo img{
+  animation:photoDrift 20s ease-in-out infinite alternate;
+  will-change:transform,object-position;
+}
+.page.cinematic-active .couple-photo img,
+.page.cinematic-active .polaroid img,
+.page.cinematic-active .extra-photo img,
+.page.cinematic-active .album-photo img{
+  animation:portraitDrift 22s ease-in-out infinite alternate;
+  will-change:object-position;
+}
+@keyframes photoDrift{
+  from{transform:scale(1.015);object-position:48% 50%}
+  to{transform:scale(1.055);object-position:53% 46%}
+}
+@keyframes portraitDrift{
+  from{object-position:48% 50%}
+  to{object-position:52% 47%}
+}
+
+.page .reveal{opacity:1;transform:none;filter:none;transition:none;will-change:auto}
+.motion-item{
+  opacity:0;
+  translate:0 14px;
+  transition:opacity .55s ease,translate .55s cubic-bezier(.2,.65,.3,1);
+  transition-delay:var(--motion-delay,0ms);
+  will-change:opacity,translate;
+}
+.motion-item.is-visible{opacity:1;translate:0 0}
+.motion-item img{
+  transition:transform .7s cubic-bezier(.2,.65,.3,1);
+}
+.motion-item.is-visible img{transform:scale(1.015)}
+.motion-item.delay1{transition-delay:calc(var(--motion-delay,0ms) + 60ms)!important}
+.motion-item.delay2{transition-delay:calc(var(--motion-delay,0ms) + 120ms)!important}
+.motion-item.delay3{transition-delay:calc(var(--motion-delay,0ms) + 180ms)!important}
+
+.event-card,.rsvp-card,.gift-card,.wishes-card,.bank,.wish-item{
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.event-card:hover,.rsvp-card:hover,.wishes-card:hover{transform:translateY(-2px)}
+.btn,.copy,.submit{
+  transition:transform .2s ease,background .2s ease,color .2s ease,box-shadow .2s ease;
+}
+.btn:hover,.copy:hover,.submit:hover{
+  transform:translateY(-1px);
+  box-shadow:0 7px 16px rgba(35,55,40,.1);
+}
+.field input,.field select,.field textarea{
+  transition:border-color .2s ease,box-shadow .2s ease;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  border-color:var(--gold);
+  box-shadow:0 0 0 2px rgba(195,164,107,.12);
+}
+
+#dots button{transition:height .20s ease,background .20s ease,transform .20s ease}
+#dots button:hover{transform:scale(1.15)}
+#dots button.active{box-shadow:0 0 0 4px rgba(142,36,48,.08)}
+
+@media(max-width:760px){
+  .page{--page-enter-x:8px}
+  .page.enter-next,.page.enter-prev{animation-duration:.36s}
+  .motion-item{translate:0 10px}
+  .page.cinematic-active .flower-decor .floral,
+  .page.cinematic-active .botanical .branch{animation-duration:12s}
+  .page.cinematic-active .photo img{animation-duration:24s}
+}
+@media(prefers-reduced-motion:reduce){
+  .page.enter-next,.page.enter-prev{animation:none!important}
+  .page.cinematic-active::before,
+  .page.cinematic-active .flower-decor .floral,
+  .page.cinematic-active .botanical .branch,
+  .page.cinematic-active .petal,
+  .page.cinematic-active .cover-photo,
+  .page.cinematic-active .final-photo,
+  .page.cinematic-active .photo img,
+  .page.cinematic-active .couple-photo img,
+  .page.cinematic-active .polaroid img,
+  .page.cinematic-active .extra-photo img,
+  .page.cinematic-active .album-photo img{animation:none!important;will-change:auto}
+  .motion-item,.page .reveal{opacity:1!important;translate:none!important;transform:none!important;filter:none!important;transition:none!important}
+  .motion-item img{transform:none!important}
+}
+
 </style>
 </head>
 <body>
@@ -1120,14 +1276,67 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
  music.addEventListener('play',()=>{musicButton.classList.add('is-visible');syncMusicButton()});
  musicButton.addEventListener('click',()=>{music.muted=!music.muted;syncMusicButton()});
  const pages=[...document.querySelectorAll('.page')];
+ let previousPageIndex=-1;
  const dots=document.getElementById('dots');
- pages.forEach((p,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Halaman '+(i+1));b.onclick=()=>p.scrollIntoView({behavior:'smooth'});dots.appendChild(b)});
+ pages.forEach((p,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Halaman '+(i+1));b.onclick=()=>navigateToPage(i);dots.appendChild(b)});
  const dotBtns=[...dots.children];
+ function navigateToPage(index){
+  if(index<0||index>=pages.length)return;
+  pages[index].scrollIntoView({behavior:'smooth',block:'start'});
+ }
  const observerRoot=window.matchMedia('(min-width: 761px)').matches?root:null;
+ const motionSelector=[
+  '.cover-copy > *','.scrollhint','.photo-wrap > .photo','.photo-caption > *',
+  '.couple-heading > *','.couple-profile > *','.couple-and','.couple-verse',
+  '.collage > *','.gallery-heading > *','.extra-photo-grid > *',
+  '.album-heading > *','.album-grid > *','.event .inner > div > *',
+  '.event-card > *','.count-inner > *','.rsvp-card > *',
+  '.gift-card > *','.bank > *','.wishes-card > *','.wishes-heading > *',
+  '.wishes-form > *','.wishes-list > *','.final-copy > *'
+ ].join(',');
+ const motionObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>entry.target.classList.toggle('is-visible',entry.isIntersecting));
+ },{root:observerRoot,rootMargin:'0px 0px -6% 0px',threshold:.12});
+ function registerMotionItem(element){
+  if(element.classList.contains('motion-item'))return;
+  const page=element.closest('.page');
+  const order=page?page.querySelectorAll('.motion-item').length:0;
+  element.classList.remove('reveal');
+  element.classList.add('motion-item');
+  element.style.setProperty('--motion-delay',Math.min(order,5)*45+'ms');
+  motionObserver.observe(element);
+ }
+ function setupMotionItems(scope){
+  const candidates=[];
+  if(scope.matches&&scope.matches(motionSelector))candidates.push(scope);
+  candidates.push(...scope.querySelectorAll(motionSelector));
+  candidates.forEach(registerMotionItem);
+  scope.querySelectorAll('.reveal').forEach(element=>{
+   if(!element.querySelector(motionSelector))registerMotionItem(element);
+  });
+ }
+ pages.forEach(setupMotionItems);
+ const wishesList=document.getElementById('wishesList');
+ if(wishesList){
+  new MutationObserver(records=>records.forEach(record=>record.addedNodes.forEach(node=>{
+   if(node.nodeType===1)setupMotionItems(node);
+  }))).observe(wishesList,{childList:true});
+ }
  const visiblePages=new Map();
  const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
-   if(e.isIntersecting)e.target.classList.add('in');
+   if(e.isIntersecting){
+    e.target.classList.add('in');
+    const nextIndex=pages.indexOf(e.target);
+    if(previousPageIndex>=0&&nextIndex!==previousPageIndex&&e.intersectionRatio>=.55){
+     const direction=nextIndex>previousPageIndex?'enter-next':'enter-prev';
+     e.target.classList.remove('enter-next','enter-prev');
+     void e.target.offsetWidth;
+     e.target.classList.add(direction);
+     window.setTimeout(()=>e.target.classList.remove(direction),500);
+    }
+    if(e.intersectionRatio>=.55)previousPageIndex=nextIndex;
+   }
    else e.target.classList.remove('in');
    if(e.isIntersecting&&e.intersectionRatio>=.35)visiblePages.set(e.target,e.intersectionRatio);
    else visiblePages.delete(e.target);
@@ -1135,6 +1344,7 @@ button,a,.btn{ -webkit-tap-highlight-color:transparent }
   let currentPage=null,currentRatio=0;
   visiblePages.forEach((ratio,page)=>{if(ratio>currentRatio){currentPage=page;currentRatio=ratio}});
   dotBtns.forEach((d,j)=>d.classList.toggle('active',pages[j]===currentPage));
+  pages.forEach(page=>page.classList.toggle('cinematic-active',page===currentPage));
  },{root:observerRoot,threshold:[0,.35,.55]});
  pages.forEach(p=>io.observe(p));
  const guest=new URLSearchParams(location.search).get('to'); if(guest){document.getElementById('guest').innerHTML='Untuk <strong>'+guest.replace(/[<>]/g,'')+'</strong>'}
