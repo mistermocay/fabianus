@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="cover-locked">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -913,9 +913,25 @@ to{transform:scale(1.025)}
   .motion-item img{transform:none!important}
 }
 
+html.cover-locked,body.cover-locked{
+  height:100%;
+  overflow:hidden;
+  overscroll-behavior:none;
+}
+body.cover-locked #app{
+  height:100svh;
+  overflow:hidden!important;
+  overscroll-behavior:none;
+  touch-action:none;
+}
+body.cover-locked #dots{
+  visibility:hidden;
+  pointer-events:none;
+}
+
 </style>
 </head>
-<body>
+<body class="cover-locked">
 <svg aria-hidden="true" width="0" height="0" style="position:absolute"><defs>
   <filter id="watercolorSoft" x="-20%" y="-20%" width="140%" height="140%">
     <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="noise"/>
@@ -948,7 +964,7 @@ to{transform:scale(1.025)}
     <div class="cover-date reveal delay2">30 · 12 · 2026 · SURAKARTA</div>
     <div id="guest" class="guest reveal delay2"></div>
     <a class="btn open reveal delay3" href="#intro">Buka Undangan</a>
-  </div></div><div class="scrollhint">SCROLL TO EXPLORE ↓</div>
+  </div></div><div class="scrollhint">TEKAN UNTUK MEMBUKA</div>
 </section>
 
 <section class="page photo-section" id="intro">
@@ -1254,13 +1270,19 @@ to{transform:scale(1.025)}
 <script>
 (() => {
  const root=document.getElementById('app');
- function showCover(){if(location.hash){try{history.replaceState(null,'',location.pathname+location.search)}catch{}}root.scrollTop=0;const behavior=document.documentElement.style.scrollBehavior;document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=behavior}
+ let invitationOpened=false;
+ function showCover(){if(invitationOpened)return;if(location.hash){try{history.replaceState(null,'',location.pathname+location.search)}catch{}}root.scrollTop=0;const behavior=document.documentElement.style.scrollBehavior;document.documentElement.style.scrollBehavior='auto';window.scrollTo(0,0);document.documentElement.style.scrollBehavior=behavior}
  showCover();window.addEventListener('load',()=>requestAnimationFrame(()=>requestAnimationFrame(showCover)),{once:true});
  const music=document.getElementById('weddingMusic');
  const musicButton=document.getElementById('music');
  const openButton=document.querySelector('.open');
  function syncMusicButton(){const muted=music.muted;musicButton.classList.toggle('is-muted',muted);musicButton.setAttribute('aria-pressed',String(muted));const label=muted?'Nyalakan musik':'Bisukan musik';musicButton.setAttribute('aria-label',label);musicButton.title=label}
- openButton.addEventListener('click',()=>{music.play().catch(()=>{})});
+ openButton.addEventListener('click',()=>{
+  invitationOpened=true;
+  document.documentElement.classList.remove('cover-locked');
+  document.body.classList.remove('cover-locked');
+  music.play().catch(()=>{});
+ });
  music.addEventListener('play',()=>{musicButton.classList.add('is-visible');syncMusicButton()});
  musicButton.addEventListener('click',()=>{music.muted=!music.muted;syncMusicButton()});
  const pages=[...document.querySelectorAll('.page')];
